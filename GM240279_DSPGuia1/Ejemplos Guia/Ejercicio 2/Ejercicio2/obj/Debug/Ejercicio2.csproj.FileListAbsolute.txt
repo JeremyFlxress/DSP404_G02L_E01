@@ -1,0 +1,10 @@
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\bin\Debug\Ejercicio2.exe.config
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\bin\Debug\Ejercicio2.exe
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\bin\Debug\Ejercicio2.pdb
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.csproj.AssemblyReference.cache
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.Form1.resources
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.Properties.Resources.resources
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.csproj.GenerateResource.cache
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.csproj.CoreCompileInputs.cache
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.exe
+C:\Users\jerem\Documents\Semana4-C#\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.pdb
