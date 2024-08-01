@@ -1,0 +1,30 @@
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\bin\Debug\com 1.exe.config
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\bin\Debug\com 1.exe
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\bin\Debug\com 1.pdb
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com 1.csproj.AssemblyReference.cache
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com_1.Form1.resources
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com_1.Properties.Resources.resources
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com 1.csproj.GenerateResource.cache
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com 1.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com 1.exe
+C:\Users\Oscar\OneDrive\Escritorio\com 1\com 1\obj\Debug\com 1.pdb
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\bin\Debug\com 1.exe.config
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\bin\Debug\com 1.exe
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\bin\Debug\com 1.pdb
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com 1.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com_1.Form1.resources
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com_1.Properties.Resources.resources
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com 1.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com 1.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com 1.exe
+C:\Users\Usuario\Documents\Semana4-C#\com 1\com 1\obj\Debug\com 1.pdb
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\bin\Debug\com 1.exe.config
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\bin\Debug\com 1.exe
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\bin\Debug\com 1.pdb
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com 1.csproj.AssemblyReference.cache
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com_1.Form1.resources
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com_1.Properties.Resources.resources
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com 1.csproj.GenerateResource.cache
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com 1.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com 1.exe
+C:\Users\Josue\Documents\FP240479_Guia1_DSP\Complementarios\com 1\com 1\obj\Debug\com 1.pdb
