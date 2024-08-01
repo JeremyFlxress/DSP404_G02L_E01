@@ -1,0 +1,10 @@
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\bin\Debug\Ejercicio 2.exe.config
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\bin\Debug\Ejercicio 2.exe
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\bin\Debug\Ejercicio 2.pdb
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio 2.csproj.AssemblyReference.cache
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio_2.Form1.resources
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio_2.Properties.Resources.resources
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio 2.csproj.GenerateResource.cache
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio 2.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio 2.exe
+C:\Users\Josue\Documents\GM240279_DSPGuia2\Ejercicios Guia\Ejercicio 2\Ejercicio 2\Ejercicio 2\obj\Debug\Ejercicio 2.pdb
