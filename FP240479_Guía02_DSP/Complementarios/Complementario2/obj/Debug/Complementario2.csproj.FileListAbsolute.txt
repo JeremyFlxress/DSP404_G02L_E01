@@ -1,0 +1,10 @@
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\bin\Debug\Complementario2.exe.config
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\bin\Debug\Complementario2.exe
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\bin\Debug\Complementario2.pdb
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.Form1.resources
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.Properties.Resources.resources
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.exe
+C:\Users\Usuario\Documents\FP240479_Guía02_DSP\Complementarios\Complementario2\obj\Debug\Complementario2.pdb
