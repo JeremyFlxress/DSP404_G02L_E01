@@ -1,0 +1,10 @@
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\bin\Debug\Complementario_01.exe.config
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\bin\Debug\Complementario_01.exe
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\bin\Debug\Complementario_01.pdb
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.Form1.resources
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.exe
+C:\Users\Usuario\source\repos\Complementario_01\Complementario_01\obj\Debug\Complementario_01.pdb
