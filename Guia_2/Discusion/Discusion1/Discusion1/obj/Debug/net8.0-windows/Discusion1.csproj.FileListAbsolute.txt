@@ -1,0 +1,17 @@
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\bin\Debug\net8.0-windows\Discusion1.exe
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\bin\Debug\net8.0-windows\Discusion1.deps.json
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\bin\Debug\net8.0-windows\Discusion1.runtimeconfig.json
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\bin\Debug\net8.0-windows\Discusion1.dll
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\bin\Debug\net8.0-windows\Discusion1.pdb
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.Form1.resources
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.csproj.GenerateResource.cache
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.AssemblyInfoInputs.cache
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.AssemblyInfo.cs
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.csproj.CoreCompileInputs.cache
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.sourcelink.json
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.dll
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\refint\Discusion1.dll
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.pdb
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\Discusion1.genruntimeconfig.cache
+C:\Users\William\Desktop\02\Discusion\Discusion1\Discusion1\obj\Debug\net8.0-windows\ref\Discusion1.dll
