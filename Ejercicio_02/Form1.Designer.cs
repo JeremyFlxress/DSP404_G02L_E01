@@ -38,15 +38,14 @@
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCajero = new System.Windows.Forms.Panel();
+            this.gbMenu = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnTransferir = new System.Windows.Forms.Button();
+            this.btnConsignar = new System.Windows.Forms.Button();
+            this.btnRetirarFondos = new System.Windows.Forms.Button();
+            this.btnConsultarSaldo = new System.Windows.Forms.Button();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.gbMenu = new System.Windows.Forms.GroupBox();
-            this.lblSalario = new System.Windows.Forms.Label();
-            this.btnConsultarSaldo = new System.Windows.Forms.Button();
-            this.btnRetirarFondos = new System.Windows.Forms.Button();
-            this.btnConsignar = new System.Windows.Forms.Button();
-            this.btnTransferir = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlInicio.SuspendLayout();
             this.pnlCajero.SuspendLayout();
@@ -141,7 +140,6 @@
             // pnlCajero
             // 
             this.pnlCajero.BackColor = System.Drawing.Color.Blue;
-            this.pnlCajero.Controls.Add(this.lblSalario);
             this.pnlCajero.Controls.Add(this.gbMenu);
             this.pnlCajero.Controls.Add(this.lblBienvenida);
             this.pnlCajero.Controls.Add(this.btnVolver);
@@ -150,7 +148,78 @@
             this.pnlCajero.Size = new System.Drawing.Size(681, 464);
             this.pnlCajero.TabIndex = 5;
             this.pnlCajero.Visible = false;
-            this.pnlCajero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCajero_Paint);
+            // 
+            // gbMenu
+            // 
+            this.gbMenu.Controls.Add(this.btnSalir);
+            this.gbMenu.Controls.Add(this.btnTransferir);
+            this.gbMenu.Controls.Add(this.btnConsignar);
+            this.gbMenu.Controls.Add(this.btnRetirarFondos);
+            this.gbMenu.Controls.Add(this.btnConsultarSaldo);
+            this.gbMenu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gbMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbMenu.ForeColor = System.Drawing.Color.White;
+            this.gbMenu.Location = new System.Drawing.Point(155, 115);
+            this.gbMenu.Name = "gbMenu";
+            this.gbMenu.Size = new System.Drawing.Size(371, 230);
+            this.gbMenu.TabIndex = 4;
+            this.gbMenu.TabStop = false;
+            this.gbMenu.Text = "Menú de opciones";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.ForeColor = System.Drawing.Color.Black;
+            this.btnSalir.Location = new System.Drawing.Point(124, 171);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(107, 39);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnTransferir
+            // 
+            this.btnTransferir.ForeColor = System.Drawing.Color.Black;
+            this.btnTransferir.Location = new System.Drawing.Point(190, 110);
+            this.btnTransferir.Name = "btnTransferir";
+            this.btnTransferir.Size = new System.Drawing.Size(158, 38);
+            this.btnTransferir.TabIndex = 3;
+            this.btnTransferir.Text = "Transferir";
+            this.btnTransferir.UseVisualStyleBackColor = true;
+            this.btnTransferir.Click += new System.EventHandler(this.btnTransferir_Click);
+            // 
+            // btnConsignar
+            // 
+            this.btnConsignar.ForeColor = System.Drawing.Color.Black;
+            this.btnConsignar.Location = new System.Drawing.Point(19, 110);
+            this.btnConsignar.Name = "btnConsignar";
+            this.btnConsignar.Size = new System.Drawing.Size(158, 38);
+            this.btnConsignar.TabIndex = 2;
+            this.btnConsignar.Text = "Consignar";
+            this.btnConsignar.UseVisualStyleBackColor = true;
+            this.btnConsignar.Click += new System.EventHandler(this.btnConsignar_Click);
+            // 
+            // btnRetirarFondos
+            // 
+            this.btnRetirarFondos.ForeColor = System.Drawing.Color.Black;
+            this.btnRetirarFondos.Location = new System.Drawing.Point(190, 39);
+            this.btnRetirarFondos.Name = "btnRetirarFondos";
+            this.btnRetirarFondos.Size = new System.Drawing.Size(158, 43);
+            this.btnRetirarFondos.TabIndex = 1;
+            this.btnRetirarFondos.Text = "Retirar Fondos";
+            this.btnRetirarFondos.UseVisualStyleBackColor = true;
+            this.btnRetirarFondos.Click += new System.EventHandler(this.btnRetirarFondos_Click);
+            // 
+            // btnConsultarSaldo
+            // 
+            this.btnConsultarSaldo.ForeColor = System.Drawing.Color.Black;
+            this.btnConsultarSaldo.Location = new System.Drawing.Point(19, 38);
+            this.btnConsultarSaldo.Name = "btnConsultarSaldo";
+            this.btnConsultarSaldo.Size = new System.Drawing.Size(158, 44);
+            this.btnConsultarSaldo.TabIndex = 0;
+            this.btnConsultarSaldo.Text = "Consultar Saldo";
+            this.btnConsultarSaldo.UseVisualStyleBackColor = true;
+            this.btnConsultarSaldo.Click += new System.EventHandler(this.btnConsultarSaldo_Click);
             // 
             // lblBienvenida
             // 
@@ -165,7 +234,6 @@
             this.lblBienvenida.TabIndex = 1;
             this.lblBienvenida.Text = "¡Bienvenido!";
             this.lblBienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBienvenida.Click += new System.EventHandler(this.lblBienvenida_Click);
             // 
             // btnVolver
             // 
@@ -177,85 +245,6 @@
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // gbMenu
-            // 
-            this.gbMenu.Controls.Add(this.btnSalir);
-            this.gbMenu.Controls.Add(this.btnTransferir);
-            this.gbMenu.Controls.Add(this.btnConsignar);
-            this.gbMenu.Controls.Add(this.btnRetirarFondos);
-            this.gbMenu.Controls.Add(this.btnConsultarSaldo);
-            this.gbMenu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gbMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbMenu.ForeColor = System.Drawing.Color.White;
-            this.gbMenu.Location = new System.Drawing.Point(149, 134);
-            this.gbMenu.Name = "gbMenu";
-            this.gbMenu.Size = new System.Drawing.Size(371, 230);
-            this.gbMenu.TabIndex = 4;
-            this.gbMenu.TabStop = false;
-            this.gbMenu.Text = "Menú de opciones";
-            // 
-            // lblSalario
-            // 
-            this.lblSalario.AutoSize = true;
-            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.ForeColor = System.Drawing.Color.White;
-            this.lblSalario.Location = new System.Drawing.Point(238, 80);
-            this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(210, 25);
-            this.lblSalario.TabIndex = 5;
-            this.lblSalario.Text = "Tienes $0.0 en tu cuenta";
-            // 
-            // btnConsultarSaldo
-            // 
-            this.btnConsultarSaldo.ForeColor = System.Drawing.Color.Black;
-            this.btnConsultarSaldo.Location = new System.Drawing.Point(19, 38);
-            this.btnConsultarSaldo.Name = "btnConsultarSaldo";
-            this.btnConsultarSaldo.Size = new System.Drawing.Size(158, 44);
-            this.btnConsultarSaldo.TabIndex = 0;
-            this.btnConsultarSaldo.Text = "Consultar Saldo";
-            this.btnConsultarSaldo.UseVisualStyleBackColor = true;
-            this.btnConsultarSaldo.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnRetirarFondos
-            // 
-            this.btnRetirarFondos.ForeColor = System.Drawing.Color.Black;
-            this.btnRetirarFondos.Location = new System.Drawing.Point(190, 39);
-            this.btnRetirarFondos.Name = "btnRetirarFondos";
-            this.btnRetirarFondos.Size = new System.Drawing.Size(158, 43);
-            this.btnRetirarFondos.TabIndex = 1;
-            this.btnRetirarFondos.Text = "Retirar Fondos";
-            this.btnRetirarFondos.UseVisualStyleBackColor = true;
-            // 
-            // btnConsignar
-            // 
-            this.btnConsignar.ForeColor = System.Drawing.Color.Black;
-            this.btnConsignar.Location = new System.Drawing.Point(19, 110);
-            this.btnConsignar.Name = "btnConsignar";
-            this.btnConsignar.Size = new System.Drawing.Size(158, 38);
-            this.btnConsignar.TabIndex = 2;
-            this.btnConsignar.Text = "Consignar";
-            this.btnConsignar.UseVisualStyleBackColor = true;
-            // 
-            // btnTransferir
-            // 
-            this.btnTransferir.ForeColor = System.Drawing.Color.Black;
-            this.btnTransferir.Location = new System.Drawing.Point(190, 110);
-            this.btnTransferir.Name = "btnTransferir";
-            this.btnTransferir.Size = new System.Drawing.Size(158, 38);
-            this.btnTransferir.TabIndex = 3;
-            this.btnTransferir.Text = "Transferir";
-            this.btnTransferir.UseVisualStyleBackColor = true;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(124, 171);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(107, 39);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -295,7 +284,6 @@
         private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox gbMenu;
-        private System.Windows.Forms.Label lblSalario;
         private System.Windows.Forms.Button btnTransferir;
         private System.Windows.Forms.Button btnConsignar;
         private System.Windows.Forms.Button btnRetirarFondos;

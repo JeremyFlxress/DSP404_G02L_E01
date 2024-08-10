@@ -29,6 +29,8 @@ namespace Ejercicio_02
         public static int[] numero_cuenta = { 10001, 10002, 10003, 10004, 10005 };
         public static int[] saldo_cuenta = { 400, 800, 1200, 1500, 2000 };
         public static string nombre_usuario;
+        public static int valor_cuenta;
+        public static int indice_valor_cuenta = -1;
 
         //Metodo para ver si es un número o no
         public static Boolean IsNumeric(string valor)
@@ -74,6 +76,9 @@ namespace Ejercicio_02
                 if (numero_cuenta[i] == valor_cuenta && nombre_valido)
                 {
                     cuentaValida = true;
+                    indice_valor_cuenta = i;
+
+
                     MessageBox.Show("Número de cuenta correcto", "Ingreso Exitosamente",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     pnlInicio.Visible = false;
@@ -105,29 +110,155 @@ namespace Ejercicio_02
             txtNombreUsuario.Focus();
         }
 
-        private void pnlCajero_Paint(object sender, PaintEventArgs e)
+        private void btnConsultarSaldo_Click(object sender, EventArgs e)
         {
+            if (indice_valor_cuenta >= 0)
+            {
+                int saldo = saldo_cuenta[indice_valor_cuenta];
 
+                MessageBox.Show("El saldo actual de la cuenta es: $" + saldo, "Saldo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-        private void lblBienvenida_Click(object sender, EventArgs e)
+        private void btnRetirarFondos_Click(object sender, EventArgs e)
         {
+            if (indice_valor_cuenta >= 0)
+            {
+                string input = Microsoft.VisualBasic.Interaction.InputBox("Digite el saldo a retirar", "Retirar saldo");
 
+                // Verificar si el usuario ha cancelado o dejado el campo vacío
+                if (string.IsNullOrEmpty(input))
+                {
+                    MessageBox.Show("Operación cancelada.", "Cancelación",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                double saldo_retirar;
+                if (double.TryParse(input, out saldo_retirar))
+                {
+                    if (saldo_retirar <= saldo_cuenta[indice_valor_cuenta])
+                    {
+                        saldo_cuenta[indice_valor_cuenta] -= (int)saldo_retirar;
+                        MessageBox.Show("Retiro exitoso. El saldo restante es: $" + saldo_cuenta[indice_valor_cuenta], "Retiro",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fondos insuficientes. El saldo actual es: $" + saldo_cuenta[indice_valor_cuenta], "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, introduzca un número válido.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Muchas Gracias, vuelva pronto", "¡Gracias!",
+                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            Close();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void btnConsignar_Click(object sender, EventArgs e)
         {
+            if (indice_valor_cuenta >= 0)
+            {
+                string input = Microsoft.VisualBasic.Interaction.InputBox("Digite el saldo a consignar", "Consignar saldo");
 
+                // Verificar si el usuario ha cancelado o dejado el campo vacío
+                if (string.IsNullOrEmpty(input))
+                {
+                    MessageBox.Show("Operación cancelada.", "Cancelación",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                double saldo_consignar;
+
+                if (double.TryParse(input, out saldo_consignar) && saldo_consignar > 0)
+                {
+                    saldo_cuenta[indice_valor_cuenta] += (int)saldo_consignar;
+                    MessageBox.Show("Consignación exitosa. El saldo actual es: $" + saldo_cuenta[indice_valor_cuenta], "Consignación",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, introduzca un número válido y mayor a 0.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTransferir_Click(object sender, EventArgs e)
         {
+            // Solicitar el número de cuenta a la que se va a transferir
+            string input_numero_cuenta = Microsoft.VisualBasic.Interaction.InputBox("Digite el número de la cuenta a la que va a transferir", "Transferir saldo");
 
+            // Verificar si el usuario ha cancelado o dejado el campo vacío
+            if (string.IsNullOrEmpty(input_numero_cuenta))
+            {
+                MessageBox.Show("Operación cancelada.", "Cancelación",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            int input_numero_cuenta_convertido;
+            if (!int.TryParse(input_numero_cuenta, out input_numero_cuenta_convertido))
+            {
+                MessageBox.Show("Número de cuenta inválido. Por favor, introduzca un número de cuenta válido.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Verificar si la cuenta de destino existe
+            int cuentaDestinoIndice = Array.IndexOf(numero_cuenta, input_numero_cuenta_convertido);
+            if (cuentaDestinoIndice == -1)
+            {
+                MessageBox.Show("No se encontró ninguna cuenta con ese número.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            // Solicitar la cantidad a transferir
+            string input_saldo_transferir = Microsoft.VisualBasic.Interaction.InputBox("Digite la cantidad en dólares que desea transferir a la cuenta", "Transferir Saldo");
+
+            // Verificar si el usuario ha cancelado o dejado el campo vacío
+            if (string.IsNullOrEmpty(input_saldo_transferir))
+            {
+                MessageBox.Show("Operación cancelada.", "Cancelación",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            double saldo_transferir;
+            if (!double.TryParse(input_saldo_transferir, out saldo_transferir) || saldo_transferir <= 0)
+            {
+                MessageBox.Show("Por favor, introduzca un monto válido y mayor a 0.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Verificar si hay suficientes fondos en la cuenta de origen
+            if (saldo_transferir > saldo_cuenta[indice_valor_cuenta])
+            {
+                MessageBox.Show("Fondos insuficientes. El saldo actual es: $" + saldo_cuenta[indice_valor_cuenta], "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Realizar la transferencia
+            saldo_cuenta[indice_valor_cuenta] -= (int)saldo_transferir; // Restar de la cuenta de origen
+            saldo_cuenta[cuentaDestinoIndice] += (int)saldo_transferir; // Sumar a la cuenta destino
+
+            MessageBox.Show("Transferencia exitosa. El saldo actual de su cuenta es: $" + saldo_cuenta[indice_valor_cuenta], "Transferencia",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }
