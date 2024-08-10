@@ -38,8 +38,8 @@
             this.lblCreado = new System.Windows.Forms.Label();
             this.txtCreadoPor = new System.Windows.Forms.TextBox();
             this.txtPaisOrigen = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.txtEpisodios = new System.Windows.Forms.TextBox();
+            this.txtTemporadas = new System.Windows.Forms.TextBox();
             this.lblPais = new System.Windows.Forms.Label();
             this.lblTemporadas = new System.Windows.Forms.Label();
             this.lblEpisodios = new System.Windows.Forms.Label();
@@ -80,9 +80,9 @@
             this.lblProtagonistas.AutoSize = true;
             this.lblProtagonistas.Location = new System.Drawing.Point(270, 111);
             this.lblProtagonistas.Name = "lblProtagonistas";
-            this.lblProtagonistas.Size = new System.Drawing.Size(45, 13);
+            this.lblProtagonistas.Size = new System.Drawing.Size(80, 13);
             this.lblProtagonistas.TabIndex = 5;
-            this.lblProtagonistas.Text = "labelPro";
+            this.lblProtagonistas.Text = "Protagoniostas:";
             this.lblProtagonistas.Click += new System.EventHandler(this.lblProtagonistas_Click);
             // 
             // lblSinopsis
@@ -90,9 +90,10 @@
             this.lblSinopsis.AutoSize = true;
             this.lblSinopsis.Location = new System.Drawing.Point(25, 111);
             this.lblSinopsis.Name = "lblSinopsis";
-            this.lblSinopsis.Size = new System.Drawing.Size(68, 13);
+            this.lblSinopsis.Size = new System.Drawing.Size(49, 13);
             this.lblSinopsis.TabIndex = 6;
-            this.lblSinopsis.Text = "labelSinopsis";
+            this.lblSinopsis.Text = "Sinopsis:";
+            this.lblSinopsis.Click += new System.EventHandler(this.lblSinopsis_Click);
             // 
             // txtSinopsis
             // 
@@ -117,65 +118,69 @@
             this.lblCreado.AutoSize = true;
             this.lblCreado.Location = new System.Drawing.Point(25, 260);
             this.lblCreado.Name = "lblCreado";
-            this.lblCreado.Size = new System.Drawing.Size(35, 13);
+            this.lblCreado.Size = new System.Drawing.Size(62, 13);
             this.lblCreado.TabIndex = 9;
-            this.lblCreado.Text = "label2";
+            this.lblCreado.Text = "Creado por:";
             // 
             // txtCreadoPor
             // 
-            this.txtCreadoPor.Location = new System.Drawing.Point(75, 257);
+            this.txtCreadoPor.Enabled = false;
+            this.txtCreadoPor.Location = new System.Drawing.Point(93, 257);
             this.txtCreadoPor.Multiline = true;
             this.txtCreadoPor.Name = "txtCreadoPor";
-            this.txtCreadoPor.Size = new System.Drawing.Size(174, 39);
+            this.txtCreadoPor.Size = new System.Drawing.Size(156, 39);
             this.txtCreadoPor.TabIndex = 10;
             // 
             // txtPaisOrigen
             // 
-            this.txtPaisOrigen.Location = new System.Drawing.Point(131, 302);
+            this.txtPaisOrigen.Enabled = false;
+            this.txtPaisOrigen.Location = new System.Drawing.Point(95, 302);
             this.txtPaisOrigen.Name = "txtPaisOrigen";
-            this.txtPaisOrigen.Size = new System.Drawing.Size(118, 20);
+            this.txtPaisOrigen.Size = new System.Drawing.Size(154, 20);
             this.txtPaisOrigen.TabIndex = 11;
             // 
-            // textBox4
+            // txtEpisodios
             // 
-            this.textBox4.Location = new System.Drawing.Point(309, 332);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(32, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtEpisodios.Enabled = false;
+            this.txtEpisodios.Location = new System.Drawing.Point(273, 332);
+            this.txtEpisodios.Name = "txtEpisodios";
+            this.txtEpisodios.Size = new System.Drawing.Size(32, 20);
+            this.txtEpisodios.TabIndex = 12;
             // 
-            // txt
+            // txtTemporadas
             // 
-            this.txt.Location = new System.Drawing.Point(141, 332);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(43, 20);
-            this.txt.TabIndex = 13;
+            this.txtTemporadas.Enabled = false;
+            this.txtTemporadas.Location = new System.Drawing.Point(122, 332);
+            this.txtTemporadas.Name = "txtTemporadas";
+            this.txtTemporadas.Size = new System.Drawing.Size(43, 20);
+            this.txtTemporadas.TabIndex = 13;
             // 
             // lblPais
             // 
             this.lblPais.AutoSize = true;
             this.lblPais.Location = new System.Drawing.Point(25, 305);
             this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(35, 13);
+            this.lblPais.Size = new System.Drawing.Size(64, 13);
             this.lblPais.TabIndex = 14;
-            this.lblPais.Text = "label2";
+            this.lblPais.Text = "Pais Origen:";
             // 
             // lblTemporadas
             // 
             this.lblTemporadas.AutoSize = true;
             this.lblTemporadas.Location = new System.Drawing.Point(25, 335);
             this.lblTemporadas.Name = "lblTemporadas";
-            this.lblTemporadas.Size = new System.Drawing.Size(35, 13);
+            this.lblTemporadas.Size = new System.Drawing.Size(69, 13);
             this.lblTemporadas.TabIndex = 15;
-            this.lblTemporadas.Text = "label2";
+            this.lblTemporadas.Text = "Temporadas:";
             // 
             // lblEpisodios
             // 
             this.lblEpisodios.AutoSize = true;
-            this.lblEpisodios.Location = new System.Drawing.Point(214, 335);
+            this.lblEpisodios.Location = new System.Drawing.Point(195, 335);
             this.lblEpisodios.Name = "lblEpisodios";
-            this.lblEpisodios.Size = new System.Drawing.Size(35, 13);
+            this.lblEpisodios.Size = new System.Drawing.Size(55, 13);
             this.lblEpisodios.TabIndex = 16;
-            this.lblEpisodios.Text = "label2";
+            this.lblEpisodios.Text = "Episodios:";
             // 
             // Login
             // 
@@ -186,8 +191,8 @@
             this.Controls.Add(this.lblEpisodios);
             this.Controls.Add(this.lblTemporadas);
             this.Controls.Add(this.lblPais);
-            this.Controls.Add(this.txt);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtTemporadas);
+            this.Controls.Add(this.txtEpisodios);
             this.Controls.Add(this.txtPaisOrigen);
             this.Controls.Add(this.txtCreadoPor);
             this.Controls.Add(this.lblCreado);
@@ -218,8 +223,8 @@
         private System.Windows.Forms.Label lblCreado;
         private System.Windows.Forms.TextBox txtCreadoPor;
         private System.Windows.Forms.TextBox txtPaisOrigen;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txtEpisodios;
+        private System.Windows.Forms.TextBox txtTemporadas;
         private System.Windows.Forms.Label lblPais;
         private System.Windows.Forms.Label lblTemporadas;
         private System.Windows.Forms.Label lblEpisodios;

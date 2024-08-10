@@ -51,8 +51,13 @@ namespace Ejercicio_01
 
                     lblTitulo1.Text = "Game Of Thrones";
                     lblTituloEspañol.Text = TituloEspañol.Value;
-                    lblSinopsis.Text = Sinopsis.Key;
+                    txtSinopsis.Text = Sinopsis.Value;
                     txtIProtagonistas.Text = Protagonistas.Value;
+                    txtPaisOrigen.Text = PaisOrigen.Value;
+                    txtCreadoPor.Text = CreadoPor.Value;
+                    txtTemporadas.Text = Temporadas.Value;
+                    txtEpisodios.Text = Episodios.Value;
+
                     break;
                 case "Libros":
                     lblTitulo1.Text = "Harry Potter";
@@ -92,6 +97,11 @@ namespace Ejercicio_01
         }
 
         private void txtIProtagonistas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSinopsis_Click(object sender, EventArgs e)
         {
 
         }
