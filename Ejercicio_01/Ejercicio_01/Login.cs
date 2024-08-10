@@ -17,11 +17,10 @@ namespace Ejercicio_01
         Dictionary<string, string> Libros = new Dictionary<string, string>();
         Dictionary<string, string> LenguajesProgramacion = new Dictionary<string, string>();
 
-        public Login(string selecionCategoria)
+        public Login()
         {
             InitializeComponent();
-            categoria = selecionCategoria;
-
+            
             ActualizarContenido();
         }
 
@@ -82,7 +81,6 @@ namespace Ejercicio_01
 
         private void Login_Load(object sender, EventArgs e)
         {
-            //Añadiendo palabras a Entretimiento
 
 
 
