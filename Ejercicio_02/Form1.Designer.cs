@@ -35,20 +35,28 @@
             this.txtCuenta = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.pnlInicio = new System.Windows.Forms.Panel();
-            this.pnlCajero = new System.Windows.Forms.Panel();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pnlCajero = new System.Windows.Forms.Panel();
+            this.lblBienvenida = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.gbMenu = new System.Windows.Forms.GroupBox();
+            this.lblSalario = new System.Windows.Forms.Label();
+            this.btnConsultarSaldo = new System.Windows.Forms.Button();
+            this.btnRetirarFondos = new System.Windows.Forms.Button();
+            this.btnConsignar = new System.Windows.Forms.Button();
+            this.btnTransferir = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlInicio.SuspendLayout();
             this.pnlCajero.SuspendLayout();
+            this.gbMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(309, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(241, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(188, 142);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -60,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(236, 185);
+            this.label1.Location = new System.Drawing.Point(168, 181);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(322, 37);
             this.label1.TabIndex = 1;
@@ -71,7 +79,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(199, 312);
+            this.label2.Location = new System.Drawing.Point(131, 308);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 21);
             this.label2.TabIndex = 2;
@@ -79,7 +87,7 @@
             // 
             // txtCuenta
             // 
-            this.txtCuenta.Location = new System.Drawing.Point(430, 309);
+            this.txtCuenta.Location = new System.Drawing.Point(362, 305);
             this.txtCuenta.Name = "txtCuenta";
             this.txtCuenta.Size = new System.Drawing.Size(197, 29);
             this.txtCuenta.TabIndex = 3;
@@ -88,7 +96,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.Gold;
             this.btnIngresar.ForeColor = System.Drawing.Color.Black;
-            this.btnIngresar.Location = new System.Drawing.Point(356, 386);
+            this.btnIngresar.Location = new System.Drawing.Point(288, 382);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(115, 39);
             this.btnIngresar.TabIndex = 4;
@@ -110,68 +118,153 @@
             this.pnlInicio.ForeColor = System.Drawing.Color.White;
             this.pnlInicio.Location = new System.Drawing.Point(0, 0);
             this.pnlInicio.Name = "pnlInicio";
-            this.pnlInicio.Size = new System.Drawing.Size(816, 464);
+            this.pnlInicio.Size = new System.Drawing.Size(681, 464);
             this.pnlInicio.TabIndex = 5;
             // 
-            // pnlCajero
+            // txtNombreUsuario
             // 
-            this.pnlCajero.BackColor = System.Drawing.Color.Blue;
-            this.pnlCajero.Controls.Add(this.label3);
-            this.pnlCajero.Controls.Add(this.btnVolver);
-            this.pnlCajero.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCajero.Location = new System.Drawing.Point(0, 0);
-            this.pnlCajero.Name = "pnlCajero";
-            this.pnlCajero.Size = new System.Drawing.Size(816, 464);
-            this.pnlCajero.TabIndex = 5;
-            this.pnlCajero.Visible = false;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Gold;
-            this.btnVolver.Location = new System.Drawing.Point(365, 331);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(94, 40);
-            this.btnVolver.TabIndex = 0;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(325, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "¡Bienvenio";
+            this.txtNombreUsuario.Location = new System.Drawing.Point(362, 261);
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(197, 29);
+            this.txtNombreUsuario.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(199, 268);
+            this.label4.Location = new System.Drawing.Point(131, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 21);
             this.label4.TabIndex = 5;
             this.label4.Text = "Digite su nombre:";
             // 
-            // txtNombreUsuario
+            // pnlCajero
             // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(430, 265);
-            this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(197, 29);
-            this.txtNombreUsuario.TabIndex = 6;
+            this.pnlCajero.BackColor = System.Drawing.Color.Blue;
+            this.pnlCajero.Controls.Add(this.lblSalario);
+            this.pnlCajero.Controls.Add(this.gbMenu);
+            this.pnlCajero.Controls.Add(this.lblBienvenida);
+            this.pnlCajero.Controls.Add(this.btnVolver);
+            this.pnlCajero.Location = new System.Drawing.Point(0, 0);
+            this.pnlCajero.Name = "pnlCajero";
+            this.pnlCajero.Size = new System.Drawing.Size(681, 464);
+            this.pnlCajero.TabIndex = 5;
+            this.pnlCajero.Visible = false;
+            this.pnlCajero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCajero_Paint);
+            // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.ForeColor = System.Drawing.Color.White;
+            this.lblBienvenida.Location = new System.Drawing.Point(133, 21);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(158, 32);
+            this.lblBienvenida.TabIndex = 1;
+            this.lblBienvenida.Text = "¡Bienvenido!";
+            this.lblBienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBienvenida.Click += new System.EventHandler(this.lblBienvenida_Click);
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Gold;
+            this.btnVolver.Location = new System.Drawing.Point(273, 396);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(107, 40);
+            this.btnVolver.TabIndex = 0;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // gbMenu
+            // 
+            this.gbMenu.Controls.Add(this.btnSalir);
+            this.gbMenu.Controls.Add(this.btnTransferir);
+            this.gbMenu.Controls.Add(this.btnConsignar);
+            this.gbMenu.Controls.Add(this.btnRetirarFondos);
+            this.gbMenu.Controls.Add(this.btnConsultarSaldo);
+            this.gbMenu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gbMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbMenu.ForeColor = System.Drawing.Color.White;
+            this.gbMenu.Location = new System.Drawing.Point(149, 134);
+            this.gbMenu.Name = "gbMenu";
+            this.gbMenu.Size = new System.Drawing.Size(371, 230);
+            this.gbMenu.TabIndex = 4;
+            this.gbMenu.TabStop = false;
+            this.gbMenu.Text = "Menú de opciones";
+            // 
+            // lblSalario
+            // 
+            this.lblSalario.AutoSize = true;
+            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.ForeColor = System.Drawing.Color.White;
+            this.lblSalario.Location = new System.Drawing.Point(238, 80);
+            this.lblSalario.Name = "lblSalario";
+            this.lblSalario.Size = new System.Drawing.Size(210, 25);
+            this.lblSalario.TabIndex = 5;
+            this.lblSalario.Text = "Tienes $0.0 en tu cuenta";
+            // 
+            // btnConsultarSaldo
+            // 
+            this.btnConsultarSaldo.ForeColor = System.Drawing.Color.Black;
+            this.btnConsultarSaldo.Location = new System.Drawing.Point(19, 38);
+            this.btnConsultarSaldo.Name = "btnConsultarSaldo";
+            this.btnConsultarSaldo.Size = new System.Drawing.Size(158, 44);
+            this.btnConsultarSaldo.TabIndex = 0;
+            this.btnConsultarSaldo.Text = "Consultar Saldo";
+            this.btnConsultarSaldo.UseVisualStyleBackColor = true;
+            this.btnConsultarSaldo.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnRetirarFondos
+            // 
+            this.btnRetirarFondos.ForeColor = System.Drawing.Color.Black;
+            this.btnRetirarFondos.Location = new System.Drawing.Point(190, 39);
+            this.btnRetirarFondos.Name = "btnRetirarFondos";
+            this.btnRetirarFondos.Size = new System.Drawing.Size(158, 43);
+            this.btnRetirarFondos.TabIndex = 1;
+            this.btnRetirarFondos.Text = "Retirar Fondos";
+            this.btnRetirarFondos.UseVisualStyleBackColor = true;
+            // 
+            // btnConsignar
+            // 
+            this.btnConsignar.ForeColor = System.Drawing.Color.Black;
+            this.btnConsignar.Location = new System.Drawing.Point(19, 110);
+            this.btnConsignar.Name = "btnConsignar";
+            this.btnConsignar.Size = new System.Drawing.Size(158, 38);
+            this.btnConsignar.TabIndex = 2;
+            this.btnConsignar.Text = "Consignar";
+            this.btnConsignar.UseVisualStyleBackColor = true;
+            // 
+            // btnTransferir
+            // 
+            this.btnTransferir.ForeColor = System.Drawing.Color.Black;
+            this.btnTransferir.Location = new System.Drawing.Point(190, 110);
+            this.btnTransferir.Name = "btnTransferir";
+            this.btnTransferir.Size = new System.Drawing.Size(158, 38);
+            this.btnTransferir.TabIndex = 3;
+            this.btnTransferir.Text = "Transferir";
+            this.btnTransferir.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.ForeColor = System.Drawing.Color.Black;
+            this.btnSalir.Location = new System.Drawing.Point(124, 171);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(107, 39);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(816, 464);
-            this.Controls.Add(this.pnlInicio);
+            this.ClientSize = new System.Drawing.Size(681, 464);
             this.Controls.Add(this.pnlCajero);
+            this.Controls.Add(this.pnlInicio);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -183,6 +276,7 @@
             this.pnlInicio.PerformLayout();
             this.pnlCajero.ResumeLayout(false);
             this.pnlCajero.PerformLayout();
+            this.gbMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -197,9 +291,16 @@
         private System.Windows.Forms.Panel pnlInicio;
         private System.Windows.Forms.Panel pnlCajero;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblBienvenida;
         private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox gbMenu;
+        private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.Button btnTransferir;
+        private System.Windows.Forms.Button btnConsignar;
+        private System.Windows.Forms.Button btnRetirarFondos;
+        private System.Windows.Forms.Button btnConsultarSaldo;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

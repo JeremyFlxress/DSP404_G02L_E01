@@ -78,6 +78,9 @@ namespace Ejercicio_02
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     pnlInicio.Visible = false;
                     pnlCajero.Visible = true;
+
+                    lblBienvenida.Text = "¡Bienvenido/a " + nombre_usuario.ToUpper() + "!";
+
                     break;
                 }
             }
@@ -102,6 +105,29 @@ namespace Ejercicio_02
             txtNombreUsuario.Focus();
         }
 
+        private void pnlCajero_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void lblBienvenida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
