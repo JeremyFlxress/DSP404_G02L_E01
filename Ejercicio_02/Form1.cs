@@ -16,5 +16,10 @@ namespace Ejercicio_02
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
