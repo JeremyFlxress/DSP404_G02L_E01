@@ -27,7 +27,7 @@ namespace Ejercicio_02
 
         //Declaración de arreglos
         public static int[] numero_cuenta = { 10001, 10002, 10003, 10004, 10005 };
-        public static int[] saldo_cuenta = { 400, 800, 1200, 1500, 2000 };
+        public static double[] saldo_cuenta = { 400, 800, 1200, 1500, 2000 };
         public static string nombre_usuario;
         public static int valor_cuenta;
         public static int indice_valor_cuenta = -1;
@@ -109,18 +109,24 @@ namespace Ejercicio_02
 
             txtNombreUsuario.Focus();
         }
-
+    
+        /**
+         * Botón para consultar saldo de la cuenta
+         */
         private void btnConsultarSaldo_Click(object sender, EventArgs e)
         {
             if (indice_valor_cuenta >= 0)
             {
-                int saldo = saldo_cuenta[indice_valor_cuenta];
+                double saldo = saldo_cuenta[indice_valor_cuenta];
 
                 MessageBox.Show("El saldo actual de la cuenta es: $" + saldo, "Saldo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
+        /**
+        * Botón para retirar saldo de la cuenta
+         */
         private void btnRetirarFondos_Click(object sender, EventArgs e)
         {
             if (indice_valor_cuenta >= 0)
@@ -140,7 +146,7 @@ namespace Ejercicio_02
                 {
                     if (saldo_retirar <= saldo_cuenta[indice_valor_cuenta])
                     {
-                        saldo_cuenta[indice_valor_cuenta] -= (int)saldo_retirar;
+                        saldo_cuenta[indice_valor_cuenta] -= saldo_retirar;
                         MessageBox.Show("Retiro exitoso. El saldo restante es: $" + saldo_cuenta[indice_valor_cuenta], "Retiro",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -158,6 +164,10 @@ namespace Ejercicio_02
             }
         }
 
+
+        /**
+         * Boton de salir que da un mensaje de despedida
+         */
         private void btnSalir_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Muchas Gracias, vuelva pronto", "¡Gracias!",
@@ -165,6 +175,10 @@ namespace Ejercicio_02
             Close();
         }
 
+
+        /**
+         * Boton de consignar, es decir, depositar dinero a la cuenta
+         */
         private void btnConsignar_Click(object sender, EventArgs e)
         {
             if (indice_valor_cuenta >= 0)
@@ -183,7 +197,7 @@ namespace Ejercicio_02
 
                 if (double.TryParse(input, out saldo_consignar) && saldo_consignar > 0)
                 {
-                    saldo_cuenta[indice_valor_cuenta] += (int)saldo_consignar;
+                    saldo_cuenta[indice_valor_cuenta] += saldo_consignar;
                     MessageBox.Show("Consignación exitosa. El saldo actual es: $" + saldo_cuenta[indice_valor_cuenta], "Consignación",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -195,6 +209,9 @@ namespace Ejercicio_02
             }
         }
 
+        /**
+         * Botón de transferir saldo a otra cuenta
+         */
         private void btnTransferir_Click(object sender, EventArgs e)
         {
             // Solicitar el número de cuenta a la que se va a transferir
@@ -217,8 +234,8 @@ namespace Ejercicio_02
             }
 
             // Verificar si la cuenta de destino existe
-            int cuentaDestinoIndice = Array.IndexOf(numero_cuenta, input_numero_cuenta_convertido);
-            if (cuentaDestinoIndice == -1)
+            int cuenta_destino_indice = Array.IndexOf(numero_cuenta, input_numero_cuenta_convertido);
+            if (cuenta_destino_indice == -1)
             {
                 MessageBox.Show("No se encontró ninguna cuenta con ese número.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -237,6 +254,7 @@ namespace Ejercicio_02
             }
 
             double saldo_transferir;
+
             if (!double.TryParse(input_saldo_transferir, out saldo_transferir) || saldo_transferir <= 0)
             {
                 MessageBox.Show("Por favor, introduzca un monto válido y mayor a 0.", "Error",
@@ -253,8 +271,8 @@ namespace Ejercicio_02
             }
 
             // Realizar la transferencia
-            saldo_cuenta[indice_valor_cuenta] -= (int)saldo_transferir; // Restar de la cuenta de origen
-            saldo_cuenta[cuentaDestinoIndice] += (int)saldo_transferir; // Sumar a la cuenta destino
+            saldo_cuenta[indice_valor_cuenta] -= saldo_transferir; // Restar de la cuenta de origen
+            saldo_cuenta[cuenta_destino_indice] += saldo_transferir; // Sumar a la cuenta destino
 
             MessageBox.Show("Transferencia exitosa. El saldo actual de su cuenta es: $" + saldo_cuenta[indice_valor_cuenta], "Transferencia",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
