@@ -22,10 +22,11 @@ namespace Ejercicio_02
             //Cuando se ejecute el programa siempre aparezca el panel de Incio
             pnlInicio.Visible = true;
             pnlCajero.Visible = false;
+
             txtNombreUsuario.Select();
         }
 
-        //Declaración de arreglos
+        //Declaración de arreglos y variables
         public static int[] numero_cuenta = { 10001, 10002, 10003, 10004, 10005 };
         public static double[] saldo_cuenta = { 400, 800, 1200, 1500, 2000 };
         public static string nombre_usuario;
@@ -45,7 +46,8 @@ namespace Ejercicio_02
             nombre_usuario = txtNombreUsuario.Text;
             bool nombre_valido = nombre_usuario.Length >= 3;
 
-            if (!nombre_valido)
+            //Validaciones para el nombre
+            if (!nombre_valido || IsNumeric(nombre_usuario))
             {
                 MessageBox.Show("Digite un nombre correcto", "Advertencia",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -58,6 +60,7 @@ namespace Ejercicio_02
                 txtCuenta.Focus();
             }
 
+            //Validaciones para el numero de cuenta
             if (!IsNumeric(valor_usuario) || valor_usuario == null)
             {
                 MessageBox.Show("Digite un número de cuenta correcto", "Error",
@@ -68,19 +71,21 @@ namespace Ejercicio_02
             }
 
             int valor_cuenta = Convert.ToInt32(txtCuenta.Text);
-            bool cuentaValida = false;
+            bool cuenta_valida = false;
 
             for (int i = 0; i < numero_cuenta.Length; i++)
             {
                 // Validación de si el usuario digitó el número de cuenta correcto
                 if (numero_cuenta[i] == valor_cuenta && nombre_valido)
                 {
-                    cuentaValida = true;
+                    cuenta_valida = true;
                     indice_valor_cuenta = i;
 
 
                     MessageBox.Show("Número de cuenta correcto", "Ingreso Exitosamente",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    //Se cambian los paneles
                     pnlInicio.Visible = false;
                     pnlCajero.Visible = true;
 
@@ -90,7 +95,7 @@ namespace Ejercicio_02
                 }
             }
 
-            if (!cuentaValida)
+            if (!cuenta_valida)
             {
                 MessageBox.Show("No existe ese número de cuenta. Digite uno correcto", "Información",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -99,16 +104,7 @@ namespace Ejercicio_02
             }
         }
 
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-            pnlCajero.Visible = false;
-            pnlInicio.Visible = true;
-            //Limpiar los textboxs
-            txtNombreUsuario.Clear();
-            txtCuenta.Clear();
 
-            txtNombreUsuario.Focus();
-        }
     
         /**
          * Botón para consultar saldo de la cuenta
@@ -142,8 +138,12 @@ namespace Ejercicio_02
                 }
 
                 double saldo_retirar;
+
+                //Validación para que el dato ingresado sea un numero
                 if (double.TryParse(input, out saldo_retirar))
                 {
+
+                    //Validación para que el saldo a retirar sea menor al saldo de la cuenta
                     if (saldo_retirar <= saldo_cuenta[indice_valor_cuenta])
                     {
                         saldo_cuenta[indice_valor_cuenta] -= saldo_retirar;
@@ -165,15 +165,7 @@ namespace Ejercicio_02
         }
 
 
-        /**
-         * Boton de salir que da un mensaje de despedida
-         */
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Muchas Gracias, vuelva pronto", "¡Gracias!",
-                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            Close();
-        }
+
 
 
         /**
@@ -209,9 +201,12 @@ namespace Ejercicio_02
             }
         }
 
+
+
         /**
          * Botón de transferir saldo a otra cuenta
          */
+
         private void btnTransferir_Click(object sender, EventArgs e)
         {
             // Solicitar el número de cuenta a la que se va a transferir
@@ -276,6 +271,31 @@ namespace Ejercicio_02
 
             MessageBox.Show("Transferencia exitosa. El saldo actual de su cuenta es: $" + saldo_cuenta[indice_valor_cuenta], "Transferencia",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
+
+
+        //Boton para volver al panel de inicio
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            pnlCajero.Visible = false;
+            pnlInicio.Visible = true;
+            //Limpiar los textboxs
+            txtNombreUsuario.Clear();
+            txtCuenta.Clear();
+
+            txtNombreUsuario.Focus();
+        }
+
+        /**
+        * Boton de salir que da un mensaje de despedida
+        */
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Muchas Gracias, vuelva pronto", "¡Gracias!",
+                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            Close();
         }
 
     }
