@@ -12,9 +12,12 @@ namespace Ejercicio_01
 {
     public partial class LenguajesProgra : Form
     {
-        public LenguajesProgra()
+        public string categoriaSeleccionada;
+        public LenguajesProgra(string CategoriaSeleccionada)
         {
             InitializeComponent();
+
+            categoriaSeleccionada = CategoriaSeleccionada;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,6 +82,14 @@ namespace Ejercicio_01
             Form1 log = new Form1();
             log.Show();
             this.Close();
+        }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            Estadística Estadistica = new Estadística(categoriaSeleccionada);
+            Estadistica.Show();
+
+            this.Hide();
         }
     }
 }

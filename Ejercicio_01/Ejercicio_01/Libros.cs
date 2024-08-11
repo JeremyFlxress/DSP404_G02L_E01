@@ -12,12 +12,15 @@ namespace Ejercicio_01
 {
     public partial class Libros : Form
     {
-        public Libros()
+        public string categoriaSeleccionada;
+
+        public Libros(string CategoriaSeleccionada)
         {
             InitializeComponent();
+            categoriaSeleccionada = CategoriaSeleccionada;
         }
 
-        private void Libros_Load(object sender, EventArgs e)
+    private void Libros_Load(object sender, EventArgs e)
         {
 
         }
@@ -90,6 +93,14 @@ namespace Ejercicio_01
         private void txtEpisodios_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            Estadística Estadistica = new Estadística(categoriaSeleccionada);
+            Estadistica.Show();
+
+            this.Hide();
         }
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.cbCategorias = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -39,19 +39,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(359, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 20);
-            this.textBox2.TabIndex = 13;
+            this.txtNombre.Location = new System.Drawing.Point(359, 118);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(174, 20);
+            this.txtNombre.TabIndex = 13;
             // 
-            // textBox3
+            // txtContraseña
             // 
-            this.textBox3.Location = new System.Drawing.Point(359, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtContraseña.Location = new System.Drawing.Point(359, 183);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(174, 20);
+            this.txtContraseña.TabIndex = 12;
             // 
             // cbCategorias
             // 
@@ -139,8 +139,8 @@
             this.ClientSize = new System.Drawing.Size(756, 458);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.cbCategorias);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLogin);
@@ -156,8 +156,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.ComboBox cbCategorias;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogin;
