@@ -50,6 +50,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitulo1 = new System.Windows.Forms.Label();
+            this.btnEstadistica = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             // 
             this.txtIProtagonistas.Enabled = false;
             this.txtIProtagonistas.Location = new System.Drawing.Point(686, 136);
-            this.txtIProtagonistas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIProtagonistas.Margin = new System.Windows.Forms.Padding(4);
             this.txtIProtagonistas.Multiline = true;
             this.txtIProtagonistas.Name = "txtIProtagonistas";
             this.txtIProtagonistas.Size = new System.Drawing.Size(202, 239);
@@ -67,7 +68,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(561, 447);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(112, 28);
             this.btnSalir.TabIndex = 4;
@@ -103,7 +104,7 @@
             // 
             this.txtSinopsis.Enabled = false;
             this.txtSinopsis.Location = new System.Drawing.Point(309, 132);
-            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(4);
             this.txtSinopsis.Multiline = true;
             this.txtSinopsis.Name = "txtSinopsis";
             this.txtSinopsis.Size = new System.Drawing.Size(338, 148);
@@ -135,7 +136,7 @@
             // 
             this.txtCreadoPor.Enabled = false;
             this.txtCreadoPor.Location = new System.Drawing.Point(416, 296);
-            this.txtCreadoPor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCreadoPor.Margin = new System.Windows.Forms.Padding(4);
             this.txtCreadoPor.Multiline = true;
             this.txtCreadoPor.Name = "txtCreadoPor";
             this.txtCreadoPor.Size = new System.Drawing.Size(232, 47);
@@ -145,7 +146,7 @@
             // 
             this.txtPaisOrigen.Enabled = false;
             this.txtPaisOrigen.Location = new System.Drawing.Point(419, 351);
-            this.txtPaisOrigen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPaisOrigen.Margin = new System.Windows.Forms.Padding(4);
             this.txtPaisOrigen.Name = "txtPaisOrigen";
             this.txtPaisOrigen.Size = new System.Drawing.Size(229, 22);
             this.txtPaisOrigen.TabIndex = 11;
@@ -154,7 +155,7 @@
             // 
             this.txtEpisodios.Enabled = false;
             this.txtEpisodios.Location = new System.Drawing.Point(686, 388);
-            this.txtEpisodios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEpisodios.Margin = new System.Windows.Forms.Padding(4);
             this.txtEpisodios.Name = "txtEpisodios";
             this.txtEpisodios.Size = new System.Drawing.Size(46, 22);
             this.txtEpisodios.TabIndex = 12;
@@ -163,7 +164,7 @@
             // 
             this.txtTemporadas.Enabled = false;
             this.txtTemporadas.Location = new System.Drawing.Point(460, 388);
-            this.txtTemporadas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTemporadas.Margin = new System.Windows.Forms.Padding(4);
             this.txtTemporadas.Name = "txtTemporadas";
             this.txtTemporadas.Size = new System.Drawing.Size(62, 22);
             this.txtTemporadas.TabIndex = 13;
@@ -204,6 +205,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.Controls.Add(this.btnEstadistica);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
@@ -211,7 +213,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 704);
             this.panel1.TabIndex = 17;
@@ -220,8 +222,8 @@
             // 
             this.button3.BackColor = System.Drawing.Color.NavajoWhite;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(26, 354);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(26, 312);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(144, 71);
             this.button3.TabIndex = 11;
@@ -233,8 +235,8 @@
             // 
             this.button2.BackColor = System.Drawing.Color.NavajoWhite;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(26, 254);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(26, 237);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 42);
             this.button2.TabIndex = 10;
@@ -259,7 +261,7 @@
             this.button1.BackColor = System.Drawing.Color.NavajoWhite;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(26, 152);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 49);
             this.button1.TabIndex = 5;
@@ -303,6 +305,19 @@
             this.lblTitulo1.TabIndex = 12;
             this.lblTitulo1.Text = "-";
             // 
+            // btnEstadistica
+            // 
+            this.btnEstadistica.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnEstadistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadistica.Location = new System.Drawing.Point(26, 403);
+            this.btnEstadistica.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEstadistica.Name = "btnEstadistica";
+            this.btnEstadistica.Size = new System.Drawing.Size(144, 71);
+            this.btnEstadistica.TabIndex = 12;
+            this.btnEstadistica.Text = "Estadistica";
+            this.btnEstadistica.UseVisualStyleBackColor = false;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -326,7 +341,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtIProtagonistas);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -361,5 +376,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTitulo1;
+        private System.Windows.Forms.Button btnEstadistica;
     }
 }

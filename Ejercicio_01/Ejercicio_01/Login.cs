@@ -12,19 +12,21 @@ namespace Ejercicio_01
 {
     public partial class Login : Form
     {
+        public string categoriaSeleccionada;
         private string eleccion;
         Dictionary<string, string> GameOfThrones = new Dictionary<string, string>();
         Dictionary<string, string> Chernobyl = new Dictionary<string, string>();
         Dictionary<string, string> Maisel = new Dictionary<string, string>();
 
-        public Login()
+        public Login(string CategoriaSeleccionada)
         {
             InitializeComponent();
-            
-            ActualizarContenido();
+            categoriaSeleccionada = CategoriaSeleccionada;
+
+
         }
 
-        private void ActualizarContenido()
+    private void ActualizarContenido()
         {
 
         }
@@ -167,6 +169,14 @@ namespace Ejercicio_01
             txtCreadoPor.Text = CreadoPor.Value;
             txtTemporadas.Text = Temporadas.Value;
             txtEpisodios.Text = Episodios.Value;
+        }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            Estadística Estadistica = new Estadística(categoriaSeleccionada);
+            Estadistica.Show();
+
+            this.Hide();
         }
     }
 }

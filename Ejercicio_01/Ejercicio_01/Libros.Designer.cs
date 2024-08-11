@@ -50,12 +50,14 @@
             this.lblTitulo1 = new System.Windows.Forms.Label();
             this.lblEpisodios = new System.Windows.Forms.Label();
             this.txtEpisodios = new System.Windows.Forms.TextBox();
+            this.btnEstadistica = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel1.Controls.Add(this.btnEstadistica);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
@@ -316,6 +318,20 @@
             this.txtEpisodios.TabIndex = 26;
             this.txtEpisodios.TextChanged += new System.EventHandler(this.txtEpisodios_TextChanged);
             // 
+            // btnEstadistica
+            // 
+            this.btnEstadistica.BackColor = System.Drawing.Color.Chocolate;
+            this.btnEstadistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadistica.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnEstadistica.Location = new System.Drawing.Point(31, 463);
+            this.btnEstadistica.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnEstadistica.Name = "btnEstadistica";
+            this.btnEstadistica.Size = new System.Drawing.Size(144, 42);
+            this.btnEstadistica.TabIndex = 12;
+            this.btnEstadistica.Text = "Estadistica";
+            this.btnEstadistica.UseVisualStyleBackColor = false;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
+            // 
             // Libros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -375,5 +391,6 @@
         private System.Windows.Forms.Label lblTitulo1;
         private System.Windows.Forms.Label lblEpisodios;
         private System.Windows.Forms.TextBox txtEpisodios;
+        private System.Windows.Forms.Button btnEstadistica;
     }
 }

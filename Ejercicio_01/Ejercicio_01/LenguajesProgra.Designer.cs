@@ -51,6 +51,7 @@ namespace Ejercicio_01
             this.lblProtagonistas = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtIProtagonistas = new System.Windows.Forms.TextBox();
+            this.btnEstadistica = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,6 +122,7 @@ namespace Ejercicio_01
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btnEstadistica);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
@@ -302,6 +304,17 @@ namespace Ejercicio_01
             this.txtIProtagonistas.Size = new System.Drawing.Size(202, 27);
             this.txtIProtagonistas.TabIndex = 32;
             // 
+            // btnEstadistica
+            // 
+            this.btnEstadistica.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnEstadistica.Location = new System.Drawing.Point(54, 408);
+            this.btnEstadistica.Name = "btnEstadistica";
+            this.btnEstadistica.Size = new System.Drawing.Size(96, 34);
+            this.btnEstadistica.TabIndex = 12;
+            this.btnEstadistica.Text = "Estadistica";
+            this.btnEstadistica.UseVisualStyleBackColor = false;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
+            // 
             // LenguajesProgra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,5 +370,6 @@ namespace Ejercicio_01
         private System.Windows.Forms.Label lblProtagonistas;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtIProtagonistas;
+        private System.Windows.Forms.Button btnEstadistica;
     }
 }

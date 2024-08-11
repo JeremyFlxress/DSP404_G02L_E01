@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:Ejercicio_01\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:Ejercicio_01\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\lenguajesprogra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\lenguajesprogra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\estad\u00EDstica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\estad\u00EDstica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\estad\u00EDstica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\estad\u00EDstica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\ejercicio_01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\lenguajesprogra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\lenguajesprogra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\ejercicio_01\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\ejercicio_01\\ejercicio_01\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11CD8F28-C229-4656-818D-9105FD5542D7}|Ejercicio_01\\Ejercicio_01.csproj|solutionrelative:ejercicio_01\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +50,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs",
               "RelativeDocumentMoniker": "Ejercicio_01\\Login.cs",
               "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs",
               "RelativeToolTip": "Ejercicio_01\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIUAAAAoAAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAYwLMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T03:34:56.13Z",
               "IsPinned": true,
@@ -59,31 +83,54 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs",
-              "RelativeDocumentMoniker": "Ejercicio_01\\Login.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs [Design]",
-              "RelativeToolTip": "Ejercicio_01\\Login.cs [Design]",
+              "Title": "LenguajesProgra.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\LenguajesProgra.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\LenguajesProgra.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\LenguajesProgra.cs",
+              "RelativeToolTip": "Ejercicio_01\\LenguajesProgra.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAASwFEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T20:39:37.088Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-11T02:31:43.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Inicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Inicio.cs",
-              "RelativeDocumentMoniker": "Ejercicio_01\\Inicio.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Inicio.cs [Design]",
-              "RelativeToolTip": "Ejercicio_01\\Inicio.cs [Design]",
+              "Title": "Estad\u00EDstica.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Estad\u00EDstica.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\Estad\u00EDstica.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Estad\u00EDstica.cs",
+              "RelativeToolTip": "Ejercicio_01\\Estad\u00EDstica.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T20:39:23.998Z",
+              "WhenOpened": "2024-08-11T02:44:25.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Form1.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\Form1.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Form1.cs",
+              "RelativeToolTip": "Ejercicio_01\\Form1.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T03:13:05.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Estad\u00EDstica.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Estad\u00EDstica.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\Estad\u00EDstica.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Estad\u00EDstica.cs [Design]",
+              "RelativeToolTip": "Ejercicio_01\\Estad\u00EDstica.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T02:25:35.793Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -100,16 +147,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Form1.cs",
-              "RelativeDocumentMoniker": "Ejercicio_01\\Form1.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Form1.cs",
-              "RelativeToolTip": "Ejercicio_01\\Form1.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAADwvzwAAAAZAAAA",
+              "DocumentIndex": 7,
+              "Title": "Libros.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Libros.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\Libros.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Libros.cs",
+              "RelativeToolTip": "Ejercicio_01\\Libros.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAkwEsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T03:13:05.344Z",
+              "WhenOpened": "2024-08-11T02:31:34.824Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LenguajesProgra.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\LenguajesProgra.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\LenguajesProgra.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\LenguajesProgra.cs [Design]",
+              "RelativeToolTip": "Ejercicio_01\\LenguajesProgra.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T02:27:44.63Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\Login.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Login.cs [Design]",
+              "RelativeToolTip": "Ejercicio_01\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T20:39:37.088Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Libros.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Libros.cs",
+              "RelativeDocumentMoniker": "Ejercicio_01\\Libros.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\Ejercicio_01\\Ejercicio_01\\Libros.cs [Design]",
+              "RelativeToolTip": "Ejercicio_01\\Libros.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T02:27:46.585Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
