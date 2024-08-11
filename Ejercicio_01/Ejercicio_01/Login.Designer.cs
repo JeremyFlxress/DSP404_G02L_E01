@@ -56,18 +56,20 @@
             // txtIProtagonistas
             // 
             this.txtIProtagonistas.Enabled = false;
-            this.txtIProtagonistas.Location = new System.Drawing.Point(576, 121);
+            this.txtIProtagonistas.Location = new System.Drawing.Point(686, 136);
+            this.txtIProtagonistas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIProtagonistas.Multiline = true;
             this.txtIProtagonistas.Name = "txtIProtagonistas";
-            this.txtIProtagonistas.Size = new System.Drawing.Size(136, 195);
+            this.txtIProtagonistas.Size = new System.Drawing.Size(202, 239);
             this.txtIProtagonistas.TabIndex = 3;
             this.txtIProtagonistas.TextChanged += new System.EventHandler(this.txtIProtagonistas_TextChanged);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(331, 389);
+            this.btnSalir.Location = new System.Drawing.Point(561, 447);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(112, 28);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -76,9 +78,11 @@
             // lblProtagonistas
             // 
             this.lblProtagonistas.AutoSize = true;
-            this.lblProtagonistas.Location = new System.Drawing.Point(573, 105);
+            this.lblProtagonistas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProtagonistas.Location = new System.Drawing.Point(682, 116);
+            this.lblProtagonistas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProtagonistas.Name = "lblProtagonistas";
-            this.lblProtagonistas.Size = new System.Drawing.Size(80, 13);
+            this.lblProtagonistas.Size = new System.Drawing.Size(116, 16);
             this.lblProtagonistas.TabIndex = 5;
             this.lblProtagonistas.Text = "Protagoniostas:";
             this.lblProtagonistas.Click += new System.EventHandler(this.lblProtagonistas_Click);
@@ -86,9 +90,11 @@
             // lblSinopsis
             // 
             this.lblSinopsis.AutoSize = true;
-            this.lblSinopsis.Location = new System.Drawing.Point(328, 105);
+            this.lblSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinopsis.Location = new System.Drawing.Point(308, 112);
+            this.lblSinopsis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSinopsis.Name = "lblSinopsis";
-            this.lblSinopsis.Size = new System.Drawing.Size(49, 13);
+            this.lblSinopsis.Size = new System.Drawing.Size(71, 16);
             this.lblSinopsis.TabIndex = 6;
             this.lblSinopsis.Text = "Sinopsis:";
             this.lblSinopsis.Click += new System.EventHandler(this.lblSinopsis_Click);
@@ -96,87 +102,102 @@
             // txtSinopsis
             // 
             this.txtSinopsis.Enabled = false;
-            this.txtSinopsis.Location = new System.Drawing.Point(326, 121);
+            this.txtSinopsis.Location = new System.Drawing.Point(309, 132);
+            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSinopsis.Multiline = true;
             this.txtSinopsis.Name = "txtSinopsis";
-            this.txtSinopsis.Size = new System.Drawing.Size(227, 121);
+            this.txtSinopsis.Size = new System.Drawing.Size(338, 148);
             this.txtSinopsis.TabIndex = 7;
             // 
             // lblTituloEspañol
             // 
             this.lblTituloEspañol.AutoSize = true;
-            this.lblTituloEspañol.Location = new System.Drawing.Point(323, 76);
+            this.lblTituloEspañol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloEspañol.Location = new System.Drawing.Point(306, 81);
+            this.lblTituloEspañol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTituloEspañol.Name = "lblTituloEspañol";
-            this.lblTituloEspañol.Size = new System.Drawing.Size(35, 13);
+            this.lblTituloEspañol.Size = new System.Drawing.Size(50, 16);
             this.lblTituloEspañol.TabIndex = 8;
             this.lblTituloEspañol.Text = "label2";
             // 
             // lblCreado
             // 
             this.lblCreado.AutoSize = true;
-            this.lblCreado.Location = new System.Drawing.Point(328, 254);
+            this.lblCreado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreado.Location = new System.Drawing.Point(314, 300);
+            this.lblCreado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreado.Name = "lblCreado";
-            this.lblCreado.Size = new System.Drawing.Size(62, 13);
+            this.lblCreado.Size = new System.Drawing.Size(89, 16);
             this.lblCreado.TabIndex = 9;
             this.lblCreado.Text = "Creado por:";
             // 
             // txtCreadoPor
             // 
             this.txtCreadoPor.Enabled = false;
-            this.txtCreadoPor.Location = new System.Drawing.Point(396, 251);
+            this.txtCreadoPor.Location = new System.Drawing.Point(416, 296);
+            this.txtCreadoPor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCreadoPor.Multiline = true;
             this.txtCreadoPor.Name = "txtCreadoPor";
-            this.txtCreadoPor.Size = new System.Drawing.Size(156, 39);
+            this.txtCreadoPor.Size = new System.Drawing.Size(232, 47);
             this.txtCreadoPor.TabIndex = 10;
             // 
             // txtPaisOrigen
             // 
             this.txtPaisOrigen.Enabled = false;
-            this.txtPaisOrigen.Location = new System.Drawing.Point(398, 296);
+            this.txtPaisOrigen.Location = new System.Drawing.Point(419, 351);
+            this.txtPaisOrigen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPaisOrigen.Name = "txtPaisOrigen";
-            this.txtPaisOrigen.Size = new System.Drawing.Size(154, 20);
+            this.txtPaisOrigen.Size = new System.Drawing.Size(229, 22);
             this.txtPaisOrigen.TabIndex = 11;
             // 
             // txtEpisodios
             // 
             this.txtEpisodios.Enabled = false;
-            this.txtEpisodios.Location = new System.Drawing.Point(576, 326);
+            this.txtEpisodios.Location = new System.Drawing.Point(686, 388);
+            this.txtEpisodios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEpisodios.Name = "txtEpisodios";
-            this.txtEpisodios.Size = new System.Drawing.Size(32, 20);
+            this.txtEpisodios.Size = new System.Drawing.Size(46, 22);
             this.txtEpisodios.TabIndex = 12;
             // 
             // txtTemporadas
             // 
             this.txtTemporadas.Enabled = false;
-            this.txtTemporadas.Location = new System.Drawing.Point(425, 326);
+            this.txtTemporadas.Location = new System.Drawing.Point(460, 388);
+            this.txtTemporadas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTemporadas.Name = "txtTemporadas";
-            this.txtTemporadas.Size = new System.Drawing.Size(43, 20);
+            this.txtTemporadas.Size = new System.Drawing.Size(62, 22);
             this.txtTemporadas.TabIndex = 13;
             // 
             // lblPais
             // 
             this.lblPais.AutoSize = true;
-            this.lblPais.Location = new System.Drawing.Point(328, 299);
+            this.lblPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPais.Location = new System.Drawing.Point(314, 355);
+            this.lblPais.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(64, 13);
+            this.lblPais.Size = new System.Drawing.Size(92, 16);
             this.lblPais.TabIndex = 14;
             this.lblPais.Text = "Pais Origen:";
             // 
             // lblTemporadas
             // 
             this.lblTemporadas.AutoSize = true;
-            this.lblTemporadas.Location = new System.Drawing.Point(328, 329);
+            this.lblTemporadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemporadas.Location = new System.Drawing.Point(314, 392);
+            this.lblTemporadas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTemporadas.Name = "lblTemporadas";
-            this.lblTemporadas.Size = new System.Drawing.Size(69, 13);
+            this.lblTemporadas.Size = new System.Drawing.Size(100, 16);
             this.lblTemporadas.TabIndex = 15;
             this.lblTemporadas.Text = "Temporadas:";
             // 
             // lblEpisodios
             // 
             this.lblEpisodios.AutoSize = true;
-            this.lblEpisodios.Location = new System.Drawing.Point(498, 329);
+            this.lblEpisodios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEpisodios.Location = new System.Drawing.Point(569, 392);
+            this.lblEpisodios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEpisodios.Name = "lblEpisodios";
-            this.lblEpisodios.Size = new System.Drawing.Size(55, 13);
+            this.lblEpisodios.Size = new System.Drawing.Size(81, 16);
             this.lblEpisodios.TabIndex = 16;
             this.lblEpisodios.Text = "Episodios:";
             // 
@@ -189,18 +210,20 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(196, 572);
+            this.panel1.Size = new System.Drawing.Size(219, 704);
             this.panel1.TabIndex = 17;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.NavajoWhite;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(54, 323);
+            this.button3.Location = new System.Drawing.Point(26, 354);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 58);
+            this.button3.Size = new System.Drawing.Size(144, 71);
             this.button3.TabIndex = 11;
             this.button3.Text = "The Marvelous Mrs. Maisel";
             this.button3.UseVisualStyleBackColor = false;
@@ -210,9 +233,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.NavajoWhite;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(54, 242);
+            this.button2.Location = new System.Drawing.Point(26, 254);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 34);
+            this.button2.Size = new System.Drawing.Size(144, 42);
             this.button2.TabIndex = 10;
             this.button2.Text = "Chernobyl";
             this.button2.UseVisualStyleBackColor = false;
@@ -223,7 +247,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(63, 78);
+            this.label3.Location = new System.Drawing.Point(54, 93);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 34);
             this.label3.TabIndex = 9;
@@ -233,9 +258,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.NavajoWhite;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(54, 159);
+            this.button1.Location = new System.Drawing.Point(26, 152);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 40);
+            this.button1.Size = new System.Drawing.Size(144, 49);
             this.button1.TabIndex = 5;
             this.button1.Text = "Game of Thrones";
             this.button1.UseVisualStyleBackColor = false;
@@ -246,7 +272,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(74, 44);
+            this.label2.Location = new System.Drawing.Point(71, 51);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 34);
             this.label2.TabIndex = 8;
@@ -257,7 +284,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(48, 10);
+            this.label1.Location = new System.Drawing.Point(32, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 34);
             this.label1.TabIndex = 7;
@@ -268,7 +296,8 @@
             this.lblTitulo1.AutoSize = true;
             this.lblTitulo1.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTitulo1.Location = new System.Drawing.Point(518, 11);
+            this.lblTitulo1.Location = new System.Drawing.Point(555, 9);
+            this.lblTitulo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo1.Name = "lblTitulo1";
             this.lblTitulo1.Size = new System.Drawing.Size(24, 34);
             this.lblTitulo1.TabIndex = 12;
@@ -276,10 +305,10 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(965, 498);
+            this.ClientSize = new System.Drawing.Size(929, 511);
             this.Controls.Add(this.lblTitulo1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblEpisodios);
@@ -296,6 +325,8 @@
             this.Controls.Add(this.lblProtagonistas);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtIProtagonistas);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);

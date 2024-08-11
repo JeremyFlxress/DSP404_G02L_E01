@@ -12,7 +12,7 @@ namespace Ejercicio_01
             cbCategorias.Items.Add("Entretenimiento");
             cbCategorias.Items.Add("Libros");
             cbCategorias.Items.Add("Lenguajes de Programacion");
-            btnLogin.Click += button1_Click;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

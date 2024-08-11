@@ -38,3 +38,17 @@ C:\Users\jerem\Documents\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Libros
 C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.LenguajesProgra.resources
 C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Inicio.resources
 C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Libros.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\bin\Debug\Ejercicio_01.exe.config
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\bin\Debug\Ejercicio_01.exe
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\bin\Debug\Ejercicio_01.pdb
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.csproj.AssemblyReference.cache
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Form1.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.LenguajesProgra.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Inicio.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Libros.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Login.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.Properties.Resources.resources
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.csproj.GenerateResource.cache
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.csproj.CoreCompileInputs.cache
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.exe
+C:\Users\jerem\Documents\DSP404_02L_E01\Ejercicio_01\Ejercicio_01\obj\Debug\Ejercicio_01.pdb
