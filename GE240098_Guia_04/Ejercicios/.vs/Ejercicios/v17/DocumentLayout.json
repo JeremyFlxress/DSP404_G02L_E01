@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9394958-092D-4126-9A48-BA56EF2316F9}|Ejercicio_02\\Ejercicio_02.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_04\\ejercicios\\ejercicio_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9394958-092D-4126-9A48-BA56EF2316F9}|Ejercicio_02\\Ejercicio_02.csproj|solutionrelative:ejercicio_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6B9A884-4E5E-4DCF-9B81-AAA128F91F0F}|Ejercicio_03\\Ejercicio_03.csproj|C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\ejercicio_03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F6B9A884-4E5E-4DCF-9B81-AAA128F91F0F}|Ejercicio_03\\Ejercicio_03.csproj|solutionrelative:ejercicio_03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9394958-092D-4126-9A48-BA56EF2316F9}|Ejercicio_02\\Ejercicio_02.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_04\\ejercicios\\ejercicio_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9394958-092D-4126-9A48-BA56EF2316F9}|Ejercicio_02\\Ejercicio_02.csproj|solutionrelative:ejercicio_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F6B9A884-4E5E-4DCF-9B81-AAA128F91F0F}|Ejercicio_03\\Ejercicio_03.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_04\\ejercicios\\ejercicio_03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B9A884-4E5E-4DCF-9B81-AAA128F91F0F}|Ejercicio_03\\Ejercicio_03.csproj|solutionrelative:ejercicio_03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9394958-092D-4126-9A48-BA56EF2316F9}|Ejercicio_02\\Ejercicio_02.csproj|C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\ejercicio_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9394958-092D-4126-9A48-BA56EF2316F9}|Ejercicio_02\\Ejercicio_02.csproj|solutionrelative:ejercicio_02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +34,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_03\\Form1.cs",
+              "RelativeDocumentMoniker": "Ejercicio_03\\Form1.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_03\\Form1.cs",
+              "RelativeToolTip": "Ejercicio_03\\Form1.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwC0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:55:52.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_03\\Form1.cs",
+              "RelativeDocumentMoniker": "Ejercicio_03\\Form1.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_03\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ejercicio_03\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:47:52.304Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_02\\Form1.cs",
               "RelativeDocumentMoniker": "Ejercicio_02\\Form1.cs",
               "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_02\\Form1.cs",
               "RelativeToolTip": "Ejercicio_02\\Form1.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAcwHgAAAAAAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAA0wJUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T17:45:02.106Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_02\\Form1.cs",
-              "RelativeDocumentMoniker": "Ejercicio_02\\Form1.cs",
-              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_04\\Ejercicios\\Ejercicio_02\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Ejercicio_02\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T17:34:18.471Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

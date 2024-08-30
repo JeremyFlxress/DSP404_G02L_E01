@@ -103,7 +103,7 @@ namespace Ejercicio_02
                 tri = Convert.ToInt32(dataGridView1.Rows[c].Cells["Trims"].Value);
                 /*
                  * Este numero de trimestre se aprovecha para acceder a posicion 
-                 * dentro del arreglo TotVentaTrim() 
+                 * dentro del arreglo TotVentaTrim()
                  * aqui acumulo Monto venta de la celda"montoventa" 
                  */ 
 
@@ -145,7 +145,6 @@ namespace Ejercicio_02
             //Mostrara a la pagina 2 del tabControl1
             tabControl1.SelectedIndex = 1;
             //Bloquea ingreso a controles del contenedor GroupBox
-            groupBox1.Enabled = false;
         }
 
         private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
