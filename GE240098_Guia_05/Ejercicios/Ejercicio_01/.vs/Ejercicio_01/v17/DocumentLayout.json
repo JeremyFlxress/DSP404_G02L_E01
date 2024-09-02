@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1C9A0279-7C86-4345-8984-94092CC47660}|..\\Ejercicio_02\\Ejercicio_02.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_05\\ejercicios\\ejercicio_02\\clsplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1C9A0279-7C86-4345-8984-94092CC47660}|..\\Ejercicio_02\\Ejercicio_02.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_05\\ejercicios\\ejercicio_02\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,27 +32,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "clsPlanilla.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_02\\clsPlanilla.cs",
+              "RelativeDocumentMoniker": "..\\Ejercicio_02\\clsPlanilla.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_02\\clsPlanilla.cs",
+              "RelativeToolTip": "..\\Ejercicio_02\\clsPlanilla.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T18:43:33.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "clsEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_02\\clsEmpleado.cs",
               "RelativeDocumentMoniker": "..\\Ejercicio_02\\clsEmpleado.cs",
               "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_02\\clsEmpleado.cs",
               "RelativeToolTip": "..\\Ejercicio_02\\clsEmpleado.cs",
-              "ViewState": "AQIAALoAAAAAAAAAAAAQwMkAAAAhAAAA",
+              "ViewState": "AQIAALQAAAAAAAAAAAAQwMsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T04:07:14.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_02\\Form1.cs",
               "RelativeDocumentMoniker": "..\\Ejercicio_02\\Form1.cs",
               "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_05\\Ejercicios\\Ejercicio_02\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\Ejercicio_02\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T04:04:02.543Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-02T04:04:02.543Z"
             }
           ]
         }
