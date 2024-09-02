@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|c:\\users\\valenyins\\documents\\dsp\\fp240479_guia_04\\complementarios_guia04\\complementarios_guia04\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\complementarios_guia04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD82E35E-116E-4A80-BA34-411287DD8336}|Complementarios_Guia04\\Complementarios_Guia04.csproj|solutionrelative:complementarios_guia04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Inicio.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Inicio.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Inicio.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Inicio.cs",
+              "RelativeToolTip": "Complementarios_Guia04\\Inicio.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T21:32:52.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Inicio.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Inicio.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\Complementarios_Guia04\\Complementarios_Guia04\\Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Complementarios_Guia04\\Complementarios_Guia04\\Inicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T21:30:15.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form3.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Form3.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form3.cs",
+              "RelativeToolTip": "Complementarios_Guia04\\Form3.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvy4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:33:21.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form3.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Form3.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\Complementarios_Guia04\\Complementarios_Guia04\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Complementarios_Guia04\\Complementarios_Guia04\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:32:28.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Program.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Program.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Program.cs",
+              "RelativeToolTip": "Complementarios_Guia04\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:31:35.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form2.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Form2.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form2.cs",
+              "RelativeToolTip": "Complementarios_Guia04\\Form2.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:30:07.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form2.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Form2.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\Complementarios_Guia04\\Complementarios_Guia04\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Complementarios_Guia04\\Complementarios_Guia04\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:28:35.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form1.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Form1.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form1.cs",
+              "RelativeToolTip": "Complementarios_Guia04\\Form1.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAiwFYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:14:11.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_04\\Complementarios_Guia04\\Complementarios_Guia04\\Form1.cs",
+              "RelativeDocumentMoniker": "Complementarios_Guia04\\Form1.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\Complementarios_Guia04\\Complementarios_Guia04\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Complementarios_Guia04\\Complementarios_Guia04\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:02:09.661Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
