@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbl3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbl3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -62,23 +62,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalle de Venta";
             // 
-            // lbl1
+            // dateTimePicker1
             // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(20, 28);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(83, 13);
-            this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "Monto Venta ($)";
+            this.dateTimePicker1.Location = new System.Drawing.Point(111, 66);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(218, 20);
+            this.dateTimePicker1.TabIndex = 3;
             // 
-            // lbl2
+            // maskedTextBox1
             // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(20, 72);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(68, 13);
-            this.lbl2.TabIndex = 1;
-            this.lbl2.Text = "Fecha Venta";
+            this.maskedTextBox1.Location = new System.Drawing.Point(111, 25);
+            this.maskedTextBox1.Mask = "00000.00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(189, 20);
+            this.maskedTextBox1.TabIndex = 1;
             // 
             // button1
             // 
@@ -89,20 +86,23 @@
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // lbl2
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(111, 25);
-            this.maskedTextBox1.Mask = "00000.00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(189, 20);
-            this.maskedTextBox1.TabIndex = 1;
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(20, 72);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(68, 13);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.Text = "Fecha Venta";
             // 
-            // dateTimePicker1
+            // lbl1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(111, 66);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(218, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(20, 28);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(83, 13);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Monto Venta ($)";
             // 
             // tabControl1
             // 
@@ -126,6 +126,23 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(22, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(456, 128);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(185, 146);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Ver Resumen Ventas";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.listBox1);
@@ -138,22 +155,13 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // listBox1
             // 
-            this.button2.Location = new System.Drawing.Point(185, 146);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Ver Resumen Ventas";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(456, 128);
-            this.dataGridView1.TabIndex = 1;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(78, 15);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(395, 160);
+            this.listBox1.TabIndex = 1;
             // 
             // lbl3
             // 
@@ -163,14 +171,7 @@
             this.lbl3.Size = new System.Drawing.Size(35, 13);
             this.lbl3.TabIndex = 0;
             this.lbl3.Text = "label1";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(78, 15);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(395, 160);
-            this.listBox1.TabIndex = 1;
+            this.lbl3.Click += new System.EventHandler(this.lbl3_Click);
             // 
             // Form1
             // 
@@ -186,9 +187,9 @@
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\",
+  "WorkspaceRootPath": "C:\\Users\\Josue\\Documents\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3FF7BCC-11D1-466D-AD11-D266606032AA}|Ejercicio02\\Ejercicio02.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_04\\ejercicios_guia\\ejercicio02\\ejercicio02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3FF7BCC-11D1-466D-AD11-D266606032AA}|Ejercicio02\\Ejercicio02.csproj|c:\\users\\josue\\documents\\gm240279_guia_04\\ejercicios_guia\\ejercicio02\\ejercicio02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3FF7BCC-11D1-466D-AD11-D266606032AA}|Ejercicio02\\Ejercicio02.csproj|solutionrelative:ejercicio02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3FF7BCC-11D1-466D-AD11-D266606032AA}|Ejercicio02\\Ejercicio02.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_04\\ejercicios_guia\\ejercicio02\\ejercicio02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3FF7BCC-11D1-466D-AD11-D266606032AA}|Ejercicio02\\Ejercicio02.csproj|C:\\Users\\Josue\\Documents\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\ejercicio02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3FF7BCC-11D1-466D-AD11-D266606032AA}|Ejercicio02\\Ejercicio02.csproj|solutionrelative:ejercicio02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs",
               "RelativeDocumentMoniker": "Ejercicio02\\Form1.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs",
               "RelativeToolTip": "Ejercicio02\\Form1.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAgwG0AAAAJAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAqwCwAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T18:26:00.659Z",
               "EditorCaption": ""
@@ -48,14 +48,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs",
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs",
               "RelativeDocumentMoniker": "Ejercicio02\\Form1.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs [Design]",
-              "RelativeToolTip": "Ejercicio02\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GM240279_Guia_04\\Ejercicios_Guia\\Ejercicio02\\Ejercicio02\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ejercicio02\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T18:07:43.53Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
