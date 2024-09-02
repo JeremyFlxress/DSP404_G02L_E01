@@ -1,0 +1,11 @@
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\bin\Release\Guia_04_new.exe.config
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\bin\Release\Guia_04_new.exe
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\bin\Release\Guia_04_new.pdb
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.csproj.AssemblyReference.cache
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.Form1.resources
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.Form2.resources
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.Properties.Resources.resources
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.csproj.GenerateResource.cache
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.csproj.CoreCompileInputs.cache
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.exe
+C:\Users\Valenyins\Documents\DSP\Guia_04_new\Guia_04_new\obj\Release\Guia_04_new.pdb
