@@ -1,0 +1,13 @@
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.frmRegistoEmpleados.resources
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\bin\Debug\GUI.exe.config
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\bin\Debug\GUI.exe
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\bin\Debug\GUI.pdb
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\bin\Debug\Registro_Empleado.dll
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\bin\Debug\Registro_Empleado.pdb
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.csproj.Up2Date
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.exe
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\GUI\obj\Debug\GUI.pdb
