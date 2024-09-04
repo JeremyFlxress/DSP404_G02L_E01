@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complementario", "Complementario\Complementario.csproj", "{1E0D3236-7814-4468-AD15-17980580FAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{795A625C-25F9-43EC-AE5A-069EFF2934C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E0D3236-7814-4468-AD15-17980580FAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0D3236-7814-4468-AD15-17980580FAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0D3236-7814-4468-AD15-17980580FAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0D3236-7814-4468-AD15-17980580FAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795A625C-25F9-43EC-AE5A-069EFF2934C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795A625C-25F9-43EC-AE5A-069EFF2934C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795A625C-25F9-43EC-AE5A-069EFF2934C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795A625C-25F9-43EC-AE5A-069EFF2934C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2317885-9A54-47EF-9E5E-70B7949B61D8}
+	EndGlobalSection
+EndGlobal
