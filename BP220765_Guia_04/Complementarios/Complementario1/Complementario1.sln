@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complementario1", "Complementario1\Complementario1.csproj", "{227AEEED-E0BD-4BB0-B11A-D86E1F6AF67B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{227AEEED-E0BD-4BB0-B11A-D86E1F6AF67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227AEEED-E0BD-4BB0-B11A-D86E1F6AF67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227AEEED-E0BD-4BB0-B11A-D86E1F6AF67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227AEEED-E0BD-4BB0-B11A-D86E1F6AF67B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {825AAD20-CBE8-425A-8A29-3627F2DCAE7A}
+	EndGlobalSection
+EndGlobal

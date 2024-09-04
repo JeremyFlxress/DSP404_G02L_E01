@@ -1,0 +1,16 @@
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.Form1.resources
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.csproj.GenerateResource.cache
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.AssemblyInfoInputs.cache
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.AssemblyInfo.cs
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.csproj.CoreCompileInputs.cache
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\bin\Debug\net8.0-windows\complementario2.exe
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\bin\Debug\net8.0-windows\complementario2.deps.json
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\bin\Debug\net8.0-windows\complementario2.runtimeconfig.json
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\bin\Debug\net8.0-windows\complementario2.dll
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\bin\Debug\net8.0-windows\complementario2.pdb
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.dll
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\refint\complementario2.dll
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.pdb
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\complementario2.genruntimeconfig.cache
+C:\Users\William Bonilla\Desktop\Complementarios\complementario2\complementario2\obj\Debug\net8.0-windows\ref\complementario2.dll
