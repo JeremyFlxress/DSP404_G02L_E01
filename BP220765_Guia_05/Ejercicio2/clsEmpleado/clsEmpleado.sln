@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clsEmpleado", "clsEmpleado\clsEmpleado.csproj", "{B0D17C6A-B8A6-4F77-AC8B-544A46F8468C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIFI", "FIFI\FIFI.csproj", "{5C3108CB-999A-4B37-AC98-EEDB9CBF8284}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D17C6A-B8A6-4F77-AC8B-544A46F8468C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D17C6A-B8A6-4F77-AC8B-544A46F8468C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D17C6A-B8A6-4F77-AC8B-544A46F8468C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D17C6A-B8A6-4F77-AC8B-544A46F8468C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3108CB-999A-4B37-AC98-EEDB9CBF8284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3108CB-999A-4B37-AC98-EEDB9CBF8284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3108CB-999A-4B37-AC98-EEDB9CBF8284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3108CB-999A-4B37-AC98-EEDB9CBF8284}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C14DC279-CC62-405F-8EC9-8BC3F0C3009D}
+	EndGlobalSection
+EndGlobal

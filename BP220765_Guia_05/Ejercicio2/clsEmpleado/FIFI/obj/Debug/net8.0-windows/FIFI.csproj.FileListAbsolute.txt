@@ -1,0 +1,16 @@
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\bin\Debug\net8.0-windows\FIFI.exe
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\bin\Debug\net8.0-windows\FIFI.deps.json
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\bin\Debug\net8.0-windows\FIFI.runtimeconfig.json
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\bin\Debug\net8.0-windows\FIFI.dll
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\bin\Debug\net8.0-windows\FIFI.pdb
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.Form1.resources
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.csproj.GenerateResource.cache
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.AssemblyInfoInputs.cache
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.AssemblyInfo.cs
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.csproj.CoreCompileInputs.cache
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.dll
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\refint\FIFI.dll
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.pdb
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\FIFI.genruntimeconfig.cache
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\FIFI\obj\Debug\net8.0-windows\ref\FIFI.dll

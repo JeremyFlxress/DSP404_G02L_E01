@@ -1,0 +1,4 @@
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\clsEmpleado\obj\Debug\net8.0\clsEmpleado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\clsEmpleado\obj\Debug\net8.0\clsEmpleado.AssemblyInfoInputs.cache
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\clsEmpleado\obj\Debug\net8.0\clsEmpleado.AssemblyInfo.cs
+C:\Users\William Bonilla\Desktop\Ejercicio2\clsEmpleado\clsEmpleado\obj\Debug\net8.0\clsEmpleado.csproj.CoreCompileInputs.cache
