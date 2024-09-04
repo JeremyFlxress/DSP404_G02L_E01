@@ -1,0 +1,13 @@
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.csproj.AssemblyReference.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.Form1.resources
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.Properties.Resources.resources
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.csproj.GenerateResource.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.csproj.CoreCompileInputs.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\bin\Debug\Ejercicio_01.exe.config
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\bin\Debug\Ejercicio_01.exe
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\bin\Debug\Ejercicio_01.pdb
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\bin\Debug\BL.dll
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\bin\Debug\BL.pdb
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercici.C29E6643.Up2Date
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.exe
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\Ejercicio_01\obj\Debug\Ejercicio_01.pdb
