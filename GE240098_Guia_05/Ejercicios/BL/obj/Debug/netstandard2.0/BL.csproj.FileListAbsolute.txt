@@ -1,0 +1,11 @@
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\bin\Debug\netstandard2.0\BL.deps.json
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\bin\Debug\netstandard2.0\BL.dll
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\bin\Debug\netstandard2.0\BL.pdb
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.csproj.AssemblyReference.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.sourcelink.json
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.dll
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Ejercicios\BL\obj\Debug\netstandard2.0\BL.pdb

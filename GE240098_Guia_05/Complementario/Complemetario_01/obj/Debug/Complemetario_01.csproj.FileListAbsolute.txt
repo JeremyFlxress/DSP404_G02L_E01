@@ -1,0 +1,10 @@
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\bin\Debug\Complemetario_01.exe.config
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\bin\Debug\Complemetario_01.exe
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\bin\Debug\Complemetario_01.pdb
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.csproj.AssemblyReference.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.Form1.resources
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.Properties.Resources.resources
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.csproj.GenerateResource.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.csproj.CoreCompileInputs.cache
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.exe
+C:\Users\Josue Garcia\Documents\GitHub\DSP404_02L_E01\GE240098_Guia_05\Complementario\Complemetario_01\obj\Debug\Complemetario_01.pdb
