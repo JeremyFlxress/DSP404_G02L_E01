@@ -1,0 +1,6 @@
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\Registro_Empleado\bin\Debug\Registro_Empleado.dll
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\Registro_Empleado\bin\Debug\Registro_Empleado.pdb
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\Registro_Empleado\obj\Debug\Registro_Empleados.csproj.AssemblyReference.cache
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\Registro_Empleado\obj\Debug\Registro_Empleados.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\Registro_Empleado\obj\Debug\Registro_Empleado.dll
+C:\Users\Josue\Documents\GitHub\DSP404_02L_E01\GM240279_Guia_05\Ejercicio\Registro_Empleados\Registro_Empleado\obj\Debug\Registro_Empleado.pdb

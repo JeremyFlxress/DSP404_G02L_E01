@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleados.csproj|c:\\users\\valenyins\\documents\\dsp\\fp240479_guia_05\\ejercicio\\registro_empleados\\registro_empleado\\clsplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleados.csproj|solutionrelative:registro_empleado\\clsplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleado.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\registro_empleado\\clsplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleado.csproj|solutionrelative:registro_empleado\\clsplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleados.csproj|c:\\users\\valenyins\\documents\\dsp\\fp240479_guia_05\\ejercicio\\registro_empleados\\registro_empleado\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleados.csproj|solutionrelative:registro_empleado\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleado.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\registro_empleado\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleado.csproj|solutionrelative:registro_empleado\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleados.csproj|c:\\users\\valenyins\\documents\\dsp\\fp240479_guia_05\\ejercicio\\registro_empleados\\registro_empleado\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleados.csproj|solutionrelative:registro_empleado\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleado.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\registro_empleado\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F18CE8-D77E-4ED8-B609-D34C2EF63152}|Registro_Empleado\\Registro_Empleado.csproj|solutionrelative:registro_empleado\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2E1A43-566D-4AB7-8E8B-6CB6490F8D9E}|GUI\\GUI.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2E1A43-566D-4AB7-8E8B-6CB6490F8D9E}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2E1A43-566D-4AB7-8E8B-6CB6490F8D9E}|GUI\\GUI.csproj|C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D2E1A43-566D-4AB7-8E8B-6CB6490F8D9E}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|GUI||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsEmpleado.cs",
+              "RelativeDocumentMoniker": "Registro_Empleado\\clsEmpleado.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsEmpleado.cs",
+              "RelativeToolTip": "Registro_Empleado\\clsEmpleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:29:04.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\Cuenta.cs",
+              "RelativeDocumentMoniker": "Registro_Empleado\\Cuenta.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\Cuenta.cs",
+              "RelativeToolTip": "Registro_Empleado\\Cuenta.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAIwFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:23:29.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsPlanilla.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsPlanilla.cs",
+              "RelativeDocumentMoniker": "Registro_Empleado\\clsPlanilla.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsPlanilla.cs",
+              "RelativeToolTip": "Registro_Empleado\\clsPlanilla.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:22:47.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsPlanilla.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsPlanilla.cs",
+              "RelativeDocumentMoniker": "Registro_Empleado\\clsPlanilla.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsPlanilla.cs",
+              "RelativeToolTip": "Registro_Empleado\\clsPlanilla.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowGUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T01:30:32.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\GUI\\Form1.cs",
+              "RelativeToolTip": "GUI\\Form1.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T00:38:42.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\Cuenta.cs",
+              "RelativeDocumentMoniker": "Registro_Empleado\\Cuenta.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\Cuenta.cs",
+              "RelativeToolTip": "Registro_Empleado\\Cuenta.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAIwFAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T01:31:21.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsEmpleado.cs",
+              "RelativeDocumentMoniker": "Registro_Empleado\\clsEmpleado.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\Registro_Empleado\\clsEmpleado.cs",
+              "RelativeToolTip": "Registro_Empleado\\clsEmpleado.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwAEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T01:28:55.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\GUI\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GUI\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T00:09:23.139Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GUI",
+              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\GUI\\GUI.csproj",
+              "RelativeDocumentMoniker": "GUI\\GUI.csproj",
+              "ToolTip": "C:\\Users\\Valenyins\\Documents\\DSP\\FP240479_Guia_05\\Ejercicio\\Registro_Empleados\\GUI\\GUI.csproj",
+              "RelativeToolTip": "GUI\\GUI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-04T00:37:51.249Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
