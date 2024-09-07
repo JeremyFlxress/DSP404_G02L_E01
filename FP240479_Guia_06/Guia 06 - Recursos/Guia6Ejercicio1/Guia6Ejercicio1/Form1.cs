@@ -15,14 +15,10 @@ namespace Guia6Ejercicio1
     {
         List<clsDoctor> doctores;
         List<clsVendedor> vendedores;
-        //prepara objeto para generar cuadro de dialogo de seleccion de archivo
         OpenFileDialog cuadroseleccion = new OpenFileDialog();
-        //METODOS de la clase Form1
-        //Metodo para generar las secuencias de dias, meses y años en combobox
         private void llenarcombobox()
         {
-            int c; //contador usos varios
-                   //primero dias
+            int c;
             for (c = 1; c <= 31; c++)
                 cmbDia.Items.Add(c);
             cmbDia.Text = DateTime.Now.Day.ToString();
@@ -30,10 +26,9 @@ namespace Guia6Ejercicio1
             cmbMes.Text = DateTime.Now.Month.ToString();
             for (c = 1950; c <= DateTime.Now.Year; c++) cmbAnno.Items.Add(c);
             cmbAnno.Text = DateTime.Now.Year.ToString();
-        }//fin metodo llenarcombox
+        }
         void PrepararNuevoDoctor()
         {
-            //Deja los controles listos para el proximo doctor a ingresar
             txtNom.Clear();
             picFotoDoc.ImageLocation = Application.StartupPath + "\\Desconocido.jpg";
             cmbDia.SelectedIndex = 0;
@@ -45,7 +40,6 @@ namespace Guia6Ejercicio1
         }
         void PrepararNuevoVendedor()
         {
-            //deja los controles listos para el proximo vendedor a ingresar
             txtNomv.Clear();
             picFotoVen.ImageLocation = Application.StartupPath + "\\Desconocido.jpg";
             dtpFechaNac.Value = DateTime.Now;
@@ -54,18 +48,14 @@ namespace Guia6Ejercicio1
         }
         public void MostrarLista_Doctores()
         {
-            //Recorre coleccion doctores, para mostrar datos en datagrid
             int cm = 0;
             int i;
-            //se ajusta el titulo de la ultima columna de grilla
             dataGridView1.Columns[4].HeaderText = "Codigo";
             dataGridView1.Rows.Clear();
-            //se llena la grilla con filas para los doctores registrados
             for (i = 0; i < doctores.Count; i++)
                 dataGridView1.Rows.Add();
             foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
-                //De cada objeto Doctor de la List, extrae valores de sus campos privados
                 fila.Cells[0].Value = cm + 1;
                 fila.Cells[1].Value = doctores[cm].nombreempleado;
                 fila.Cells[2].Value = Image.FromFile(doctores[cm].URLfoto);
@@ -76,12 +66,10 @@ namespace Guia6Ejercicio1
         }
         public void MostrarLista_Vendedores()
         {
-            //recorre coleccion vendedores, para mostrar datos en datagrid
             int cm = 0;
             int i;
             dataGridView1.Columns[4].HeaderText = "Fecha Contrato";
             dataGridView1.Rows.Clear();
-            //se llena la grilla con filas para los vendedores registrados
             for (i = 0; i < vendedores.Count; i++)
                 dataGridView1.Rows.Add();
             foreach (DataGridViewRow fila in dataGridView1.Rows)
@@ -94,7 +82,7 @@ namespace Guia6Ejercicio1
                 cm++;
             }
         }
-        public Form1() //constructor de clase Form1
+        public Form1() 
         {
             InitializeComponent();
 
@@ -103,13 +91,10 @@ namespace Guia6Ejercicio1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            llenarcombobox(); //llena los 3 combos (que definen a una fecha)
-                              //crea las listas de doctores y vendedores
+            llenarcombobox(); 
             doctores = new List<clsDoctor>();
             vendedores = new List<clsVendedor>();
-            //Define filtros para el cuadro de seleccion, que mostrara solo imagenes JPG
             cuadroseleccion.Filter = "Imagenes de tipo JPG |*.jpg";
-            //Inicia los controles para ingresar un nuevo Doctor o un nuevo Vendedor
             PrepararNuevoDoctor();
             PrepararNuevoVendedor();
         }
@@ -132,20 +117,16 @@ namespace Guia6Ejercicio1
 
         private void btnAgregarDoc_Click(object sender, EventArgs e)
         {
-            clsDoctor Doctor = new clsDoctor(); //objeto de la clase derivada
-                                                //toma los datos de los controles del form para definir a objeto Doctor
+            clsDoctor Doctor = new clsDoctor();
             Doctor.nombreempleado = txtNom.Text;
             Doctor.asignarfechanac(cmbAnno.Text, cmbMes.Text, cmbDia.Text);
             Doctor.sueldobase = Convert.ToSingle(nudSueldo.Value);
             Doctor.codigodoctor = mtbCodDoctor.Text;
-            //envia url de foto seleccionada por usuario
             Doctor.URLfoto = picFotoDoc.ImageLocation;
-            //intenta agregar nuevo doctor a coleccion de Doctores
             if (Doctor.DatossonCorrectos())
             {
                 doctores.Add(Doctor);
                 MessageBox.Show("Doctor " + Doctor.nombreempleado + " se ha agregado a la lista","Excelente!!",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                //Inicia los controles para ingresar un nuevo Doctor
                  PrepararNuevoDoctor();
             }
             else
@@ -154,17 +135,13 @@ namespace Guia6Ejercicio1
 
         private void btnAgregarVen_Click(object sender, EventArgs e)
         {
-            clsVendedor Vendedor = new clsVendedor(); //objeto de la clase derivada
-                                                      //Define valores brindados por usuario hacia objeto vendedor
+            clsVendedor Vendedor = new clsVendedor();
             Vendedor.nombreempleado = txtNomv.Text;
-            Vendedor.sueldobase = 2000; //asigna un sueldo fijo de $2000;
+            Vendedor.sueldobase = 2000;
             Vendedor.asignarfechanac(dtpFechaNac.Value);
             Vendedor.FechaContrato = dtpFechaC.Value;
-            //envia url de foto seleccionada por usuario
             Vendedor.URLfoto = picFotoVen.ImageLocation;
-            //agrega vendedor actual hacia list de vendedores
             vendedores.Add(Vendedor);
-            //deja controles listos para el prox. vendedor a registrar
             PrepararNuevoVendedor();
         }
 
