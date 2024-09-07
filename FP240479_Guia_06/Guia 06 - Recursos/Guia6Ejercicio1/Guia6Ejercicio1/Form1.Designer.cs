@@ -30,48 +30,52 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.btnAgregarDoc = new System.Windows.Forms.Button();
+            this.mtbCodDoctor = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.picFotoDoc = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudSueldo = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbAnno = new System.Windows.Forms.ComboBox();
+            this.cmbMes = new System.Windows.Forms.ComboBox();
+            this.cmbDia = new System.Windows.Forms.ComboBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnAgregarVen = new System.Windows.Forms.Button();
+            this.dtpFechaC = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaNac = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnBuscar2 = new System.Windows.Forms.Button();
+            this.picFotoVen = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNomv = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Foto = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.campo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rbVendedores = new System.Windows.Forms.RadioButton();
+            this.rbDoctores = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoDoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSueldo)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoVen)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +83,8 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(216, 22);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(55, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(884, 540);
@@ -87,220 +92,234 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.maskedTextBox1);
+            this.tabPage1.Controls.Add(this.btnAgregarDoc);
+            this.tabPage1.Controls.Add(this.mtbCodDoctor);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.numericUpDown1);
+            this.tabPage1.Controls.Add(this.nudSueldo);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtNom);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(876, 514);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Ingreso de Doctores:";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAgregarDoc
             // 
-            this.button2.Location = new System.Drawing.Point(445, 465);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 27);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAgregarDoc.Location = new System.Drawing.Point(431, 445);
+            this.btnAgregarDoc.Name = "btnAgregarDoc";
+            this.btnAgregarDoc.Size = new System.Drawing.Size(140, 27);
+            this.btnAgregarDoc.TabIndex = 8;
+            this.btnAgregarDoc.Text = "Agregar a Doctor";
+            this.btnAgregarDoc.UseVisualStyleBackColor = true;
+            this.btnAgregarDoc.Click += new System.EventHandler(this.btnAgregarDoc_Click);
             // 
-            // maskedTextBox1
+            // mtbCodDoctor
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(598, 300);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(203, 20);
-            this.maskedTextBox1.TabIndex = 7;
+            this.mtbCodDoctor.Location = new System.Drawing.Point(598, 300);
+            this.mtbCodDoctor.Mask = "AA-000000";
+            this.mtbCodDoctor.Name = "mtbCodDoctor";
+            this.mtbCodDoctor.Size = new System.Drawing.Size(203, 20);
+            this.mtbCodDoctor.TabIndex = 7;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.btnBuscar);
+            this.groupBox1.Controls.Add(this.picFotoDoc);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(64, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(350, 236);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Foto";
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(60, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 27);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(27, 133);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(95, 27);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // pictureBox1
+            // picFotoDoc
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(151, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 169);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picFotoDoc.Location = new System.Drawing.Point(151, 42);
+            this.picFotoDoc.Name = "picFotoDoc";
+            this.picFotoDoc.Size = new System.Drawing.Size(141, 169);
+            this.picFotoDoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoDoc.TabIndex = 1;
+            this.picFotoDoc.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.label2.Text = "Seleccione foto";
             // 
-            // numericUpDown1
+            // nudSueldo
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(597, 244);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(205, 20);
-            this.numericUpDown1.TabIndex = 6;
+            this.nudSueldo.DecimalPlaces = 2;
+            this.nudSueldo.Location = new System.Drawing.Point(597, 244);
+            this.nudSueldo.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nudSueldo.Name = "nudSueldo";
+            this.nudSueldo.Size = new System.Drawing.Size(205, 20);
+            this.nudSueldo.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(473, 308);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.label4.Text = "Cod. Medico";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(473, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.label3.Text = "Sueldo base ($)";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbAnno);
+            this.groupBox2.Controls.Add(this.cmbMes);
+            this.groupBox2.Controls.Add(this.cmbDia);
             this.groupBox2.Location = new System.Drawing.Point(445, 115);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(397, 104);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Fecha de nacimiento";
             // 
-            // comboBox3
+            // cmbAnno
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(283, 45);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(89, 21);
-            this.comboBox3.TabIndex = 2;
+            this.cmbAnno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAnno.FormattingEnabled = true;
+            this.cmbAnno.Location = new System.Drawing.Point(283, 45);
+            this.cmbAnno.Name = "cmbAnno";
+            this.cmbAnno.Size = new System.Drawing.Size(89, 21);
+            this.cmbAnno.TabIndex = 2;
             // 
-            // comboBox2
+            // cmbMes
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(161, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(90, 21);
-            this.comboBox2.TabIndex = 1;
+            this.cmbMes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMes.FormattingEnabled = true;
+            this.cmbMes.Location = new System.Drawing.Point(161, 45);
+            this.cmbMes.Name = "cmbMes";
+            this.cmbMes.Size = new System.Drawing.Size(90, 21);
+            this.cmbMes.TabIndex = 1;
             // 
-            // comboBox1
+            // cmbDia
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(95, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cmbDia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDia.FormattingEnabled = true;
+            this.cmbDia.Location = new System.Drawing.Point(22, 45);
+            this.cmbDia.Name = "cmbDia";
+            this.cmbDia.Size = new System.Drawing.Size(95, 21);
+            this.cmbDia.TabIndex = 0;
             // 
-            // textBox1
+            // txtNom
             // 
-            this.textBox1.Location = new System.Drawing.Point(169, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNom.Location = new System.Drawing.Point(169, 68);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(245, 20);
+            this.txtNom.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(61, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Nombre completo";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.dateTimePicker2);
-            this.tabPage2.Controls.Add(this.dateTimePicker1);
+            this.tabPage2.Controls.Add(this.btnAgregarVen);
+            this.tabPage2.Controls.Add(this.dtpFechaC);
+            this.tabPage2.Controls.Add(this.dtpFechaNac);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.txtNomv);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(876, 514);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Ingreso de Vendedores";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnAgregarVen
             // 
-            this.button4.Location = new System.Drawing.Point(458, 412);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(152, 27);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAgregarVen.Location = new System.Drawing.Point(458, 412);
+            this.btnAgregarVen.Name = "btnAgregarVen";
+            this.btnAgregarVen.Size = new System.Drawing.Size(152, 27);
+            this.btnAgregarVen.TabIndex = 10;
+            this.btnAgregarVen.Text = "Agregar a vendedor:";
+            this.btnAgregarVen.UseVisualStyleBackColor = true;
+            this.btnAgregarVen.Click += new System.EventHandler(this.btnAgregarVen_Click);
             // 
-            // dateTimePicker2
+            // dtpFechaC
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(577, 192);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(197, 20);
-            this.dateTimePicker2.TabIndex = 9;
+            this.dtpFechaC.Location = new System.Drawing.Point(577, 192);
+            this.dtpFechaC.Name = "dtpFechaC";
+            this.dtpFechaC.Size = new System.Drawing.Size(197, 20);
+            this.dtpFechaC.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // dtpFechaNac
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(580, 103);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(195, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.dtpFechaNac.Location = new System.Drawing.Point(580, 103);
+            this.dtpFechaNac.Name = "dtpFechaNac";
+            this.dtpFechaNac.Size = new System.Drawing.Size(195, 20);
+            this.dtpFechaNac.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(505, 166);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(100, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.label8.Text = "Fecha Contratacion";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(505, 81);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(108, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.label7.Text = "Fecha de Nacimiento";
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.pictureBox2);
+            this.groupBox3.Controls.Add(this.btnBuscar2);
+            this.groupBox3.Controls.Add(this.picFotoVen);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Location = new System.Drawing.Point(75, 119);
             this.groupBox3.Name = "groupBox3";
@@ -309,47 +328,61 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // button3
+            // btnBuscar2
             // 
-            this.button3.Location = new System.Drawing.Point(46, 126);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 24);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBuscar2.Location = new System.Drawing.Point(46, 126);
+            this.btnBuscar2.Name = "btnBuscar2";
+            this.btnBuscar2.Size = new System.Drawing.Size(69, 24);
+            this.btnBuscar2.TabIndex = 4;
+            this.btnBuscar2.Text = "Buscar";
+            this.btnBuscar2.UseVisualStyleBackColor = true;
+            this.btnBuscar2.Click += new System.EventHandler(this.btnBuscar2_Click);
             // 
-            // pictureBox2
+            // picFotoVen
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(185, 35);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(141, 169);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.picFotoVen.Location = new System.Drawing.Point(185, 35);
+            this.picFotoVen.Name = "picFotoVen";
+            this.picFotoVen.Size = new System.Drawing.Size(141, 169);
+            this.picFotoVen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoVen.TabIndex = 1;
+            this.picFotoVen.TabStop = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 61);
+            this.label6.Location = new System.Drawing.Point(20, 64);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(143, 13);
             this.label6.TabIndex = 3;
-            this.label6.Text = "label6";
+            this.label6.Text = "Seleccione archivo de foto...";
             // 
-            // textBox2
+            // txtNomv
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtNomv.Location = new System.Drawing.Point(180, 69);
+            this.txtNomv.Name = "txtNomv";
+            this.txtNomv.Size = new System.Drawing.Size(245, 20);
+            this.txtNomv.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(72, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(90, 13);
             this.label5.TabIndex = 0;
-            this.label5.Text = "label5";
+            this.label5.Text = "Nombre completo";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.rbVendedores);
+            this.tabPage3.Controls.Add(this.rbDoctores);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(876, 514);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Ver empleados registrados";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -364,7 +397,7 @@
             this.Foto,
             this.Column1,
             this.campo});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 237);
+            this.dataGridView1.Location = new System.Drawing.Point(85, 225);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 120;
             this.dataGridView1.Size = new System.Drawing.Size(687, 219);
@@ -403,28 +436,54 @@
             this.campo.Name = "campo";
             this.campo.ReadOnly = true;
             // 
+            // rbVendedores
+            // 
+            this.rbVendedores.AutoSize = true;
+            this.rbVendedores.Location = new System.Drawing.Point(373, 151);
+            this.rbVendedores.Name = "rbVendedores";
+            this.rbVendedores.Size = new System.Drawing.Size(153, 17);
+            this.rbVendedores.TabIndex = 1;
+            this.rbVendedores.TabStop = true;
+            this.rbVendedores.Text = "ver vendedores registrados";
+            this.rbVendedores.UseVisualStyleBackColor = true;
+            this.rbVendedores.CheckedChanged += new System.EventHandler(this.rbVendedores_CheckedChanged);
+            // 
+            // rbDoctores
+            // 
+            this.rbDoctores.AutoSize = true;
+            this.rbDoctores.Location = new System.Drawing.Point(373, 68);
+            this.rbDoctores.Name = "rbDoctores";
+            this.rbDoctores.Size = new System.Drawing.Size(139, 17);
+            this.rbDoctores.TabIndex = 0;
+            this.rbDoctores.TabStop = true;
+            this.rbDoctores.Text = "Ver doctores registrados";
+            this.rbDoctores.UseVisualStyleBackColor = true;
+            this.rbDoctores.CheckedChanged += new System.EventHandler(this.rbDoctores_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 662);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1117, 662);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoDoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSueldo)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoVen)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -436,38 +495,40 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.PictureBox picFotoDoc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.MaskedTextBox mtbCodDoctor;
+        private System.Windows.Forms.NumericUpDown nudSueldo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbAnno;
+        private System.Windows.Forms.ComboBox cmbMes;
+        private System.Windows.Forms.ComboBox cmbDia;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picFotoVen;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNomv;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dtpFechaC;
+        private System.Windows.Forms.DateTimePicker dtpFechaNac;
+        private System.Windows.Forms.Button btnAgregarDoc;
+        private System.Windows.Forms.Button btnAgregarVen;
+        private System.Windows.Forms.Button btnBuscar2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn num;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
         private System.Windows.Forms.DataGridViewImageColumn Foto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn campo;
-
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.RadioButton rbVendedores;
+        private System.Windows.Forms.RadioButton rbDoctores;
     }
 }
 

@@ -22,3 +22,13 @@ C:\Users\ACER\Documents\Ciclo II\Desarrollo de Aplicaciones con Software Propiet
 C:\Users\ACER\Documents\Ciclo II\Desarrollo de Aplicaciones con Software Propietario\Material de Apoyo\DSP_Practicas\DSP_practica06\Guia6Ejercicio1\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.csproj.CoreCompileInputs.cache
 C:\Users\ACER\Documents\Ciclo II\Desarrollo de Aplicaciones con Software Propietario\Material de Apoyo\DSP_Practicas\DSP_practica06\Guia6Ejercicio1\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.exe
 C:\Users\ACER\Documents\Ciclo II\Desarrollo de Aplicaciones con Software Propietario\Material de Apoyo\DSP_Practicas\DSP_practica06\Guia6Ejercicio1\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.pdb
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\bin\Debug\Guia6Ejercicio1.exe.config
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\bin\Debug\Guia6Ejercicio1.exe
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\bin\Debug\Guia6Ejercicio1.pdb
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.csproj.AssemblyReference.cache
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.Form1.resources
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.Properties.Resources.resources
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.csproj.GenerateResource.cache
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.exe
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Guia 06 - Recursos\Guia6Ejercicio1\Guia6Ejercicio1\obj\Debug\Guia6Ejercicio1.pdb
