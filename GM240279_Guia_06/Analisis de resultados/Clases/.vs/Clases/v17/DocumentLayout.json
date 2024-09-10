@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9DC90A83-C203-4485-A1FE-5FC76D915AC2}|Zoologico\\Zoologico.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\zoologico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DC90A83-C203-4485-A1FE-5FC76D915AC2}|Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DC90A83-C203-4485-A1FE-5FC76D915AC2}|Zoologico\\Zoologico.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\zoologico\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DC90A83-C203-4485-A1FE-5FC76D915AC2}|Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9DC90A83-C203-4485-A1FE-5FC76D915AC2}|Zoologico\\Zoologico.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\zoologico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9DC90A83-C203-4485-A1FE-5FC76D915AC2}|Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\clases\\animales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\clases\\animales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|solutionrelative:clases\\animales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\clases\\mamifero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|solutionrelative:clases\\mamifero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\clases\\reptil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|solutionrelative:clases\\reptil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_06\\analisis de resultados\\clases\\clases\\peces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{435408B8-C59B-429C-9B95-20A46865CD18}|Clases\\Clases.csproj|solutionrelative:clases\\peces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Zoologico\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Zoologico\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Zoologico\\Form1.Designer.cs",
+              "RelativeToolTip": "Zoologico\\Form1.Designer.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAnwIIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T01:11:38.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Zoologico\\Form1.cs",
+              "RelativeDocumentMoniker": "Zoologico\\Form1.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Zoologico\\Form1.cs",
+              "RelativeToolTip": "Zoologico\\Form1.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwDMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T22:52:26.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Zoologico\\Form1.cs",
               "RelativeDocumentMoniker": "Zoologico\\Form1.cs",
@@ -43,10 +65,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T03:28:28.901Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
@@ -74,55 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Peces.cs",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Peces.cs",
-              "RelativeDocumentMoniker": "Clases\\Peces.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Peces.cs",
-              "RelativeToolTip": "Clases\\Peces.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T00:51:41.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Reptil.cs",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Reptil.cs",
-              "RelativeDocumentMoniker": "Clases\\Reptil.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Reptil.cs",
-              "RelativeToolTip": "Clases\\Reptil.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T00:51:13.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mamifero.cs",
-              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Mamifero.cs",
-              "RelativeDocumentMoniker": "Clases\\Mamifero.cs",
-              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Mamifero.cs",
-              "RelativeToolTip": "Clases\\Mamifero.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T00:50:36.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Animales.cs",
               "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Animales.cs",
               "RelativeDocumentMoniker": "Clases\\Animales.cs",
               "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_06\\Analisis de resultados\\Clases\\Clases\\Animales.cs",
               "RelativeToolTip": "Clases\\Animales.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAFAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T00:40:35.075Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

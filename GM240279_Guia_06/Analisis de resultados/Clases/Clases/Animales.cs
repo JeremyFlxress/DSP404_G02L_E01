@@ -39,5 +39,23 @@ namespace Clases
                 }
             }
         }
+
+        public class Reptil : Animales
+        {
+            public string Orden { get; set; }
+            public string TipoLocomocion { get; set; }
+        }
+
+        public class Mamifero : Animales
+        {
+            public string TipoDesarrollo { get; set; }
+            public int CantidadMamas { get; set; }
+        }
+
+        public class Peces : Animales
+        {
+            public string SistemaEsqueletico { get; set; }
+            public string DesarrolloEmbrionario { get; set; }
+        }
     }
 }
