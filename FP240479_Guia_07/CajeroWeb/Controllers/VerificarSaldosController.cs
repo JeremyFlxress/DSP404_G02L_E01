@@ -12,7 +12,7 @@ namespace CajeroWeb.Controllers
         // GET: VerificarSaldos
         public ActionResult VerSaldo(string sNumeroTarjeta, decimal sSaldo)
         {
-            // Pasamos el número de tarjeta y el saldo a la vista usando ViewBag
+            
             ViewBag.sNumeroTarjeta = sNumeroTarjeta;
             ViewBag.sSaldo = sSaldo;
             return View();

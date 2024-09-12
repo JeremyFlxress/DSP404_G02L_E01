@@ -20,7 +20,7 @@ namespace CajeroWeb.Controllers
         [HttpPost]
         public ActionResult Internacionales(string sNumeroTarjeta, double sSaldo, double cantidad)
         {
-            // Crea una instancia de la clase transaccion con los valores de la tarjeta y saldo.
+    
             transaccion nuevaTransaccion = new transaccion(sNumeroTarjeta, sSaldo);
 
             if (cantidad > 0)
@@ -30,7 +30,7 @@ namespace CajeroWeb.Controllers
 
             sSaldo = nuevaTransaccion.getSaldo();  // Se actualiza el saldo.
 
-            // Retorna a la vista Menu con los valores actualizados.
+         
             return Redirect("~/Menu/Menu?sNumeroTarjeta=" + sNumeroTarjeta + "&sSaldo=" + sSaldo);
         }
     }

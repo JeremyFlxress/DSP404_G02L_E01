@@ -3,56 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\valenyins\\documents\\github\\dsp404_g02l_e01\\fp240479_guia_07\\cajeroweb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\controllers\\nacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\nacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\controllers\\verificarsaldoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\verificarsaldoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\controllers\\internacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\internacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\valenyins\\documents\\github\\dsp404_g02l_e01\\fp240479_guia_07\\cajeroweb\\views\\verificarsaldos\\versaldo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\verificarsaldos\\versaldo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\views\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\valenyins\\documents\\github\\dsp404_g02l_e01\\fp240479_guia_07\\cajeroweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\views\\internacionales\\internacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\internacionales\\internacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\views\\nacionales\\nacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\nacionales\\nacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\cajeroweb\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0192AF5E-1FED-4049-8B33-B336CD1121D4}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,166 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Content\\css\\style.css",
-              "RelativeDocumentMoniker": "CajeroWeb\\Content\\css\\style.css",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Content\\css\\style.css",
-              "RelativeToolTip": "CajeroWeb\\Content\\css\\style.css",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAAG4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-12T23:08:11.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Versaldo.cshtml",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\VerificarSaldos\\Versaldo.cshtml",
-              "RelativeDocumentMoniker": "CajeroWeb\\Views\\VerificarSaldos\\Versaldo.cshtml",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\VerificarSaldos\\Versaldo.cshtml",
-              "RelativeToolTip": "CajeroWeb\\Views\\VerificarSaldos\\Versaldo.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwC0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T23:04:20.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InternacionalesController.cs",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\InternacionalesController.cs",
-              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\InternacionalesController.cs",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\InternacionalesController.cs",
-              "RelativeToolTip": "CajeroWeb\\Controllers\\InternacionalesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T05:03:16.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Menu.cshtml",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Menu\\Menu.cshtml",
-              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Menu\\Menu.cshtml",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Menu\\Menu.cshtml",
-              "RelativeToolTip": "CajeroWeb\\Views\\Menu\\Menu.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T04:44:20.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "CajeroWeb\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CajeroWeb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-12T04:38:32.244Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VerificarSaldosController.cs",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\VerificarSaldosController.cs",
-              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\VerificarSaldosController.cs",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\VerificarSaldosController.cs",
-              "RelativeToolTip": "CajeroWeb\\Controllers\\VerificarSaldosController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T22:25:22.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NacionalesController.cs",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\NacionalesController.cs",
-              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\NacionalesController.cs",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\NacionalesController.cs",
-              "RelativeToolTip": "CajeroWeb\\Controllers\\NacionalesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T04:45:35.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CajeroWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T04:39:55.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "transaccion.cs",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Models\\transaccion.cs",
-              "RelativeDocumentMoniker": "CajeroWeb\\Models\\transaccion.cs",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Models\\transaccion.cs",
-              "RelativeToolTip": "CajeroWeb\\Models\\transaccion.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T04:28:54.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Internacionales.cshtml",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Internacionales\\Internacionales.cshtml",
-              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Internacionales\\Internacionales.cshtml",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Internacionales\\Internacionales.cshtml",
-              "RelativeToolTip": "CajeroWeb\\Views\\Internacionales\\Internacionales.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T05:04:41.919Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Nacionales.cshtml",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
-              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
-              "RelativeToolTip": "CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T04:48:21.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "CajeroWeb\\Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T04:43:29.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Valenyins\\Documents\\GitHub\\DSP404_G02L_E01\\FP240479_Guia_07\\CajeroWeb\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CajeroWeb\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T04:34:20.798Z"
             }
           ]
         }

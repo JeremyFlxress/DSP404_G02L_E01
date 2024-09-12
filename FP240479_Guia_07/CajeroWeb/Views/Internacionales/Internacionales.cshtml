@@ -33,26 +33,28 @@
 <nav class="right">
     <ul>
         <li>
-            @Html.ActionLink("Transferencias nacionales", "someaction", "somecontroller",
-           new { id = "123" }, null)
-        </li>
-        <li>
-            @Html.ActionLink("Transferencias internacionales", "someaction",
-           "somecontroller", new { id = "123" }, null)
-        </li>
-        <li>
-            @Html.ActionLink("Pagos de Servicios", "someaction", "somecontroller", new
+            @Html.ActionLink("Transferencias nacionales", "Nacionales", "Nacionales", new
             {
-                id
-           = "123"
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,
+                sSaldo = ViewBag.sSaldo
             }, null)
         </li>
         <li>
-            @Html.ActionLink("Verificar saldos", "someaction", "somecontroller", new
+            @Html.ActionLink("Transferencias internacionales", "Internacionales", "Internacionales", new
             {
-                id =
-           "123"
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,  
+                sSaldo = ViewBag.sSaldo                 
             }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Pagos de Servicios", "Servicio", "Servicios", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+        </li>
+
+        <li>
+            @Html.ActionLink("Verificar saldos", "VerSaldo", "VerificarSaldos", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+
+
+
         </li>
     </ul>
 </nav>

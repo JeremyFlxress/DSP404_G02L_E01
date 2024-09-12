@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Pago de Servicios";
+}
+
+<h2>Pago de Servicios</h2>
+
+<p>Tarjeta: @ViewBag.sNumeroTarjeta</p>
+<p>Saldo Actual: $@ViewBag.sSaldo</p>
+
+@if (ViewBag.Servicio != null)
+{
+    <h3>Pago realizado con éxito</h3>
+    <p>Servicio: @ViewBag.Servicio</p>
+    <p>Monto pagado: $@ViewBag.Monto</p>
+    <p>Nuevo Saldo: $@ViewBag.Saldo</p>
+}
+else
+{
+    <div>
+        <h4>Seleccionar Servicio</h4>
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                @Html.Label("Servicio")
+                @Html.DropDownList("servicio", new SelectListItem[] {
+                    new SelectListItem { Text = "Energía Eléctrica", Value = "Energía Eléctrica" },
+                    new SelectListItem { Text = "Colegiatura", Value = "Colegiatura" },
+                    new SelectListItem { Text = "Servicio de Alcantarillado", Value = "Servicio de Alcantarillado" },
+                    new SelectListItem { Text = "Servicio de Telefonía", Value = "Servicio de Telefonía" }
+                }, "Seleccione un servicio", new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Monto a Pagar")
+                @Html.TextBox("monto", null, new { @class = "form-control", type = "number", step = "0.01" })
+            </div>
+
+            <button type="submit" class="btn btn-primary">Pagar</button>
+
+            if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.Error
+                </div>
+            }
+        }
+    </div>
+}
+<nav class="right">
+    <ul>
+        <li>
+            @Html.ActionLink("Transferencias nacionales", "Nacionales", "Nacionales", new
+            {
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,
+                sSaldo = ViewBag.sSaldo
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Transferencias internacionales", "Internacionales", "Internacionales", new
+            {
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,  
+                sSaldo = ViewBag.sSaldo                 
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Pagos de Servicios", "Servicio", "Servicios", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+        </li>
+
+        <li>
+            @Html.ActionLink("Verificar saldos", "VerSaldo", "VerificarSaldos", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+
+
+
+        </li>
+    </ul>
+</nav>
+

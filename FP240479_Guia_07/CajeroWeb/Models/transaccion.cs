@@ -48,5 +48,11 @@ namespace CajeroWeb.Models
         {
             fSaldo = fSaldo - monto;
         }
+        // Método adicional para pagar servicios
+        public void pagarServicio(double monto)
+        {
+            fSaldo -= monto;
+        }
+
     }
 }

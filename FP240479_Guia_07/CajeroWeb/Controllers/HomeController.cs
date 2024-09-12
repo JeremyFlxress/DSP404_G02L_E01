@@ -28,8 +28,7 @@ namespace CajeroWeb.Controllers
             }
             else
             {
-                // Si el numero de pin o de tarjeta no corresponde, entonces se
-                // procede a mostrar un mensaje de error
+               
                 ViewBag.Error = "Error en número de tarjeta o número de PIN. Verifique";
                 return View();
             }
