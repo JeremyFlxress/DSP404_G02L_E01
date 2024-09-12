@@ -104,13 +104,13 @@ background: #85ACF7 url('../images/hidr.jpg');
 
 .credenciales{
     margin-top: 15px;
-    background : #000;
-    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.4); /* Fondo gris oscuro con transparencia */
     padding: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
 
 .etiqueta{
     width: 15%;
@@ -119,11 +119,13 @@ background: #85ACF7 url('../images/hidr.jpg');
     float: left;
     color: #FFF;
 }
-.control{
+.control {
     width: 83%;
     display: block;
     float: right;
+    color: #FFF; 
 }
+
 .clear{
     clear: both;
 }

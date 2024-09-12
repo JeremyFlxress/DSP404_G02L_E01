@@ -3,8 +3,8 @@
 }
 
 <article class="middle">
-    <h2>Transferencia Internacional</h2>
-    <p>Realice sus transacciones internacionales de manera segura y confiable.</p>
+    <h2>Transferencias Internacionales</h2>
+    <p>Realice sus transferencias internacionales de una manera fácil y rápida con nuestro sistema.</p>
 
     <div class="credenciales">
         <div class="bloque">
@@ -22,15 +22,37 @@
             @Html.Editor("cantidad", new { @class = "control" })
         </div>
         <div class="bloque">
-            <button type="submit" class="submit">Transferir</button>
+            <button type="submit" class="submit">Realizar Transferencia</button>
         </div>
         <div class="clear"></div>
     </div>
-
-    @using (Html.BeginForm())
-    {
-        <div class="bloque">
-            <label class="error">@ViewBag.Error</label>
-        </div>
-    }
 </article>
+
+
+
+<nav class="right">
+    <ul>
+        <li>
+            @Html.ActionLink("Transferencias nacionales", "someaction", "somecontroller",
+           new { id = "123" }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Transferencias internacionales", "someaction",
+           "somecontroller", new { id = "123" }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Pagos de Servicios", "someaction", "somecontroller", new
+            {
+                id
+           = "123"
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Verificar saldos", "someaction", "somecontroller", new
+            {
+                id =
+           "123"
+            }, null)
+        </li>
+    </ul>
+</nav>

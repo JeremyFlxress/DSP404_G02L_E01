@@ -104,6 +104,7 @@
     <Compile Include="Controllers\InternacionalesController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\NacionalesController.cs" />
+    <Compile Include="Controllers\VerificarSaldosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -120,6 +121,8 @@
     <Content Include="Views\Menu\Menu.cshtml" />
     <Content Include="Views\Nacionales\Nacionales.cshtml" />
     <Content Include="Views\Internacionales\Internacionales.cshtml" />
+    <Content Include="Views\VerificarSaldos\Verificar.cshtml" />
+    <Content Include="Views\VerificarSaldos\Versaldo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

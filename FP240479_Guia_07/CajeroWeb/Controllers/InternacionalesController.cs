@@ -20,22 +20,17 @@ namespace CajeroWeb.Controllers
         [HttpPost]
         public ActionResult Internacionales(string sNumeroTarjeta, double sSaldo, double cantidad)
         {
-            // Crea una nueva instancia de la transacción
+            // Crea una instancia de la clase transaccion con los valores de la tarjeta y saldo.
             transaccion nuevaTransaccion = new transaccion(sNumeroTarjeta, sSaldo);
 
-            // Verifica si la cantidad es mayor que cero
             if (cantidad > 0)
             {
-                // Realiza la transferencia internacional
-                nuevaTransaccion.transferenciaInternacional(cantidad);
+                nuevaTransaccion.transferenciaInternacional(cantidad);  // Se aplica la transferencia internacional.
             }
 
-            // Actualiza el saldo
-            sSaldo = nuevaTransaccion.getSaldo();
-            ViewBag.sNumeroTarjeta = nuevaTransaccion.getNumTarjeta();
-            ViewBag.sSaldo = nuevaTransaccion.getSaldo();
+            sSaldo = nuevaTransaccion.getSaldo();  // Se actualiza el saldo.
 
-            // Redirige al menú principal con los nuevos valores
+            // Retorna a la vista Menu con los valores actualizados.
             return Redirect("~/Menu/Menu?sNumeroTarjeta=" + sNumeroTarjeta + "&sSaldo=" + sSaldo);
         }
     }

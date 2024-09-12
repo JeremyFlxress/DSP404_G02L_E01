@@ -13,24 +13,26 @@
         <li>
             @Html.ActionLink("Transferencias nacionales", "Nacionales", "Nacionales", new
             {
-           sNumeroTarjeta = ViewBag.sNumeroTarjeta,
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,
                 sSaldo = ViewBag.sSaldo
             }, null)
         </li>
         <li>
             @Html.ActionLink("Transferencias internacionales", "Internacionales", "Internacionales", new
             {
-                opcion = 2
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,  // Se agrega para pasar el número de tarjeta
+                sSaldo = ViewBag.sSaldo                  // Se agrega para pasar el saldo
             }, null)
         </li>
-
         <li>
             @Html.ActionLink("Pagos de Servicios", "Menuopcion", "Home", new { opcion = 3 },
            null)
         </li>
         <li>
-            @Html.ActionLink("Verificar saldos", "Menuopcion", "Home", new { opcion = 4 },
-           null)
+        @Html.ActionLink("Verificar saldos", "VerSaldo", "VerificarSaldos", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+
+
+     
         </li>
     </ul>
 </nav>
