@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\views\\nacionales\\nacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\nacionales\\nacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\controllers\\nacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\nacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\views\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\views\\home\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\views\\home\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|c:\\users\\william bonilla\\source\\repos\\cajeroweb\\cajeroweb\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F73CB71-78CE-40A8-B129-DF531CFE400F}|CajeroWeb\\CajeroWeb.csproj|solutionrelative:cajeroweb\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Nacionales.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "RelativeToolTip": "CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T23:17:45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NacionalesController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Controllers\\NacionalesController.cs",
+              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\NacionalesController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Controllers\\NacionalesController.cs",
+              "RelativeToolTip": "CajeroWeb\\Controllers\\NacionalesController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T23:16:50.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Menu\\Menu.cshtml",
+              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Menu\\Menu.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Menu\\Menu.cshtml",
+              "RelativeToolTip": "CajeroWeb\\Views\\Menu\\Menu.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T23:16:10.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "CajeroWeb\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T23:15:21.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CajeroWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwCMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T23:07:40.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CajeroWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T22:59:34.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Home\\Index1.cshtml",
+              "RelativeDocumentMoniker": "CajeroWeb\\Views\\Home\\Index1.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Views\\Home\\Index1.cshtml",
+              "RelativeToolTip": "CajeroWeb\\Views\\Home\\Index1.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T22:59:14.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CajeroWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CajeroWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:55:33.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "transaccion.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Models\\transaccion.cs",
+              "RelativeDocumentMoniker": "CajeroWeb\\Models\\transaccion.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\source\\repos\\CajeroWeb\\CajeroWeb\\Models\\transaccion.cs",
+              "RelativeToolTip": "CajeroWeb\\Models\\transaccion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:51.816Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
