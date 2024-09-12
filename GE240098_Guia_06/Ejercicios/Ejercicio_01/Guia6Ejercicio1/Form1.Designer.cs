@@ -117,6 +117,7 @@
             this.btnAgregarDoc.TabIndex = 8;
             this.btnAgregarDoc.Text = "Agregar a Doctor";
             this.btnAgregarDoc.UseVisualStyleBackColor = true;
+            this.btnAgregarDoc.Click += new System.EventHandler(this.btnAgregarDoc_Click);
             // 
             // mtbCodDoctor
             // 
@@ -147,6 +148,7 @@
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // picFotoDoc
             // 
@@ -279,6 +281,7 @@
             this.btnAgregarVen.TabIndex = 10;
             this.btnAgregarVen.Text = "Agregar a Vendedor";
             this.btnAgregarVen.UseVisualStyleBackColor = true;
+            this.btnAgregarVen.Click += new System.EventHandler(this.btnAgregarVen_Click);
             // 
             // dtpFechaC
             // 
@@ -333,6 +336,7 @@
             this.btnBuscar2.TabIndex = 4;
             this.btnBuscar2.Text = "Buscar";
             this.btnBuscar2.UseVisualStyleBackColor = true;
+            this.btnBuscar2.Click += new System.EventHandler(this.btnBuscar2_Click);
             // 
             // picFotoVen
             // 
@@ -441,6 +445,7 @@
             this.rbVendedores.TabStop = true;
             this.rbVendedores.Text = "Ver vendedores registrados";
             this.rbVendedores.UseVisualStyleBackColor = true;
+            this.rbVendedores.CheckedChanged += new System.EventHandler(this.rbVendedores_CheckedChanged);
             // 
             // rbDoctores
             // 
@@ -452,6 +457,7 @@
             this.rbDoctores.TabStop = true;
             this.rbDoctores.Text = "Ver doctores registrados";
             this.rbDoctores.UseVisualStyleBackColor = true;
+            this.rbDoctores.CheckedChanged += new System.EventHandler(this.rbDoctores_CheckedChanged);
             // 
             // Form1
             // 
