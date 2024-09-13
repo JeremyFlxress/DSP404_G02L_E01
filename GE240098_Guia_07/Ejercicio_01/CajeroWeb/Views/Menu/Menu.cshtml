@@ -23,10 +23,11 @@
             }, null)
         </li>
         <li>
-            @Html.ActionLink("Transferencias internacionales", "Menuopcion", "Home", new
-            {
-            opcion = 2
-            }, null)
+            @Html.ActionLink("Transferencias internacionales", "Internacionales", "Internacionales", new
+       {
+           sNumeroTarjeta = ViewBag.sNumeroTarjeta,
+           sSaldo = ViewBag.sSaldo
+       }, null)
         </li>
         <li>
             @Html.ActionLink("Pagos de Servicios", "Menuopcion", "Home", new { opcion = 3 }, null)
