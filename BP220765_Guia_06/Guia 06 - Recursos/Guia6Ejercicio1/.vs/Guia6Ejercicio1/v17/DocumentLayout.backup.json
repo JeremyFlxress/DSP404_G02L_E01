@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|c:\\users\\william bonilla\\desktop\\guia 06 - recursos\\guia6ejercicio1\\guia6ejercicio1\\bp220765.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|solutionrelative:guia6ejercicio1\\bp220765.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\guia6ejercicio1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|solutionrelative:guia6ejercicio1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|c:\\users\\william bonilla\\desktop\\guia 06 - recursos\\guia6ejercicio1\\guia6ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|solutionrelative:guia6ejercicio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Guia6Ejercicio1||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD8E3777-FD2C-4948-8C32-56BCA0F18A4B}|Guia6Ejercicio1\\Guia6Ejercicio1.csproj|c:\\users\\william bonilla\\desktop\\guia 06 - recursos\\guia6ejercicio1\\guia6ejercicio1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\Form1.cs",
+              "RelativeDocumentMoniker": "Guia6Ejercicio1\\Form1.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Guia6Ejercicio1\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:14:02.924Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BP220765.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\BP220765.cs",
+              "RelativeDocumentMoniker": "Guia6Ejercicio1\\BP220765.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\BP220765.cs",
+              "RelativeToolTip": "Guia6Ejercicio1\\BP220765.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T04:16:53.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\Program.cs",
+              "RelativeDocumentMoniker": "Guia6Ejercicio1\\Program.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\Program.cs",
+              "RelativeToolTip": "Guia6Ejercicio1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:14:02.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Guia6Ejercicio1",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\Guia6Ejercicio1.csproj",
+              "RelativeDocumentMoniker": "Guia6Ejercicio1\\Guia6Ejercicio1.csproj",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\Guia 06 - Recursos\\Guia6Ejercicio1\\Guia6Ejercicio1\\Guia6Ejercicio1.csproj",
+              "RelativeToolTip": "Guia6Ejercicio1\\Guia6Ejercicio1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-05T03:41:45.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\bin\Debug\Complementario_Guia06.exe.config
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\bin\Debug\Complementario_Guia06.exe
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\bin\Debug\Complementario_Guia06.pdb
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.csproj.AssemblyReference.cache
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.Form1.resources
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.Properties.Resources.resources
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.csproj.GenerateResource.cache
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.csproj.CoreCompileInputs.cache
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.exe
+C:\Users\Valenyins\Documents\GitHub\DSP404_G02L_E01\FP240479_Guia_06\Complementario_Guia06\Complementario_Guia06\obj\Debug\Complementario_Guia06.pdb
