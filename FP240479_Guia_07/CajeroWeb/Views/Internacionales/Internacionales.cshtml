@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Internacionales";
+}
+
+<article class="middle">
+    <h2>Transferencias Internacionales</h2>
+    <p>Realice sus transferencias internacionales de una manera fácil y rápida con nuestro sistema.</p>
+
+    <div class="credenciales">
+        <div class="bloque">
+            <label class="etiqueta">Tarjeta #:</label>
+            <label class="control">@ViewBag.sNumeroTarjeta</label>
+        </div>
+        <div class="clear"></div>
+        <div class="bloque">
+            <label class="etiqueta">Saldo:</label>
+            <label class="control">@ViewBag.sSaldo</label>
+        </div>
+        <div class="clear"></div>
+        <div class="bloque">
+            @Html.Label("Cantidad a transferir:", new { @class = "etiqueta" })
+            @Html.Editor("cantidad", new { @class = "control" })
+        </div>
+        <div class="bloque">
+            <button type="submit" class="submit">Realizar Transferencia</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+</article>
+
+
+
+<nav class="right">
+    <ul>
+        <li>
+            @Html.ActionLink("Transferencias nacionales", "Nacionales", "Nacionales", new
+            {
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,
+                sSaldo = ViewBag.sSaldo
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Transferencias internacionales", "Internacionales", "Internacionales", new
+            {
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,  
+                sSaldo = ViewBag.sSaldo                 
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Pagos de Servicios", "Servicio", "Servicios", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+        </li>
+
+        <li>
+            @Html.ActionLink("Verificar saldos", "VerSaldo", "VerificarSaldos", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+
+
+
+        </li>
+    </ul>
+</nav>

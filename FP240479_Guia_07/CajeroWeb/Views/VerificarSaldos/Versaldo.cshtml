@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Verificar Saldo";
+}
+
+<article class="middle">
+    <h2>Verificación de Saldo</h2>
+    <p>A continuación, se muestra el saldo actual de su cuenta:</p>
+
+    <div class="credenciales">
+        <div class="bloque">
+            <label class="etiqueta">Tarjeta #:</label>
+            <label class="control">@ViewBag.sNumeroTarjeta</label>
+        </div>
+        <div class="clear"></div>
+        <div class="bloque">
+            <label class="etiqueta">Saldo Disponible:</label>
+            <label class="control">@ViewBag.sSaldo</label>
+        </div>
+    </div>
+</article>
+
+
+<nav class="right">
+    <ul>
+        <li>
+            @Html.ActionLink("Transferencias nacionales", "Nacionales", "Nacionales", new
+            {
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,
+                sSaldo = ViewBag.sSaldo
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Transferencias internacionales", "Internacionales", "Internacionales", new
+            {
+                sNumeroTarjeta = ViewBag.sNumeroTarjeta,  
+                sSaldo = ViewBag.sSaldo                  
+            }, null)
+        </li>
+        <li>
+            @Html.ActionLink("Pagos de Servicios", "Servicio", "Servicios", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+        </li>
+
+        <li>
+            @Html.ActionLink("Verificar saldos", "VerSaldo", "VerificarSaldos", new { sNumeroTarjeta = ViewBag.sNumeroTarjeta, sSaldo = ViewBag.sSaldo }, null)
+
+
+
+        </li>
+    </ul>
+</nav>
+
