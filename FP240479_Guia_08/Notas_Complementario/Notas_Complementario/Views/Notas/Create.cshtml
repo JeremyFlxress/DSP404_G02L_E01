@@ -1,0 +1,37 @@
+﻿@model Notas_Complementario.Models.Nota
+
+<h2>Crear Nueva Nota</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label for="Codigo_alumno">Código del Alumno</label>
+        @Html.TextBoxFor(model => model.Codigo_alumno, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label for="Codigo_curso">Código del Curso</label>
+        @Html.TextBoxFor(model => model.Codigo_curso, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label for="Nota40T">Nota 40% Teórica</label>
+        @Html.TextBoxFor(model => model.Nota40T, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label for="Nota60L">Nota 60% Laboratorio</label>
+        @Html.TextBoxFor(model => model.Nota60L, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label for="NotaFinal">Nota Final</label>
+        @Html.TextBoxFor(model => model.NotaFinal, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+}
+
+<p>
+    @Html.ActionLink("Volver a la lista", "Index")
+</p>

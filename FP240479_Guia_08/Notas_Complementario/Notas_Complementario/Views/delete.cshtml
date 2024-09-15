@@ -1,0 +1,21 @@
+﻿@model Notas_Complementario.Models.Nota
+
+<h2>Eliminar Nota</h2>
+
+<div>
+    <h3>¿Seguro que deseas eliminar esta nota?</h3>
+    <p>
+        Alumno: @Model.Codigo_alumno <br />
+        Curso: @Model.Codigo_curso <br />
+        Nota Final: @Model.NotaFinal
+    </p>
+
+    @using (Html.BeginForm())
+    {
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+    }
+</div>
+
+<p>
+    @Html.ActionLink("Volver a la lista", "Index")
+</p>

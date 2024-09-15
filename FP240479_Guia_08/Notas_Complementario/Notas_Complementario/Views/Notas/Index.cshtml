@@ -1,0 +1,36 @@
+﻿@model List<Notas_Complementario.Models.Nota>
+
+<h2>Lista de Notas</h2> 
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código Alumno</th>
+            <th>Código Curso</th>
+            <th>Nota 40% Teórica</th>
+            <th>Nota 60% Laboratorio</th>
+            <th>Nota Final</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var nota in Model)
+        {
+            <tr>
+                <td>@nota.Codigo_alumno</td>
+                <td>@nota.Codigo_curso</td>
+                <td>@nota.Nota40T</td>
+                <td>@nota.Nota60L</td>
+                <td>@nota.NotaFinal</td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { Codigo_alumno = nota.Codigo_alumno, Codigo_curso = nota.Codigo_curso }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { Codigo_alumno = nota.Codigo_alumno, Codigo_curso = nota.Codigo_curso })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    @Html.ActionLink("Crear nueva nota", "Create", new { })
+</p>
