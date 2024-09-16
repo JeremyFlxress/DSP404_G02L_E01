@@ -1,0 +1,7 @@
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.AssemblyInfoInputs.cache
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.AssemblyInfo.cs
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.csproj.CoreCompileInputs.cache
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.RazorAssemblyInfo.cache
+C:\Users\William Bonilla\source\repos\Ejercicio\Ejercicio\obj\Debug\net8.0\Ejercicio.RazorAssemblyInfo.cs
