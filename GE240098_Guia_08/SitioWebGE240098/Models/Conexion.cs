@@ -30,6 +30,7 @@ namespace SitioWebGE240098.Models
             {
                 //Crea un objeto SQLConnection(this.cadenaConexion);
                 //Abre la conexion a la base de datos SQLServer
+                this.conexionSQL = new SqlConnection(this.cadenaConexion);
                 this.conexionSQL.Open();
                 return true;
             }
@@ -187,15 +188,8 @@ namespace SitioWebGE240098.Models
             //Crea una DataTable para almacenar todos los registros de consulta SQL
             DataTable t = new DataTable();
             //Realiza consulta a varias tablas de bases de datos Bolsa de Trabajo
-            SQL = "SELECT categorias.sNombreCategoria, ofertas.nIdOferta, ofertas.sTituloOferta, nTipoContrato = CASE  " +
-                "ofertas.nTipoContrato WHEN 1 THEN 'Permanente' WHEN 2 THEN 'Por proyecto' END, nTipoJornada = CASE" +
-                "ofertas.nTipoJornada WHEN 1 THEN 'Tiempo Completo' WHEN 2 THEN 'Por horas' END, ofertas.fSalario, " +
-                "ofertas.dFechaPublicacion, empresas.sNombreEmpresa, municipios.sNombreMunicipio FROM municipios INNER JOIN" +
-                "ofertas ON municipios.nIdMunicipio = ofertas.nIdLocalidad INNER JOIN empresas ON ofertas.nIdEmpresa =" +
-                "empresas.nIdEmpresa INNER JOIN categorias ON ofertas.nIdCategoria = categorias.nIdCategoria WHERE" +
-                "categorias.nIdCategoria = @nIdCategoria AND municipios.nIdMunicipio = @nIdMunicipio AND empresas.nIdEmpresa =" +
-                "@nIdEmpresa";
-            SqlCommand comando = new SqlCommand();
+            SQL = "SELECT categorias.sNombreCategoria, ofertas.nIdOferta, ofertas.sTituloOferta, nTipoContrato = CASE ofertas.nTipoContrato WHEN 1 THEN 'Permanente' WHEN 2 THEN 'Por proyecto' END, nTipoJornada = CASE ofertas.nTipoJornada WHEN 1 THEN 'Tiempo Completo' WHEN 2 THEN 'Por horas' END, ofertas.fSalario, ofertas.dFechaPublicacion, empresas.sNombreEmpresa, municipios.sNombreMunicipio FROM municipios INNER JOIN ofertas ON municipios.nIdMunicipio = ofertas.nIdLocalidad INNER JOIN empresas ON ofertas.nIdEmpresa = empresas.nIdEmpresa INNER JOIN categorias ON ofertas.nIdCategoria = categorias.nIdCategoria WHERE categorias.nIdCategoria = @nIdCategoria AND municipios.nIdMunicipio = @nIdMunicipio AND empresas.nIdEmpresa = @nIdEmpresa";
+            SqlCommand comando = new SqlCommand(SQL, conexionSQL);
             //Asigna los valores a los parametros utilizados en la consulta
             comando.Parameters.Clear();
             comando.Parameters.AddWithValue("@nIdCategoria", categoria);

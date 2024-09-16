@@ -88,11 +88,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\ie\html5shiv.js" />
+    <Content Include="Content\css\ie\images\banner-overlay.png" />
+    <Content Include="Content\css\ie\PIE.htc" />
+    <Content Include="Content\css\ie\v8.css" />
+    <Content Include="Content\css\ie\v9.css" />
+    <Content Include="Content\css\images\arrow.svg" />
+    <Content Include="Content\css\images\overlay.png" />
+    <Content Include="Content\css\skel.css" />
+    <Content Include="Content\css\style-large.css" />
+    <Content Include="Content\css\style-medium.css" />
+    <Content Include="Content\css\style-small.css" />
+    <Content Include="Content\css\style-xlarge.css" />
+    <Content Include="Content\css\style-xsmall.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -106,6 +123,11 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Nuevo.cshtml" />
+    <Content Include="Views\Home\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -115,7 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
