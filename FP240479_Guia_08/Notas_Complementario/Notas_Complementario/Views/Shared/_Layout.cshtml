@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Notas Complementario</title>
+    <link href="~/Content/site.css" rel="stylesheet" type="text/css" />
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div class="navbar">
+        <a href="@Url.Action("Index", "Home")">Inicio</a>
+        <a href="@Url.Action("Index", "Notas")">Notas</a>
+        <a href="@Url.Action("Create", "Notas")">Crear Nota</a>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
