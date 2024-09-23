@@ -22,7 +22,7 @@ public class AccountController : Controller
 
     // Procesar formulario de registro
     [HttpPost]
-    public ActionResult Register(UserRegisterViewModel model)
+    public ActionResult Register(RegistroUsuario model)
     {
         if (ModelState.IsValid)
         {
@@ -67,7 +67,7 @@ public class AccountController : Controller
 
     // Procesar formulario de login
     [HttpPost]
-    public ActionResult Login(UserLoginViewModel model)
+    public ActionResult Login(RegistroUsuario model)
     {
         if (ModelState.IsValid)
         {
@@ -80,7 +80,7 @@ public class AccountController : Controller
                     if (cliente != null)
                     {
                         Session["UserId"] = cliente.ClienteId;
-                        Session["Role"] = "Cliente";
+                        Session["Rol"] = "Cliente";
                         return RedirectToAction("Menu", "Pedidos");
                     }
                 }
@@ -91,7 +91,7 @@ public class AccountController : Controller
                     if (empleado != null)
                     {
                         Session["UserId"] = empleado.EmpleadoId;
-                        Session["Role"] = "Empleado";
+                        Session["Rol"] = "Empleado";
                         return RedirectToAction("ManagePedidos", "Pedidos");
                     }
                 }

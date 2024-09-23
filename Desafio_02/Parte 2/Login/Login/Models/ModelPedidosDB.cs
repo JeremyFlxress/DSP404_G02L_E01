@@ -8,7 +8,7 @@ namespace Login.Models
 {
     public class ModelPedidosDB : DbContext
     {
-        public ModelPedidosDB() : base("PedidosDBContext")
+        public ModelPedidosDB() : base("The Temper Trap")
         {
         }
 
