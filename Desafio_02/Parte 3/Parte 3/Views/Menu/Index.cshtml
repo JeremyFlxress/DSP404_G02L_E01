@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Parte_3.Models.Producto>
+
+<h2>Menú</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model)
+        {
+            <tr>
+                <td>@producto.Nombre</td>
+                <td>@producto.Precio</td>
+                <td>@producto.Descripción</td>
+                <td>
+                    <a href="@Url.Action("AgregarAlCarrito", "Carrito", new { id = producto.Id })">Agregar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
