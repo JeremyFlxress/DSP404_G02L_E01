@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\views\\carrito\\pagar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\views\\carrito\\pagar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\views\\carrito\\vercarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\views\\carrito\\vercarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\jasd\\dsp404_g02l_e01\\desafio_02\\parte 3\\parte 3\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB294A36-C5E6-4995-83E4-5BCBAFFCA01A}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pagar.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Views\\Carrito\\Pagar.cshtml",
+              "RelativeDocumentMoniker": "Parte 3\\Views\\Carrito\\Pagar.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Views\\Carrito\\Pagar.cshtml",
+              "RelativeToolTip": "Parte 3\\Views\\Carrito\\Pagar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:50:50.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Models\\Pago.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\Pago.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Models\\Pago.cs",
+              "RelativeToolTip": "Parte 3\\Models\\Pago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:48:30.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerCarrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Views\\Carrito\\VerCarrito.cshtml",
+              "RelativeDocumentMoniker": "Parte 3\\Views\\Carrito\\VerCarrito.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Views\\Carrito\\VerCarrito.cshtml",
+              "RelativeToolTip": "Parte 3\\Views\\Carrito\\VerCarrito.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:44:11.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Controllers\\CarritoController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "Parte 3\\Controllers\\CarritoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:42:20.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "carrito.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Models\\carrito.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\carrito.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Models\\carrito.cs",
+              "RelativeToolTip": "Parte 3\\Models\\carrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:41:25.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Views\\Menu\\Index.cshtml",
+              "RelativeDocumentMoniker": "Parte 3\\Views\\Menu\\Index.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Views\\Menu\\Index.cshtml",
+              "RelativeToolTip": "Parte 3\\Views\\Menu\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:08:00.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Parte 3\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:05:26.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Models\\Producto.cs",
+              "RelativeToolTip": "Parte 3\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T05:47:28.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "homeController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Controllers\\homeController.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Controllers\\homeController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\jasd\\DSP404_G02L_E01\\Desafio_02\\Parte 3\\Parte 3\\Controllers\\homeController.cs",
+              "RelativeToolTip": "Parte 3\\Controllers\\homeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T05:39:07.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+﻿@model Parte_3.Models.Carrito
+
+<h2>Pagar</h2>
+<form action="@Url.Action("ConfirmarPago", "Carrito")" method="post">
+    <h3>Resumen de Pedido</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in Model.Productos)
+            {
+                <tr>
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Precio</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <h4>Total: @Model.Productos.Sum(p => p.Precio)</h4>
+    <label for="metodoPago">Método de Pago:</label>
+    <select name="metodoPago" id="metodoPago">
+        <option value="Tarjeta">Tarjeta</option>
+        <option value="Efectivo">Efectivo</option>
+    </select>
+    <button type="submit">Confirmar Pago</button>
+</form>
