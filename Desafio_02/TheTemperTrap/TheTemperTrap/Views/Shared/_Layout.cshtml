@@ -1,16 +1,59 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - TheTemperTrap</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="header">
-        <h1>TheTemperTrap</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú Lateral -->
+            <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <img src="~/Content/Images/icono_menu.png" alt="Icon" />
+                                Menú
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("MenuCliente", "Cliente")">Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("MenuEmpleado", "Empleado")">Empleado</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Navbar -->
+            <div class="col-md-10">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">The Temper Trap</a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("MenuCliente", "Cliente")">Menú Cliente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("MenuEmpleado", "Empleado")">Menú Empleado</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Contenido Principal -->
+                <main role="main" class="col-md-12 ml-sm-auto px-4">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
     </div>
-    <div class="content">
-        @RenderBody()
-    </div>
+
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>

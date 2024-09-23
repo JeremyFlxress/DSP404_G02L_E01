@@ -9,7 +9,7 @@ namespace TheTemperTrap.Controllers
 {
     public class ClienteController : Controller
     {
-        private TheTemperTrapEntities db = new TheTemperTrapEntities(); // Tu contexto de Entity Framework
+        private TheTemperTrapEntities db = new TheTemperTrapEntities();
 
         // Acción para registrar nuevo cliente
         [HttpGet]

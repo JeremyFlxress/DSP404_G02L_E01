@@ -178,6 +178,8 @@
     <Content Include="Views\Auth\SelectUserType.cshtml" />
     <Content Include="Views\Cliente\Register.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\MenuCliente.cshtml" />
+    <Content Include="Views\MenuEmpleado.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

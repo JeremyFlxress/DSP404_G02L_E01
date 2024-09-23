@@ -1,12 +1,85 @@
-﻿
-@{
-    ViewBag.Title = "SelectUserType";
+﻿@{
+    Layout = null;
 }
 
-<h2>Seleccionar tipo de usuario</h2>
-<div>
-    <a href="@Url.Action("Login", "Auth")">Iniciar sesión como cliente</a>
+<div class="user-type-page">
+    <div class="form-container">
+        <h1 class="form-title">Selecciona tu tipo de usuario</h1>
+
+        <div class="user-type-options">
+            <a href="@Url.Action("Login", "Auth", new { userType = "Cliente" })" class="user-btn">Cliente</a>
+            <a href="@Url.Action("Login", "Auth", new { userType = "Empleado" })" class="user-btn">Empleado</a>
+        </div>
+
+        <button class="back-btn" onclick="window.history.back()">Regresar</button>
+    </div>
 </div>
-<div>
-    <a href="@Url.Action("Login", "Auth")">Iniciar sesión como empleado</a>
-</div>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .user-type-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #f7f7f7;
+    }
+
+    .form-container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px;
+        position: relative;
+    }
+
+    .form-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .user-type-options {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .user-btn {
+        padding: 12px 24px;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+        .user-btn:hover {
+            background-color: #0056b3;
+        }
+
+    .back-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: transparent;
+        color: #999;
+        border: none;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+        .back-btn:hover {
+            color: #555;
+        }
+</style>
