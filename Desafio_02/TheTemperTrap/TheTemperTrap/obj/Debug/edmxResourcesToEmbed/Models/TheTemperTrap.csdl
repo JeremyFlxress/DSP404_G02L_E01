@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TheTemperTrapModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ClienteID" />
+    </Key>
+    <Property Name="ClienteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Municipio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Colonia" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroCalle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__Pedido__ClienteI__3F466844" FromRole="Cliente" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="DetallePedido">
+    <Key>
+      <PropertyRef Name="DetallePedidoID" />
+    </Key>
+    <Property Name="DetallePedidoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDPedido" Type="Int32" Nullable="false" />
+    <Property Name="ProductoID" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__DetallePe__IDPed__440B1D61" FromRole="DetallePedido" ToRole="Pedido" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__DetallePe__Produ__44FF419A" FromRole="DetallePedido" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="EmpleadoID" />
+    </Key>
+    <Property Name="EmpleadoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Celular" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="FechaContratacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ContraseñaEmpleado" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Municipio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Colonia" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroCalle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__Pedido__Empleado__403A8C7D" FromRole="Empleado" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="FacturaID" />
+    </Key>
+    <Property Name="FacturaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDPedido" Type="Int32" Nullable="false" />
+    <Property Name="FechaTransaccion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MontoTotal" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="TipoPago" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__Factura__IDPedid__47DBAE45" FromRole="Factura" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="IDPedido" />
+    </Key>
+    <Property Name="IDPedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClienteID" Type="Int32" Nullable="false" />
+    <Property Name="EmpleadoID" Type="Int32" />
+    <Property Name="FechaPedido" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EstadoPedido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPagar" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Comentario" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Pedido__ClienteI__3F466844" FromRole="Pedido" ToRole="Cliente" />
+    <NavigationProperty Name="DetallePedido" Relationship="Self.FK__DetallePe__IDPed__440B1D61" FromRole="Pedido" ToRole="DetallePedido" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK__Pedido__Empleado__403A8C7D" FromRole="Pedido" ToRole="Empleado" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDPedid__47DBAE45" FromRole="Pedido" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="ProductoID" />
+    </Key>
+    <Property Name="ProductoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Producto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion_del_Producto" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Precio_Unitario" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="DetallePedido" Relationship="Self.FK__DetallePe__Produ__44FF419A" FromRole="Producto" ToRole="DetallePedido" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__Pedido__ClienteI__3F466844">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePe__IDPed__440B1D61">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="1" />
+    <End Role="DetallePedido" Type="Self.DetallePedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="IDPedido" />
+      </Principal>
+      <Dependent Role="DetallePedido">
+        <PropertyRef Name="IDPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallePe__Produ__44FF419A">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="DetallePedido" Type="Self.DetallePedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="ProductoID" />
+      </Principal>
+      <Dependent Role="DetallePedido">
+        <PropertyRef Name="ProductoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pedido__Empleado__403A8C7D">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoID" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="EmpleadoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Factura__IDPedid__47DBAE45">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="IDPedido" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IDPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TheTemperTrapEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="DetallePedido" EntityType="Self.DetallePedido" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="Pedido" EntityType="Self.Pedido" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK__Pedido__ClienteI__3F466844" Association="Self.FK__Pedido__ClienteI__3F466844">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePe__IDPed__440B1D61" Association="Self.FK__DetallePe__IDPed__440B1D61">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="DetallePedido" EntitySet="DetallePedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallePe__Produ__44FF419A" Association="Self.FK__DetallePe__Produ__44FF419A">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="DetallePedido" EntitySet="DetallePedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pedido__Empleado__403A8C7D" Association="Self.FK__Pedido__Empleado__403A8C7D">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Factura__IDPedid__47DBAE45" Association="Self.FK__Factura__IDPedid__47DBAE45">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
