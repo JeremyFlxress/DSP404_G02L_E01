@@ -1,0 +1,27 @@
+﻿@model Parte3.Models.Pedido
+
+<h2>Detalles del Pedido @Model.IDPedido</h2>
+
+<p>Fecha del Pedido: @Model.FechaPedido.ToShortDateString()</p>
+<p>Estado: @Model.EstadoPedido</p>
+<p>Total a Pagar: @Model.TotalPagar</p>
+<p>Comentarios: @Model.Comentario</p>
+
+<h3>Productos</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var detalle in Model.DetallePedidos)
+        {
+            <tr>
+                <td>@detalle.Producto.Nombre_Producto</td>
+                <td>@detalle.Cantidad</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+﻿@model Parte3.Models.Pedido
+
+<h2>Pago</h2>
+
+<p>Estado: @Model.EstadoPedido</p>
+<p>Total a Pagar: @Model.TotalPagar.ToString("C")</p>
+
+<form method="post" action="@Url.Action("ProcesarPago")">
+    <input type="hidden" name="pedidoId" value="@Model.IDPedido" />
+    <label for="tipoPago">Método de Pago:</label>
+    <select id="tipoPago" name="tipoPago">
+        <option value="Efectivo">Efectivo</option>
+        <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+    </select>
+    <button type="submit">Pagar</button>
+</form>
+
+

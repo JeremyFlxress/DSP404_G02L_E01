@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Parte3.Models.Pedido>
+
+<h2>Mis Pedidos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID Pedido</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Total a Pagar</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pedido in Model)
+        {
+            <tr>
+                <td>@pedido.IDPedido</td>
+                <td>@pedido.FechaPedido.ToShortDateString()</td>
+                <td>@pedido.EstadoPedido</td>
+                <td>@pedido.TotalPagar</td>
+                <td>
+                    @Html.ActionLink("Ver Detalles", "Detalles", new { id = pedido.IDPedido })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
