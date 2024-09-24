@@ -18,9 +18,7 @@ namespace TheTemperTrap.Models
         public Pedido()
         {
             this.DetallePedido = new HashSet<DetallePedido>();
-            this.DetallePedido1 = new HashSet<DetallePedido>();
             this.Factura = new HashSet<Factura>();
-            this.Factura1 = new HashSet<Factura>();
         }
     
         public int IDPedido { get; set; }
@@ -32,16 +30,10 @@ namespace TheTemperTrap.Models
         public string Comentario { get; set; }
     
         public virtual Cliente Cliente { get; set; }
-        public virtual Cliente Cliente1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DetallePedido> DetallePedido { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetallePedido> DetallePedido1 { get; set; }
         public virtual Empleado Empleado { get; set; }
-        public virtual Empleado Empleado1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Factura> Factura { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Factura> Factura1 { get; set; }
     }
 }

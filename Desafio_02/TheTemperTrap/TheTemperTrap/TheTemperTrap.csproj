@@ -60,8 +60,8 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -107,79 +107,86 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\SignUp.png" />
+    <Content Include="Content\Images\Login.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Models\ModeloTheTemperTrap.Context.tt">
+    <Content Include="Models\TheTemperTrap.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloTheTemperTrap.edmx</DependentUpon>
-      <LastGenOutput>ModeloTheTemperTrap.Context.cs</LastGenOutput>
+      <DependentUpon>TheTemperTrap.edmx</DependentUpon>
+      <LastGenOutput>TheTemperTrap.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ModeloTheTemperTrap.tt">
+    <Content Include="Models\TheTemperTrap.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloTheTemperTrap.edmx</DependentUpon>
-      <LastGenOutput>ModeloTheTemperTrap.cs</LastGenOutput>
+      <DependentUpon>TheTemperTrap.edmx</DependentUpon>
+      <LastGenOutput>TheTemperTrap.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Cliente.cs">
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DetallePedido.cs">
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Empleado.cs">
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Factura.cs">
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ModeloTheTemperTrap.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloTheTemperTrap.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ModeloTheTemperTrap.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ModeloTheTemperTrap.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloTheTemperTrap.edmx</DependentUpon>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Pedido.cs">
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Producto.cs">
-      <DependentUpon>ModeloTheTemperTrap.tt</DependentUpon>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TheTemperTrap.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TheTemperTrap.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TheTemperTrap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TheTemperTrap.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TheTemperTrap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TheTemperTrap.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\ModeloTheTemperTrap.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModeloTheTemperTrap.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ModeloTheTemperTrap.edmx.diagram">
-      <DependentUpon>ModeloTheTemperTrap.edmx</DependentUpon>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Auth\SelectUserType.cshtml" />
     <Content Include="Views\Cliente\Register.cshtml" />
+    <EntityDeploy Include="Models\TheTemperTrap.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TheTemperTrap.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\TheTemperTrap.edmx.diagram">
+      <DependentUpon>TheTemperTrap.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\MenuCliente.cshtml" />
-    <Content Include="Views\MenuEmpleado.cshtml" />
+    <Content Include="Views\Empleado\EmpleadoMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -21,6 +21,5 @@ namespace TheTemperTrap.Models
         public string TipoPago { get; set; }
     
         public virtual Pedido Pedido { get; set; }
-        public virtual Pedido Pedido1 { get; set; }
     }
 }

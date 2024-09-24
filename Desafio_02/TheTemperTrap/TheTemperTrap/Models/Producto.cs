@@ -18,7 +18,6 @@ namespace TheTemperTrap.Models
         public Producto()
         {
             this.DetallePedido = new HashSet<DetallePedido>();
-            this.DetallePedido1 = new HashSet<DetallePedido>();
         }
     
         public int ProductoID { get; set; }
@@ -28,7 +27,5 @@ namespace TheTemperTrap.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DetallePedido> DetallePedido { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetallePedido> DetallePedido1 { get; set; }
     }
 }

@@ -21,26 +21,32 @@ namespace TheTemperTrap.Controllers
         [HttpPost]
         public ActionResult Login(string correo, string contraseña)
         {
-            var cliente = db.Cliente.SingleOrDefault(c => c.Correo == correo && c.Contraseña == contraseña);
-            var empleado = db.Empleado.SingleOrDefault(e => e.Correo == correo && e.ContraseñaEmpleado == contraseña);
+            try
+            {
+                var cliente = db.Cliente.SingleOrDefault(c => c.Correo == correo && c.Contraseña == contraseña);
+                var empleado = db.Empleado.SingleOrDefault(e => e.Correo == correo && e.ContraseñaEmpleado == contraseña);
 
-            if (cliente != null)
-            {
-                // Redirigir al menú del cliente
-                Session["UserType"] = "Cliente";
-                Session["UserId"] = cliente.ClienteID;
-                return RedirectToAction("ClienteMenu", "Cliente");
+                if (cliente != null)
+                {
+                    Session["UserType"] = "Cliente";
+                    Session["UserId"] = cliente.ClienteID;
+                    return RedirectToAction("ClienteMenu", "Cliente");
+                }
+                else if (empleado != null)
+                {
+                    Session["UserType"] = "Empleado";
+                    Session["UserId"] = empleado.EmpleadoID;
+                    return RedirectToAction("EmpleadoMenu", "Empleado");
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = "Correo o contraseña incorrecta.";
+                    return View();
+                }
             }
-            else if (empleado != null)
+            catch (Exception ex)
             {
-                // Redirigir al menú del empleado
-                Session["UserType"] = "Empleado";
-                Session["UserId"] = empleado.EmpleadoID;
-                return RedirectToAction("EmpleadoMenu", "Empleado");
-            }
-            else
-            {
-                ViewBag.ErrorMessage = "Correo o contraseña incorrecta.";
+                ViewBag.ErrorMessage = "Ocurrió un error: " + ex.Message;
                 return View();
             }
         }
