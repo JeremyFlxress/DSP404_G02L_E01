@@ -1,0 +1,124 @@
+﻿@model TheTemperTrap.Models.TheTemperTrapEntities
+@{
+    ViewBag.Title = "Detalle Pedido";
+    Layout = null;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+<h1 class="text-primary text-center my-5">The Temper Trap</h1>
+
+<section class="container">
+    <table class="table caption-top">
+        <caption>Estado de pedidos de los clientes</caption>
+        <thead class="table-info">
+            <tr>
+                <th scope="col" class="text-center">N° de factura</th>
+                <th scope="col" class="text-center">Cliente</th>
+                <th scope="col" class="text-center">Monto a pagar</th>
+                <th scope="col" class="text-center">Estado del pedido</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                @{
+
+                    foreach (TheTemperTrap.Models.Factura item in ViewBag.factura)
+                    {
+                        <td class="text-center">@item.FacturaID</td>
+                    }
+
+                    foreach (TheTemperTrap.Models.Cliente item in ViewBag.cliente)
+                    {
+                        <td class="text-center">@item.Nombre @item.Apellido</td>
+                    }
+
+                    foreach (TheTemperTrap.Models.Factura item in ViewBag.factura)
+                    {
+                        <td class="text-center">$ @item.MontoTotal</td>
+                    }
+
+                    foreach (TheTemperTrap.Models.Pedido item in ViewBag.pedido)
+                    {
+                        <td class="d-flex justify-content-center">
+                            <select class="form-control w-75" onchange="mostrarModalComentario(@item.IDPedido, this.value)">
+                                <option class="text-center" value="Aceptado" selected @(item.EstadoPedido == "Aceptado" ? "selected" : "")>Aceptado</option>
+                                <option class="text-center" value="En proceso" @(item.EstadoPedido == "En proceso" ? "selected" : "")>En proceso</option>
+                                <option class="text-center" value="Entregado al repartidor" @(item.EstadoPedido == "Entregado al repartidor" ? "selected" : "")>Entregado al repartidor</option>
+                                <option class="text-center" value="Entregado al cliente" @(item.EstadoPedido == "Entregado al cliente" ? "selected" : "")>Entregado al cliente</option>
+                            </select>
+                        </td>
+                    }
+                }
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Modal de Bootstrap para el comentario -->
+<div class="modal fade" id="comentarioModal" tabindex="-1" aria-labelledby="comentarioModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title text-center" id="comentarioModalLabel">Ingrese un comentario del pedido</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModal"></button>
+            </div>
+            <div class="modal-body">
+                <textarea id="comentarioInput" class="form-control mw-100" rows="3" placeholder="Ingrese su comentario"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="guardarComentario()">Guardar comentario</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    let pedidoIdGlobal;
+    let nuevoEstadoGlobal;
+
+    // Mostrar el modal cuando se cambia el estado del pedido
+    function mostrarModalComentario(pedidoId, nuevoEstado) {
+        pedidoIdGlobal = pedidoId; // Guardar el ID del pedido globalmente
+        nuevoEstadoGlobal = nuevoEstado; // Guardar el nuevo estado globalmente
+        $('#comentarioModal').modal('show'); // Mostrar el modal
+        $('#comentarioInput').val(''); // Limpiar el textarea
+    }
+
+    // Validar y guardar el comentario
+    function guardarComentario() {
+        var comentario = $('#comentarioInput').val().trim(); // Obtener el valor del textarea
+
+        // Validar que el comentario tenga al menos 3 caracteres
+        if (comentario.length < 3) {
+            alert('El comentario debe tener al menos 3 caracteres.');
+            return;
+        }
+
+        // Enviar el comentario y el estado al servidor mediante AJAX
+        $.ajax({
+            url: '@Url.Action("ActualizarEstado", "Empleado")',
+            type: 'POST',
+            data: { id: pedidoIdGlobal, estado: nuevoEstadoGlobal, comentario: comentario },
+            success: function (result) {
+                alert('Estado y comentario actualizados correctamente.');
+                $('#comentarioModal').modal('hide'); // Cerrar el modal al guardar
+            },
+            error: function () {
+                alert('Error al actualizar el estado y el comentario.');
+            }
+        });
+    }
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
