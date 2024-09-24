@@ -1,0 +1,48 @@
+﻿@model Parte3.Models.Pedido
+
+@{
+    ViewBag.Title = "Detalles del Pedido";
+}
+
+<h2>Detalles del Pedido @Model.IDPedido</h2>
+
+<p><strong>Fecha del Pedido:</strong> @Model.FechaPedido.ToShortDateString()</p>
+<p><strong>Estado:</strong> @Model.EstadoPedido</p>
+<p><strong>Total a Pagar:</strong> @Model.TotalPagar.ToString("C")</p>
+<p><strong>Comentario:</strong> @Model.Comentario</p>
+
+<h3>Productos en el Pedido</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre del Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.DetallePedidos != null && Model.DetallePedidos.Any())
+        {
+            foreach (var detalle in Model.DetallePedidos)
+            {
+                <tr>
+                    <td>@detalle.Producto.Nombre_Producto</td>
+                    <td>@detalle.Cantidad</td>
+                    <td>@detalle.Producto.Precio_Unitario.ToString("C")</td>
+                    <td>@(detalle.Cantidad * detalle.Producto.Precio_Unitario).ToString("C")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4">No hay productos en este pedido.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("MisPedidos", "Pedido")" class="btn btn-primary">Volver a Mis Pedidos</a>
+
+

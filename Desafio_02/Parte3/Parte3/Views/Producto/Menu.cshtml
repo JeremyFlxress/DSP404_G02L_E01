@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Parte3.Models.Producto>
+
+@{
+    ViewBag.Title = "Menú";
+}
+
+<h2>Menú</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model)
+        {
+            <tr>
+                <td>@producto.Nombre_Producto</td>
+                <td>@producto.Descripcion_del_Producto</td>
+                <td>@producto.Precio_Unitario.ToString("C")</td>
+                <td>
+                    @Html.ActionLink("Agregar al Pedido", "AgregarAlPedido", "Pedido", new { id = producto.ProductoID }, null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
