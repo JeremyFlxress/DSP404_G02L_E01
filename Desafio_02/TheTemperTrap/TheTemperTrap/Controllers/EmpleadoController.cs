@@ -14,16 +14,20 @@ namespace TheTemperTrap.Controllers
         // GET: Empleado
         public ActionResult EmpleadoMenu()
         {
-            List<Cliente> cliente = contexto.Cliente.ToList();
-            List<Factura> fact = contexto.Factura.ToList();
-            List<Pedido> pedido = contexto.Pedido.ToList();
+            // Obtener las listas de facturas, clientes y pedidos desde la base de datos
+            List<Cliente> clientes = contexto.Cliente.ToList();
+            List<Factura> facturas = contexto.Factura.ToList();
+            List<Pedido> pedidos = contexto.Pedido.ToList();
 
-            ViewBag.cliente = cliente;
-            ViewBag.factura = fact;
-            ViewBag.pedido = pedido;
+            // Pasar las listas a la vista mediante ViewBag
+            ViewBag.cliente = clientes;
+            ViewBag.factura = facturas;
+            ViewBag.pedido = pedidos;
 
+            // Retornar la vista
             return View();
         }
+
 
         [HttpPost]
         public ActionResult ActualizarEstado(int id, string estado, string comentario)

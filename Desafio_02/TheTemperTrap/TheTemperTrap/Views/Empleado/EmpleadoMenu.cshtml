@@ -1,5 +1,4 @@
-﻿@model TheTemperTrap.Models.TheTemperTrapEntities
-@{
+﻿@{
     ViewBag.Title = "Detalle Pedido";
     Layout = null;
 }
@@ -25,40 +24,38 @@
             </tr>
         </thead>
         <tbody class="table-group-divider">
-            <tr>
-                @{
+            @if (ViewBag.factura != null && ViewBag.cliente != null && ViewBag.pedido != null)
+            {
+                var facturas = ViewBag.factura as List<TheTemperTrap.Models.Factura>;
+                var clientes = ViewBag.cliente as List<TheTemperTrap.Models.Cliente>;
+                var pedidos = ViewBag.pedido as List<TheTemperTrap.Models.Pedido>;
 
-                    foreach (TheTemperTrap.Models.Factura item in ViewBag.factura)
-                    {
-                        <td class="text-center">@item.FacturaID</td>
-                    }
+                for (int i = 0; i < facturas.Count; i++)
+                {
+                    var factura = facturas[i];
+                    var cliente = clientes[i];
+                    var pedido = pedidos[i];
 
-                    foreach (TheTemperTrap.Models.Cliente item in ViewBag.cliente)
-                    {
-                        <td class="text-center">@item.Nombre @item.Apellido</td>
-                    }
-
-                    foreach (TheTemperTrap.Models.Factura item in ViewBag.factura)
-                    {
-                        <td class="text-center">$ @item.MontoTotal</td>
-                    }
-
-                    foreach (TheTemperTrap.Models.Pedido item in ViewBag.pedido)
-                    {
+                    <tr>
+                        <td class="text-center">@factura.FacturaID</td>
+                        <td class="text-center">@cliente.Nombre @cliente.Apellido</td>
+                        <td class="text-center">$ @factura.MontoTotal</td>
                         <td class="d-flex justify-content-center">
-                            <select class="form-control w-75" onchange="mostrarModalComentario(@item.IDPedido, this.value)">
-                                <option class="text-center" value="Aceptado" selected @(item.EstadoPedido == "Aceptado" ? "selected" : "")>Aceptado</option>
-                                <option class="text-center" value="En proceso" @(item.EstadoPedido == "En proceso" ? "selected" : "")>En proceso</option>
-                                <option class="text-center" value="Entregado al repartidor" @(item.EstadoPedido == "Entregado al repartidor" ? "selected" : "")>Entregado al repartidor</option>
-                                <option class="text-center" value="Entregado al cliente" @(item.EstadoPedido == "Entregado al cliente" ? "selected" : "")>Entregado al cliente</option>
+                            <select class="form-control w-75" onchange="mostrarModalComentario(@pedido.IDPedido, this.value)">
+                                <option class="text-center" value="Aceptado" @(pedido.EstadoPedido == "Aceptado" ? "selected" : "")>Aceptado</option>
+                                <option class="text-center" value="En proceso" @(pedido.EstadoPedido == "En proceso" ? "selected" : "")>En proceso</option>
+                                <option class="text-center" value="Entregado al repartidor" @(pedido.EstadoPedido == "Entregado al repartidor" ? "selected" : "")>Entregado al repartidor</option>
+                                <option class="text-center" value="Entregado al cliente" @(pedido.EstadoPedido == "Entregado al cliente" ? "selected" : "")>Entregado al cliente</option>
                             </select>
                         </td>
-                    }
+                    </tr>
                 }
-            </tr>
+            }
         </tbody>
+
     </table>
 </section>
+
 
 <!-- Modal de Bootstrap para el comentario -->
 <div class="modal fade" id="comentarioModal" tabindex="-1" aria-labelledby="comentarioModalLabel" aria-hidden="true">
