@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\controllers\\thetempertrapcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\controllers\\thetempertrapcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|c:\\users\\william bonilla\\desktop\\itadori\\parte 3\\parte 3\\views\\productos\\productos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\views\\productos\\productos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\models\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\models\\thetempertrap.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\thetempertrap.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\models\\thetempertrap.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\thetempertrap.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\models\\thetempertrap.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\thetempertrap.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\models\\thetempertrap.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\models\\thetempertrap.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\parte 3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D57B63D6-59EC-44FA-8E57-00C21D9954D3}|Parte 3\\Parte 3.csproj|solutionrelative:parte 3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TheTemperTrap.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.edmx.diagram",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\TheTemperTrap.edmx.diagram",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.edmx.diagram",
+              "RelativeToolTip": "Parte 3\\Models\\TheTemperTrap.edmx.diagram",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-25T03:56:23.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TheTemperTrap.Context.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.Context.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\TheTemperTrap.Context.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.Context.cs",
+              "RelativeToolTip": "Parte 3\\Models\\TheTemperTrap.Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:55:29.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TheTemperTrap.Context.tt",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.Context.tt",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\TheTemperTrap.Context.tt",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.Context.tt",
+              "RelativeToolTip": "Parte 3\\Models\\TheTemperTrap.Context.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-25T03:56:21.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Parte 3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:22:33.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetallePedido.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\DetallePedido.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\DetallePedido.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\DetallePedido.cs",
+              "RelativeToolTip": "Parte 3\\Models\\DetallePedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:20:42.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\Producto.cs",
+              "RelativeToolTip": "Parte 3\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:19:59.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TheTemperTrapContext.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Controllers\\TheTemperTrapContext.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Controllers\\TheTemperTrapContext.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Controllers\\TheTemperTrapContext.cs",
+              "RelativeToolTip": "Parte 3\\Controllers\\TheTemperTrapContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:18:10.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Parte 3\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Parte 3\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T02:49:01.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Productos.cshtml",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Views\\Productos\\Productos.cshtml",
+              "RelativeDocumentMoniker": "Parte 3\\Views\\Productos\\Productos.cshtml",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Views\\Productos\\Productos.cshtml",
+              "RelativeToolTip": "Parte 3\\Views\\Productos\\Productos.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAMYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T02:48:48.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Parte 3\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Parte 3\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T02:47:45.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TheTemperTrap.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.edmx",
+              "RelativeDocumentMoniker": "Parte 3\\Models\\TheTemperTrap.edmx",
+              "ToolTip": "C:\\Users\\William Bonilla\\Desktop\\itadori\\Parte 3\\Parte 3\\Models\\TheTemperTrap.edmx [Diagram1]",
+              "RelativeToolTip": "Parte 3\\Models\\TheTemperTrap.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-25T02:47:12.763Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
