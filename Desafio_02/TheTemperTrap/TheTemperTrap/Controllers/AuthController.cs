@@ -30,7 +30,7 @@ namespace TheTemperTrap.Controllers
                 {
                     Session["UserType"] = "Cliente";
                     Session["UserId"] = cliente.ClienteID;
-                    return RedirectToAction("ClienteMenu", "Cliente");
+                    return RedirectToAction("Productos", "Productos");
                 }
                 else if (empleado != null)
                 {

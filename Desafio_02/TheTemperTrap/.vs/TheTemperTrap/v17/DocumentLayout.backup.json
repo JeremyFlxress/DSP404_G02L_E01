@@ -3,11 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\desafio_02\\thetempertrap\\thetempertrap\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|solutionrelative:thetempertrap\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\desafio_02\\thetempertrap\\thetempertrap\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|solutionrelative:thetempertrap\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\desafio_02\\thetempertrap\\thetempertrap\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|solutionrelative:thetempertrap\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\desafio_02\\thetempertrap\\thetempertrap\\views\\productos\\productos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|solutionrelative:thetempertrap\\views\\productos\\productos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\desafio_02\\thetempertrap\\thetempertrap\\views\\empleado\\empleadomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|solutionrelative:thetempertrap\\views\\empleado\\empleadomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\desafio_02\\thetempertrap\\thetempertrap\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\thetempertrap\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E57C1D1D-28D0-47EB-960F-8CBDFE036CDC}|TheTemperTrap\\TheTemperTrap.csproj|solutionrelative:thetempertrap\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,25 +47,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "TheTemperTrap\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "TheTemperTrap\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T03:53:06.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TheTemperTrap\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TheTemperTrap\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T03:52:07.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Productos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Views\\Productos\\Productos.cshtml",
+              "RelativeDocumentMoniker": "TheTemperTrap\\Views\\Productos\\Productos.cshtml",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Views\\Productos\\Productos.cshtml",
+              "RelativeToolTip": "TheTemperTrap\\Views\\Productos\\Productos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T03:45:38.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "TheTemperTrap\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "TheTemperTrap\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T03:41:28.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EmpleadoController.cs",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\EmpleadoController.cs",
               "RelativeDocumentMoniker": "TheTemperTrap\\Controllers\\EmpleadoController.cs",
               "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Controllers\\EmpleadoController.cs",
               "RelativeToolTip": "TheTemperTrap\\Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T21:52:50.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EmpleadoMenu.cshtml",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Views\\Empleado\\EmpleadoMenu.cshtml",
               "RelativeDocumentMoniker": "TheTemperTrap\\Views\\Empleado\\EmpleadoMenu.cshtml",
               "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\Desafio_02\\TheTemperTrap\\TheTemperTrap\\Views\\Empleado\\EmpleadoMenu.cshtml",
               "RelativeToolTip": "TheTemperTrap\\Views\\Empleado\\EmpleadoMenu.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-25T21:48:42.512Z",
               "EditorCaption": ""

@@ -107,6 +107,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\1.png" />
+    <Content Include="Content\Images\2.png" />
+    <Content Include="Content\Images\3.png" />
+    <Content Include="Content\Images\4.png" />
+    <Content Include="Content\Images\5.png" />
+    <Content Include="Content\Images\6.png" />
+    <Content Include="Content\Images\7.png" />
+    <Content Include="Content\Images\lupa.png" />
+    <Content Include="Content\Images\plato1.png" />
+    <Content Include="Content\Images\plato10.png" />
+    <Content Include="Content\Images\plato2.png" />
+    <Content Include="Content\Images\plato3.png" />
+    <Content Include="Content\Images\plato4.png" />
+    <Content Include="Content\Images\plato5.png" />
+    <Content Include="Content\Images\plato6.png" />
+    <Content Include="Content\Images\plato7.png" />
+    <Content Include="Content\Images\plato8.png" />
+    <Content Include="Content\Images\plato9.png" />
     <Content Include="Content\Images\SignUp.png" />
     <Content Include="Content\Images\Login.png" />
     <Content Include="Content\Site.css" />
@@ -129,6 +147,7 @@
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
+    <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,6 +206,7 @@
     <None Include="packages.config" />
     <Content Include="Views\MenuCliente.cshtml" />
     <Content Include="Views\Empleado\EmpleadoMenu.cshtml" />
+    <Content Include="Views\Productos\Productos.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
