@@ -4,12 +4,12 @@ Link: https://drive.google.com/file/d/1LPL_SdJQCPq_zwHdtcYwl9QUBH_SQTKA/view?usp
 
 
 Edgar Josué Gómez Meléndez – GM240279
-Parte II – Creación de logeo
-
-Josué Eduardo García Estrada - GE240098  
-Parte III – Creación de compras
+Parte II – Creación de login
 
 William Adonay Bonilla Pérez - BP220765  
+Parte III – Creación de compras
+
+Josué Eduardo García Estrada - GE240098  
 Parte IV – Despacho de pedidos
 
-Link: 
+Link: https://drive.google.com/file/d/1aB8fS3yGoP5eTDdCeoHgD4rN3WJGB9ZT/view?usp=sharing
