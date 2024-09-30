@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_10\\sitioweb10_ge240098\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|solutionrelative:views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_10\\sitioweb10_ge240098\\views\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|solutionrelative:views\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_10\\sitioweb10_ge240098\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|solutionrelative:views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_10\\sitioweb10_ge240098\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_10\\sitioweb10_ge240098\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_10\\sitioweb10_ge240098\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{547830CB-E068-41BE-9774-D84824856AE1}|SitioWeb10_GE240098.csproj|solutionrelative:views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,26 +44,65 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAqAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T03:57:18.919Z",
+              "WhenOpened": "2024-09-30T04:19:08.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DefaultController.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\DefaultController.cs",
+              "RelativeDocumentMoniker": "Views\\DefaultController.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\DefaultController.cs",
+              "RelativeToolTip": "Views\\DefaultController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:16:29.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T03:55:39.338Z",
+              "WhenOpened": "2024-09-30T04:10:01.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T04:09:15.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_10\\SitioWeb10_GE240098\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T04:05:44.733Z",
               "EditorCaption": ""
             }
           ]

@@ -144,6 +144,7 @@
     <Compile Include="Suppliers.cs">
       <DependentUpon>ModeloEmprezaPlazaLibre.tt</DependentUpon>
     </Compile>
+    <Compile Include="Views\DefaultController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -172,6 +173,7 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
