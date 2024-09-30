@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\css\\login.css",
+              "RelativeDocumentMoniker": "WebService\\css\\login.css",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\css\\login.css",
+              "RelativeToolTip": "WebService\\css\\login.css",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-30T19:44:17.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "WebService\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx.cs",
+              "RelativeToolTip": "WebService\\Login.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T19:43:54.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx",
+              "RelativeDocumentMoniker": "WebService\\Login.aspx",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx",
+              "RelativeToolTip": "WebService\\Login.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-30T19:42:04.455Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

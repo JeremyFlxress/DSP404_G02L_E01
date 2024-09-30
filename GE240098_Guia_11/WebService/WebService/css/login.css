@@ -29,22 +29,24 @@ body {
 form {
   position:relative;
   margin: 50px auto;
-  width: 380px;
+  width: 546px;
   height: auto;
+    top: 0px;
+    left: 83px;
 }
 
 input {
-  padding: 16px;
-  border-radius:7px;
-  border:0px;
-  background: rgba(255,255,255,.2);
-  display: block;
-  margin: 15px;
-  width: 300px;  
-  color:white;
-  font-size:18px;
-  height: 54px;
-}
+  border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    padding: 16px;
+    border-radius:7px;
+    display: block;
+  margin: 15px 15px 15px 92px;
+    width: 300px;  
+    color:white;
+    font-size:18px;
+  }
 
 input:focus {
   outline-color: rgba(0,0,0,0);
@@ -53,37 +55,40 @@ input:focus {
 }
 
 .submit {
-  float:right;
-  height: 121px;
-  width: 50px;
-  border: 0px;
-  background: #e74c3c;
-  border-radius:7px;
-  padding: 10px;
-  color:white;
-  font-size:22px;
+  border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    float:right;
+    background: #e74c3c;
+    border-radius:7px;
+    padding: 10px;
+    color:white;
+    font-size:22px;
 }
 
 .inputUserIcon {
   position:absolute;
-  top:100px;
-  right: 80px;
+  top:71px;
+  right: 355px;
   color:white;
-    width: 3px;
+    width: 150px;
+    height: 22px;
 }
 
 .inputPassIcon {
   position:absolute;
-  top:160px;
-  right: 80px;
+  top:127px;
+  right: 356px;
   color:white;
+    width: 151px;
 }
 
 .inputLockIcon {
   position:absolute;
-  top:136px;
-  right: 36px;
+  top:39px;
   color:black;
+    width: 129px;
+    left: 324px;
 }
 
 input::-webkit-input-placeholder {

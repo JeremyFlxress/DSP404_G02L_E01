@@ -17,9 +17,9 @@
         <br />
           <asp:Button ID="BtnEntrar" runat="server"  class="submit" OnClick="BtnEntrar_Click"/>
             <span class="entypo-user inputUserIcon"></span>
-          <asp:TextBox ID="TxtUsuario" runat="server" class="user" placeholder="Usuario"></asp:TextBox>
             <span class="entypo-key inputPassIcon"></span>
           <asp:TextBox ID="TxtPassword" runat="server" class="pass" placeholder="password" TextMode="Password"></asp:TextBox>
+          <asp:TextBox ID="TxtUsuario" runat="server" class="user" placeholder="Usuario"></asp:TextBox>
             <span class="entypo-lock inputLockIcon"></span>
     </div>
         <asp:Label ID="LblError" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="Red"></asp:Label>
