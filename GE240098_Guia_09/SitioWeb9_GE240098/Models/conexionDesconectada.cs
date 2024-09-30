@@ -71,6 +71,7 @@ namespace SitioWeb9_GE240098.Models
                 //utilizará como llave primaria
                 DataTable tablaActual;
                 tablaActual = DataSetPrincipal.Tables[nombreTabla];
+
                 DataColumn[] columnasPrincipales = new DataColumn[1];
                 columnasPrincipales[0] = tablaActual.Columns[primaryKey];
                 tablaActual.PrimaryKey = columnasPrincipales;
@@ -106,7 +107,7 @@ namespace SitioWeb9_GE240098.Models
             DataView vistaFiltro = new DataView(ds.Tables["Products"]);
             vistaFiltro.RowFilter = "ProductID = " + productID;
 
-            Product itemProduct = new Product();
+            Product itemproduct = new Product();
             foreach (DataRowView dr in vistaFiltro)
             {
                 itemproduct.ProductID = dr["ProductID"].ToString();
@@ -118,7 +119,7 @@ namespace SitioWeb9_GE240098.Models
                 itemproduct.UnitsInStock = dr["UnitsInStock"].ToString();
                 itemproduct.UnitsOnOrder = dr["UnitsOnOrder"].ToString();
             }
-            return itemProduct;
+            return itemproduct;
         } 
 
         public int actualizarProducto (DataSet ds, int ProductID, string Categorias,
