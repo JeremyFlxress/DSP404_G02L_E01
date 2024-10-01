@@ -9,7 +9,52 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).ready(function () {
+            var usu = document.getElementById('Label2').innerHTML;
+            $.ajax({
+                type: "GET",
+                url: "https://localhost:49778/api/Logins/" + usu,
+
+                dataType: "json",
+                success: function (responseString) {
+                    for (i = 0; i < responseString.Contactoes.length; i++) {
+                        var table = document.getElementById("tblContactos");
+                        {
+                            var row = table.insertRow(i + 1);
+                            var cell1 = row.insertCell(0);
+                            var cell2 = row.insertCell(1);
+                            var cell3 = row.insertCell(2);
+                            var cell4 = row.insertCell(3);
+                            var cell5 = row.insertCell(4);
+                            var cell6 = row.insertCell(5);
+                            cell1.innerHTML = i + 1;
+                            cell2.innerHTML = responseString.Contactoes[i].Nombre;
+                            cell3.innerHTML = responseString.Contactoes[i].Apellido1;
+                            cell4.innerHTML = responseString.Contactoes[i].Correo;
+                            cell5.innerHTML = responseString.Contactoes[i].Telefono;
+                            cell6.innerHTML = responseString.Contactoes[i].Direcion;
+                        }
+                    }
+                    if (i > 0) //usuario tiene al menos un contacto registrado
+                        document.getElementById('Mensaje').innerHTML = usu + ' tiene ' +
+                            i + ' contactos registrados';
+                    else
+                        document.getElementById('Mensaje').innerHTML = usu +
+                            ' aun no tiene contactos registrados';
+                },
+                error: function (xhr, errorType, exception) {
+                    var errorMessage = exception || xhr.statusText;
+                    alert(errorMessage);
+                }
+            })
+            document.getElementById('Label2').innerHTML = 'AGENDA ' + usu;
+        });
+
+    </script>
 </head>
+
 <body class="homepage">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -32,6 +77,26 @@
       </ul>
     </div>
   </div>
+</nav>
+
+    <nav>
+ <form runat="server" style="margin:5%">
+ <p>
+ <asp:Label ID="Mensaje" runat="server" CssClass="h2"></asp:Label>
+ </p>
+ <p>
+ <asp:Table ID="tblContactos" runat="server" CssClass ="table-bordered" Width="90%">
+     <asp:TableHeaderRow BackColor="Yellow">
+     <asp:TableHeaderCell Text="Id_Contacto"></asp:TableHeaderCell>
+     <asp:TableHeaderCell Text="Nombre"></asp:TableHeaderCell>
+     <asp:TableHeaderCell Text="Apellido 1"></asp:TableHeaderCell>
+     <asp:TableHeaderCell Text="Correo"></asp:TableHeaderCell>
+     <asp:TableHeaderCell Text="Telefono"></asp:TableHeaderCell>
+     <asp:TableHeaderCell Text="Direccion"></asp:TableHeaderCell>
+</asp:TableHeaderRow>
+ </asp:Table>
+ </p>
+ </form>
 </nav>
 
 </body>

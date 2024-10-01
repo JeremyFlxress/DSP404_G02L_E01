@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\agregarcontacto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\agregarcontacto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\agregarcontacto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\agregarcontacto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\vercontacto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\vercontacto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\vercontacto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\vercontacto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\webservice\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|c:\\users\\josue garcia\\documents\\github\\dsp404_02l_e01\\ge240098_guia_11\\webservice\\webservice\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{29A6B5C9-113B-4DC5-9AAB-87750B135F7E}|WebService\\WebService.csproj|solutionrelative:webservice\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,32 +46,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "login.css",
-              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\css\\login.css",
-              "RelativeDocumentMoniker": "WebService\\css\\login.css",
-              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\css\\login.css",
-              "RelativeToolTip": "WebService\\css\\login.css",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-30T19:44:17.268Z",
+              "DocumentIndex": 0,
+              "Title": "AgregarContacto.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\AgregarContacto.aspx.cs",
+              "RelativeDocumentMoniker": "WebService\\AgregarContacto.aspx.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\AgregarContacto.aspx.cs",
+              "RelativeToolTip": "WebService\\AgregarContacto.aspx.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:36:05.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AgregarContacto.aspx",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\AgregarContacto.aspx",
+              "RelativeDocumentMoniker": "WebService\\AgregarContacto.aspx",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\AgregarContacto.aspx",
+              "RelativeToolTip": "WebService\\AgregarContacto.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-01T03:35:57.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VerContacto.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\VerContacto.aspx.cs",
+              "RelativeDocumentMoniker": "WebService\\VerContacto.aspx.cs",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\VerContacto.aspx.cs",
+              "RelativeToolTip": "WebService\\VerContacto.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:35:53.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VerContacto.aspx",
+              "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\VerContacto.aspx",
+              "RelativeDocumentMoniker": "WebService\\VerContacto.aspx",
+              "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\VerContacto.aspx",
+              "RelativeToolTip": "WebService\\VerContacto.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-01T03:31:04.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx.cs",
               "RelativeDocumentMoniker": "WebService\\Login.aspx.cs",
               "ToolTip": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx.cs",
               "RelativeToolTip": "WebService\\Login.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T19:43:54.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Login.aspx",
               "DocumentMoniker": "C:\\Users\\Josue Garcia\\Documents\\GitHub\\DSP404_02L_E01\\GE240098_Guia_11\\WebService\\WebService\\Login.aspx",
               "RelativeDocumentMoniker": "WebService\\Login.aspx",
