@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\views\\default\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\views\\default\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\views\\default\\a\u00F1adir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\views\\default\\a\u00F1adir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\models\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\models\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|c:\\users\\josue\\documents\\github\\dsp404_02l_e01\\gm240279_guia_09\\sitioweb_gm240279\\sitioweb_gm240279\\models\\conexiondesconetada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0367B0-4272-4F84-96F3-354068710411}|SitioWeb_GM240279\\SitioWeb_GM240279.csproj|solutionrelative:sitioweb_gm240279\\models\\conexiondesconetada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Views\\Default\\Editar.cshtml",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Views\\Default\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Views\\Default\\Editar.cshtml",
+              "RelativeToolTip": "SitioWeb_GM240279\\Views\\Default\\Editar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T02:54:32.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "A\u00F1adir.cshtml",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Views\\Default\\A\u00F1adir.cshtml",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Views\\Default\\A\u00F1adir.cshtml",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Views\\Default\\A\u00F1adir.cshtml",
+              "RelativeToolTip": "SitioWeb_GM240279\\Views\\Default\\A\u00F1adir.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T02:53:31.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "SitioWeb_GM240279\\Views\\Default\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T02:49:14.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Suppliers.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\Suppliers.cs",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Models\\Suppliers.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\Suppliers.cs",
+              "RelativeToolTip": "SitioWeb_GM240279\\Models\\Suppliers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T02:46:58.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\Product.cs",
+              "RelativeToolTip": "SitioWeb_GM240279\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T02:46:02.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\Category.cs",
+              "RelativeToolTip": "SitioWeb_GM240279\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T02:45:24.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "conexionDesconetada.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\conexionDesconetada.cs",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Models\\conexionDesconetada.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Models\\conexionDesconetada.cs",
+              "RelativeToolTip": "SitioWeb_GM240279\\Models\\conexionDesconetada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T02:44:35.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DefaultController.cs",
+              "DocumentMoniker": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Controllers\\DefaultController.cs",
+              "RelativeDocumentMoniker": "SitioWeb_GM240279\\Controllers\\DefaultController.cs",
+              "ToolTip": "C:\\Users\\Josue\\Documents\\GitHub\\DSP404_02L_E01\\GM240279_Guia_09\\SitioWeb_GM240279\\SitioWeb_GM240279\\Controllers\\DefaultController.cs",
+              "RelativeToolTip": "SitioWeb_GM240279\\Controllers\\DefaultController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwDsAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:49:05.512Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
