@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|c:\\users\\jerem\\source\\repos\\wsagenda\\wsagenda\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|solutionrelative:wsagenda\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|c:\\users\\jerem\\source\\repos\\wsagenda\\wsagenda\\controllers\\contactoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|solutionrelative:wsagenda\\controllers\\contactoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsagenda\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|solutionrelative:wsagenda\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsagenda\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|solutionrelative:wsagenda\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsagenda\\dbagenda.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{05BDD136-86BF-4321-8AF5-94AF33726005}|wsAgenda\\wsAgenda.csproj|solutionrelative:wsagenda\\dbagenda.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\Web.config",
+              "RelativeDocumentMoniker": "wsAgenda\\Web.config",
+              "ToolTip": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\Web.config",
+              "RelativeToolTip": "wsAgenda\\Web.config",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-05T23:29:09.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactosController.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\Controllers\\ContactosController.cs",
+              "RelativeDocumentMoniker": "wsAgenda\\Controllers\\ContactosController.cs",
+              "ToolTip": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\Controllers\\ContactosController.cs",
+              "RelativeToolTip": "wsAgenda\\Controllers\\ContactosController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:18:15.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "wsAgenda\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "wsAgenda\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:09:12.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginsController.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\Controllers\\LoginsController.cs",
+              "RelativeDocumentMoniker": "wsAgenda\\Controllers\\LoginsController.cs",
+              "ToolTip": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\Controllers\\LoginsController.cs",
+              "RelativeToolTip": "wsAgenda\\Controllers\\LoginsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:08:07.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBAgenda.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\DBAgenda.edmx",
+              "RelativeDocumentMoniker": "wsAgenda\\DBAgenda.edmx",
+              "ToolTip": "C:\\Users\\jerem\\source\\repos\\wsAgenda\\wsAgenda\\DBAgenda.edmx [Diagram1]",
+              "RelativeToolTip": "wsAgenda\\DBAgenda.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-10-05T23:00:17.23Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
