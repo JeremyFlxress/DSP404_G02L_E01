@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SitioWeb10_FP240479.Category>
+
+@{
+    ViewBag.Title = "Categorias de Productos";
+}
+
+<h2>Informacion de Ctaegorias de Porductos registrados</h2>
+
+<p>
+    @Html.ActionLink("Crear Categoria", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nombre de la Categoria
+        </th>
+        <th>
+            Descripcion
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "Edit", new
+            {
+              id = item.CategoryID
+            }) |
+            @Html.ActionLink("Ver detalles", "Details", new
+            {
+                id = item.CategoryID
+            }) |
+            @Html.ActionLink("Eliminar", "Delete", new
+            {
+                id = item.CategoryID
+            })
+
+        </td>
+    </tr>
+}
+
+</table>
