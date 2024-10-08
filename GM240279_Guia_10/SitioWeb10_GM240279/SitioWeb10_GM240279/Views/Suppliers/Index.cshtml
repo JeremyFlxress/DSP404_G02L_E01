@@ -1,0 +1,46 @@
+﻿@model IEnumerable<SitioWeb10_GM240279.Models.Suppliers>
+
+@{
+    ViewBag.Title = "Proveedores";
+}
+
+<h2>Lista de Proveedores</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo Proveedor", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.ActionLink("Modificar", "Edit", new { id = item.SupplierID }) |
+                @Html.ActionLink("Ver detalles", "Details", new { id = item.SupplierID }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.SupplierID })
+            </td>
+        </tr>
+    }
+
+</table>
