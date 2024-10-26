@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TurnoverTicket</RootNamespace>
     <AssemblyName>TurnoverTicket</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44302</IISExpressSSLPort>
@@ -23,7 +23,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,7 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -99,21 +106,89 @@
     <Content Include="Content\img\ticket.png" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Models\TurnoverTicket.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TurnoverTicket.Context.cs</LastGenOutput>
+      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\TurnoverTicket.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
+      <LastGenOutput>TurnoverTicket.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ComprarConciertoController.cs" />
     <Compile Include="Controllers\CrearConciertoController.cs" />
     <Compile Include="Controllers\DashboardEmpleadoController.cs" />
+    <Compile Include="Controllers\HistorialUsuarioController.cs" />
     <Compile Include="Controllers\ListaConciertosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Conciertos.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrearConciertoViewModel.cs" />
+    <Compile Include="Models\DetallesEntradas.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Empleado.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entradas.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Factura.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HistorialCompra.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ST_LeerConciertos_Result.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ST_LeerEntradas_Result.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ST_LeerUsuarios_Result.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TurnoverTicket.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurnoverTicket.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TurnoverTicket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TurnoverTicket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuarios.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VentaEntradas.cs">
+      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <EntityDeploy Include="Models\TurnoverTicket.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TurnoverTicket.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\TurnoverTicket.edmx.diagram">
+      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -121,6 +196,8 @@
     <Content Include="Views\DashboardEmpleado\DashboardEmpleado.cshtml" />
     <Content Include="Views\ListaConciertos\ListaConciertos.cshtml" />
     <Content Include="Views\CrearConcierto\CrearConcierto.cshtml" />
+    <Content Include="Views\ComprarConcierto\ComprarConcierto.cshtml" />
+    <Content Include="Views\HistorialUsuario\HistorialUsuario.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,7 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
