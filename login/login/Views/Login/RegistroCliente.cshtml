@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Registro de Cliente";
+}
+
+<!-- Contenedor principal del formulario -->
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f1f1f1;">
+    <div style="width: 400px; padding: 30px; background-color: #fff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <form>
+            <div style="margin-bottom: 15px;">
+                <input type="text" id="nombre" placeholder="Nombres"
+                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <input type="text" id="apellido" placeholder="Apellidos"
+                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <input type="tel" id="telefono" placeholder="(+503)"
+                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <input type="email" id="correo" placeholder="Correo electrónico"
+                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <input type="password" id="password" placeholder="Contraseña"
+                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;" required>
+            </div>
+
+            
+
+            <button type="submit"
+                    style="width: 100%; padding: 10px; background-color: #0b0b73; color: white;
+                           border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                Registrarme
+            </button>
+        </form>
+
+        <p style="text-align: center; margin-top: 15px;">
+            ¿Ya tienes cuenta? <a href="@Url.Action("Login", "Login")" style="color: #0b0b73; text-decoration: underline;">Inicia sesión</a>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
