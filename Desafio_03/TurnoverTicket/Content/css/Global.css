@@ -1,0 +1,96 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*
+    Layout
+*/
+.all-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "menu main-content"
+        "menu footer";
+    min-height: 100vh;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.menu {
+    position: relative;
+    grid-area: menu;
+    background-color: #190482;
+    height: 100%; 
+}
+
+.menu__title h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu__title img {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+}
+.menu__links nav ul{
+    padding-inline: 20px;
+}
+.menu__links ul li,
+.menu__logout {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-inline: 10px;
+    margin: 0;
+    transition: transform 0.2s ease-in;
+}
+
+.menu__links li > a.links,
+.menu__logout a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+.menu__links ul li:hover,
+.menu__logout:hover{
+    transform: scale(1.08);
+}
+.menu__links img,
+.menu__logout img {
+    width: 20px;
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu__logout {
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.body-footer {
+    grid-area: footer;
+    background-color: #110452;
+}
+
+.body-footer p {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
