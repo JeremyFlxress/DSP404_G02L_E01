@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="739fc9dbc1f844d89e316498bb43fb5b" Name="Diagram1">
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.Conciertos" Width="1.5" PointX="2.125" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.Empleado" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.Entradas" Width="1.5" PointX="8.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.Factura" Width="1.5" PointX="4.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.HistorialCompra" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.Usuarios" Width="1.5" PointX="7.625" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.VentaEntradas" Width="1.5" PointX="2.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Turnover_SA_CVModel.DetallesEntradas" Width="1.5" PointX="5.125" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__Entradas__IDConc__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__Factura__IDEmple__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__VentaEntr__IDEmp__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__DetallesE__IDEnt__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__Factura__IDUsuar__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__Factura__IDVenta__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__Historial__IDFac__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="Turnover_SA_CVModel.FK__DetallesE__IDVen__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

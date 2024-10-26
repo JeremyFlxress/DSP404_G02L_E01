@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Turnover_SA_CVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Conciertos">
+          <Key>
+            <PropertyRef Name="IDConcierto" />
+          </Key>
+          <Property Name="IDConcierto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Localizacion" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Artista" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Fecha" Type="date" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="DetallesEntradas">
+          <Key>
+            <PropertyRef Name="Cantidad" />
+          </Key>
+          <Property Name="IDVenta" Type="int" />
+          <Property Name="IDEntrada" Type="int" />
+          <Property Name="Cantidad" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Empleado">
+          <Key>
+            <PropertyRef Name="IDEmpleado" />
+          </Key>
+          <Property Name="IDEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombres" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Apellidos" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="15" />
+          <Property Name="Correo" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Contraseña" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Entradas">
+          <Key>
+            <PropertyRef Name="IDEntrada" />
+          </Key>
+          <Property Name="IDEntrada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDConcierto" Type="int" />
+          <Property Name="Localidad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CantidadDisponible" Type="int" Nullable="false" />
+          <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="IDFactura" />
+          </Key>
+          <Property Name="IDFactura" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDEmpleado" Type="int" />
+          <Property Name="IDUsuario" Type="int" />
+          <Property Name="IDVenta" Type="int" />
+          <Property Name="FechaVenta" Type="date" />
+          <Property Name="Subtotal" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="HistorialCompra">
+          <Key>
+            <PropertyRef Name="IDHistorial" />
+          </Key>
+          <Property Name="IDHistorial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDFactura" Type="int" />
+          <Property Name="FechaCompra" Type="date" />
+          <Property Name="CantidadEntradas" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IDUsuario" />
+          </Key>
+          <Property Name="IDUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombres" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Apellidos" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Correo" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Contraseña" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="VentaEntradas">
+          <Key>
+            <PropertyRef Name="IDVenta" />
+          </Key>
+          <Property Name="IDVenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDEmpleado" Type="int" />
+        </EntityType>
+        <Association Name="FK__DetallesE__IDEnt__46E78A0C">
+          <End Role="Entradas" Type="Self.Entradas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entradas">
+              <PropertyRef Name="IDEntrada" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDEntrada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetallesE__IDVen__45F365D3">
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VentaEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Entradas__IDConc__3F466844">
+          <End Role="Conciertos" Type="Self.Conciertos" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Entradas" Type="Self.Entradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conciertos">
+              <PropertyRef Name="IDConcierto" />
+            </Principal>
+            <Dependent Role="Entradas">
+              <PropertyRef Name="IDConcierto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Factura__IDEmple__4AB81AF0">
+          <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="IDEmpleado" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Factura__IDUsuar__4BAC3F29">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="IDUsuario" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="IDUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Factura__IDVenta__4CA06362">
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VentaEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="IDVenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Historial__IDFac__5165187F">
+          <End Role="Factura" Type="Self.Factura" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="HistorialCompra" Type="Self.HistorialCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factura">
+              <PropertyRef Name="IDFactura" />
+            </Principal>
+            <Dependent Role="HistorialCompra">
+              <PropertyRef Name="IDFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__VentaEntr__IDEmp__440B1D61">
+          <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="IDEmpleado" />
+            </Principal>
+            <Dependent Role="VentaEntradas">
+              <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="ST_ActualizarConcierto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDConcierto" Type="int" Mode="In" />
+          <Parameter Name="Localizacion" Type="nvarchar" Mode="In" />
+          <Parameter Name="Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fecha" Type="date" Mode="In" />
+        </Function>
+        <Function Name="ST_ActualizarEntrada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDEntrada" Type="int" Mode="In" />
+          <Parameter Name="CantidadDisponible" Type="int" Mode="In" />
+          <Parameter Name="Precio" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="ST_ActualizarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDUsuario" Type="int" Mode="In" />
+          <Parameter Name="Telefono" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ST_CrearConcierto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Localizacion" Type="nvarchar" Mode="In" />
+          <Parameter Name="Nombre" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fecha" Type="date" Mode="In" />
+        </Function>
+        <Function Name="ST_CrearEntrada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDConcierto" Type="int" Mode="In" />
+          <Parameter Name="Localidad" Type="nvarchar" Mode="In" />
+          <Parameter Name="CantidadDisponible" Type="int" Mode="In" />
+          <Parameter Name="Precio" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="ST_CrearUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Nombres" Type="nvarchar" Mode="In" />
+          <Parameter Name="Apellidos" Type="nvarchar" Mode="In" />
+          <Parameter Name="Correo" Type="nvarchar" Mode="In" />
+          <Parameter Name="Contraseña" Type="nvarchar" Mode="In" />
+          <Parameter Name="Telefono" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ST_EliminarConcierto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDConcierto" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ST_EliminarEntrada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDEntrada" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ST_EliminarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDUsuario" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ST_LeerConciertos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="ST_LeerEntradas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="ST_LeerUsuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Turnover_SA_CVModelStoreContainer">
+          <EntitySet Name="Conciertos" EntityType="Self.Conciertos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Entradas" EntityType="Self.Entradas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HistorialCompra" EntityType="Self.HistorialCompra" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VentaEntradas" EntityType="Self.VentaEntradas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetallesEntradas" EntityType="Self.DetallesEntradas" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [DetallesEntradas].[IDVenta] AS [IDVenta], 
+    [DetallesEntradas].[IDEntrada] AS [IDEntrada], 
+    [DetallesEntradas].[Cantidad] AS [Cantidad]
+    FROM [dbo].[DetallesEntradas] AS [DetallesEntradas]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__DetallesE__IDEnt__46E78A0C" Association="Self.FK__DetallesE__IDEnt__46E78A0C">
+            <End Role="Entradas" EntitySet="Entradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetallesE__IDVen__45F365D3" Association="Self.FK__DetallesE__IDVen__45F365D3">
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Entradas__IDConc__3F466844" Association="Self.FK__Entradas__IDConc__3F466844">
+            <End Role="Conciertos" EntitySet="Conciertos" />
+            <End Role="Entradas" EntitySet="Entradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDEmple__4AB81AF0" Association="Self.FK__Factura__IDEmple__4AB81AF0">
+            <End Role="Empleado" EntitySet="Empleado" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDUsuar__4BAC3F29" Association="Self.FK__Factura__IDUsuar__4BAC3F29">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDVenta__4CA06362" Association="Self.FK__Factura__IDVenta__4CA06362">
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Historial__IDFac__5165187F" Association="Self.FK__Historial__IDFac__5165187F">
+            <End Role="Factura" EntitySet="Factura" />
+            <End Role="HistorialCompra" EntitySet="HistorialCompra" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VentaEntr__IDEmp__440B1D61" Association="Self.FK__VentaEntr__IDEmp__440B1D61">
+            <End Role="Empleado" EntitySet="Empleado" />
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Turnover_SA_CVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Conciertos">
+          <Key>
+            <PropertyRef Name="IDConcierto" />
+          </Key>
+          <Property Name="IDConcierto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Localizacion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Artista" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="Entradas" Relationship="Self.FK__Entradas__IDConc__3F466844" FromRole="Conciertos" ToRole="Entradas" />
+        </EntityType>
+        <EntityType Name="Empleado">
+          <Key>
+            <PropertyRef Name="IDEmpleado" />
+          </Key>
+          <Property Name="IDEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDEmple__4AB81AF0" FromRole="Empleado" ToRole="Factura" />
+          <NavigationProperty Name="VentaEntradas" Relationship="Self.FK__VentaEntr__IDEmp__440B1D61" FromRole="Empleado" ToRole="VentaEntradas" />
+        </EntityType>
+        <EntityType Name="Entradas">
+          <Key>
+            <PropertyRef Name="IDEntrada" />
+          </Key>
+          <Property Name="IDEntrada" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDConcierto" Type="Int32" />
+          <Property Name="Localidad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CantidadDisponible" Type="Int32" Nullable="false" />
+          <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Conciertos" Relationship="Self.FK__Entradas__IDConc__3F466844" FromRole="Entradas" ToRole="Conciertos" />
+          <NavigationProperty Name="DetallesEntradas" Relationship="Self.FK__DetallesE__IDEnt__46E78A0C" FromRole="Entradas" ToRole="DetallesEntradas" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="IDFactura" />
+          </Key>
+          <Property Name="IDFactura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDEmpleado" Type="Int32" />
+          <Property Name="IDUsuario" Type="Int32" />
+          <Property Name="IDVenta" Type="Int32" />
+          <Property Name="FechaVenta" Type="DateTime" Precision="0" />
+          <Property Name="Subtotal" Type="Decimal" Precision="10" Scale="2" />
+          <NavigationProperty Name="Empleado" Relationship="Self.FK__Factura__IDEmple__4AB81AF0" FromRole="Factura" ToRole="Empleado" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK__Factura__IDUsuar__4BAC3F29" FromRole="Factura" ToRole="Usuarios" />
+          <NavigationProperty Name="VentaEntradas" Relationship="Self.FK__Factura__IDVenta__4CA06362" FromRole="Factura" ToRole="VentaEntradas" />
+          <NavigationProperty Name="HistorialCompra" Relationship="Self.FK__Historial__IDFac__5165187F" FromRole="Factura" ToRole="HistorialCompra" />
+        </EntityType>
+        <EntityType Name="HistorialCompra">
+          <Key>
+            <PropertyRef Name="IDHistorial" />
+          </Key>
+          <Property Name="IDHistorial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDFactura" Type="Int32" />
+          <Property Name="FechaCompra" Type="DateTime" Precision="0" />
+          <Property Name="CantidadEntradas" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Factura" Relationship="Self.FK__Historial__IDFac__5165187F" FromRole="HistorialCompra" ToRole="Factura" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IDUsuario" />
+          </Key>
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDUsuar__4BAC3F29" FromRole="Usuarios" ToRole="Factura" />
+        </EntityType>
+        <EntityType Name="VentaEntradas">
+          <Key>
+            <PropertyRef Name="IDVenta" />
+          </Key>
+          <Property Name="IDVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDEmpleado" Type="Int32" />
+          <NavigationProperty Name="Empleado" Relationship="Self.FK__VentaEntr__IDEmp__440B1D61" FromRole="VentaEntradas" ToRole="Empleado" />
+          <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDVenta__4CA06362" FromRole="VentaEntradas" ToRole="Factura" />
+          <NavigationProperty Name="DetallesEntradas" Relationship="Self.FK__DetallesE__IDVen__45F365D3" FromRole="VentaEntradas" ToRole="DetallesEntradas" />
+        </EntityType>
+        <EntityType Name="DetallesEntradas">
+          <Key>
+            <PropertyRef Name="Cantidad" />
+          </Key>
+          <Property Name="IDVenta" Type="Int32" />
+          <Property Name="IDEntrada" Type="Int32" />
+          <Property Name="Cantidad" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Entradas" Relationship="Self.FK__DetallesE__IDEnt__46E78A0C" FromRole="DetallesEntradas" ToRole="Entradas" />
+          <NavigationProperty Name="VentaEntradas" Relationship="Self.FK__DetallesE__IDVen__45F365D3" FromRole="DetallesEntradas" ToRole="VentaEntradas" />
+        </EntityType>
+        <Association Name="FK__Entradas__IDConc__3F466844">
+          <End Role="Conciertos" Type="Self.Conciertos" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Entradas" Type="Self.Entradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conciertos">
+              <PropertyRef Name="IDConcierto" />
+            </Principal>
+            <Dependent Role="Entradas">
+              <PropertyRef Name="IDConcierto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Factura__IDEmple__4AB81AF0">
+          <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="IDEmpleado" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__VentaEntr__IDEmp__440B1D61">
+          <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="IDEmpleado" />
+            </Principal>
+            <Dependent Role="VentaEntradas">
+              <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetallesE__IDEnt__46E78A0C">
+          <End Role="Entradas" Type="Self.Entradas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entradas">
+              <PropertyRef Name="IDEntrada" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDEntrada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Factura__IDUsuar__4BAC3F29">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="IDUsuario" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="IDUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Factura__IDVenta__4CA06362">
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VentaEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="IDVenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Historial__IDFac__5165187F">
+          <End Role="Factura" Type="Self.Factura" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="HistorialCompra" Type="Self.HistorialCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factura">
+              <PropertyRef Name="IDFactura" />
+            </Principal>
+            <Dependent Role="HistorialCompra">
+              <PropertyRef Name="IDFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetallesE__IDVen__45F365D3">
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VentaEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Turnover_SA_CVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Conciertos" EntityType="Self.Conciertos" />
+          <EntitySet Name="Empleado" EntityType="Self.Empleado" />
+          <EntitySet Name="Entradas" EntityType="Self.Entradas" />
+          <EntitySet Name="Factura" EntityType="Self.Factura" />
+          <EntitySet Name="HistorialCompra" EntityType="Self.HistorialCompra" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <EntitySet Name="VentaEntradas" EntityType="Self.VentaEntradas" />
+          <EntitySet Name="DetallesEntradas" EntityType="Self.DetallesEntradas" />
+          <AssociationSet Name="FK__Entradas__IDConc__3F466844" Association="Self.FK__Entradas__IDConc__3F466844">
+            <End Role="Conciertos" EntitySet="Conciertos" />
+            <End Role="Entradas" EntitySet="Entradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDEmple__4AB81AF0" Association="Self.FK__Factura__IDEmple__4AB81AF0">
+            <End Role="Empleado" EntitySet="Empleado" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VentaEntr__IDEmp__440B1D61" Association="Self.FK__VentaEntr__IDEmp__440B1D61">
+            <End Role="Empleado" EntitySet="Empleado" />
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetallesE__IDEnt__46E78A0C" Association="Self.FK__DetallesE__IDEnt__46E78A0C">
+            <End Role="Entradas" EntitySet="Entradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDUsuar__4BAC3F29" Association="Self.FK__Factura__IDUsuar__4BAC3F29">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDVenta__4CA06362" Association="Self.FK__Factura__IDVenta__4CA06362">
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Historial__IDFac__5165187F" Association="Self.FK__Historial__IDFac__5165187F">
+            <End Role="Factura" EntitySet="Factura" />
+            <End Role="HistorialCompra" EntitySet="HistorialCompra" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetallesE__IDVen__45F365D3" Association="Self.FK__DetallesE__IDVen__45F365D3">
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
+          <FunctionImport Name="ST_ActualizarConcierto">
+            <Parameter Name="IDConcierto" Mode="In" Type="Int32" />
+            <Parameter Name="Localizacion" Mode="In" Type="String" />
+            <Parameter Name="Nombre" Mode="In" Type="String" />
+            <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="ST_ActualizarEntrada">
+            <Parameter Name="IDEntrada" Mode="In" Type="Int32" />
+            <Parameter Name="CantidadDisponible" Mode="In" Type="Int32" />
+            <Parameter Name="Precio" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="ST_ActualizarUsuario">
+            <Parameter Name="IDUsuario" Mode="In" Type="Int32" />
+            <Parameter Name="Telefono" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ST_CrearConcierto">
+            <Parameter Name="Localizacion" Mode="In" Type="String" />
+            <Parameter Name="Nombre" Mode="In" Type="String" />
+            <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="ST_CrearEntrada">
+            <Parameter Name="IDConcierto" Mode="In" Type="Int32" />
+            <Parameter Name="Localidad" Mode="In" Type="String" />
+            <Parameter Name="CantidadDisponible" Mode="In" Type="Int32" />
+            <Parameter Name="Precio" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="ST_CrearUsuario">
+            <Parameter Name="Nombres" Mode="In" Type="String" />
+            <Parameter Name="Apellidos" Mode="In" Type="String" />
+            <Parameter Name="Correo" Mode="In" Type="String" />
+            <Parameter Name="Contraseña" Mode="In" Type="String" />
+            <Parameter Name="Telefono" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ST_EliminarConcierto">
+            <Parameter Name="IDConcierto" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ST_EliminarEntrada">
+            <Parameter Name="IDEntrada" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ST_EliminarUsuario">
+            <Parameter Name="IDUsuario" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ST_LeerConciertos" ReturnType="Collection(Turnover_SA_CVModel.ST_LeerConciertos_Result)" />
+          <FunctionImport Name="ST_LeerEntradas" ReturnType="Collection(Turnover_SA_CVModel.ST_LeerEntradas_Result)" />
+          <FunctionImport Name="ST_LeerUsuarios" ReturnType="Collection(Turnover_SA_CVModel.ST_LeerUsuarios_Result)" />
+        </EntityContainer>
+        <ComplexType Name="ST_LeerConciertos_Result">
+          <Property Type="Int32" Name="IDConcierto" Nullable="false" />
+          <Property Type="String" Name="Localizacion" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Artista" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="Fecha" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ST_LeerEntradas_Result">
+          <Property Type="Int32" Name="IDEntrada" Nullable="false" />
+          <Property Type="Int32" Name="IDConcierto" Nullable="true" />
+          <Property Type="String" Name="Localidad" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="CantidadDisponible" Nullable="false" />
+          <Property Type="Decimal" Name="Precio" Nullable="false" Precision="10" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="ST_LeerUsuarios_Result">
+          <Property Type="Int32" Name="IDUsuario" Nullable="false" />
+          <Property Type="String" Name="Nombres" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Correo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Contraseña" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Telefono" Nullable="true" MaxLength="15" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Turnover_SA_CVModelStoreContainer" CdmEntityContainer="Turnover_SA_CVEntities">
+          <EntitySetMapping Name="Conciertos">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Conciertos">
+              <MappingFragment StoreEntitySet="Conciertos">
+                <ScalarProperty Name="IDConcierto" ColumnName="IDConcierto" />
+                <ScalarProperty Name="Localizacion" ColumnName="Localizacion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Artista" ColumnName="Artista" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empleado">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Empleado">
+              <MappingFragment StoreEntitySet="Empleado">
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Entradas">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Entradas">
+              <MappingFragment StoreEntitySet="Entradas">
+                <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
+                <ScalarProperty Name="IDConcierto" ColumnName="IDConcierto" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="CantidadDisponible" ColumnName="CantidadDisponible" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Factura">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Factura">
+              <MappingFragment StoreEntitySet="Factura">
+                <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
+                <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HistorialCompra">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.HistorialCompra">
+              <MappingFragment StoreEntitySet="HistorialCompra">
+                <ScalarProperty Name="IDHistorial" ColumnName="IDHistorial" />
+                <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+                <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+                <ScalarProperty Name="CantidadEntradas" ColumnName="CantidadEntradas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VentaEntradas">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.VentaEntradas">
+              <MappingFragment StoreEntitySet="VentaEntradas">
+                <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetallesEntradas">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.DetallesEntradas">
+              <MappingFragment StoreEntitySet="DetallesEntradas">
+                <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
+                <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ST_ActualizarConcierto" FunctionName="Turnover_SA_CVModel.Store.ST_ActualizarConcierto" />
+          <FunctionImportMapping FunctionImportName="ST_ActualizarEntrada" FunctionName="Turnover_SA_CVModel.Store.ST_ActualizarEntrada" />
+          <FunctionImportMapping FunctionImportName="ST_ActualizarUsuario" FunctionName="Turnover_SA_CVModel.Store.ST_ActualizarUsuario" />
+          <FunctionImportMapping FunctionImportName="ST_CrearConcierto" FunctionName="Turnover_SA_CVModel.Store.ST_CrearConcierto" />
+          <FunctionImportMapping FunctionImportName="ST_CrearEntrada" FunctionName="Turnover_SA_CVModel.Store.ST_CrearEntrada" />
+          <FunctionImportMapping FunctionImportName="ST_CrearUsuario" FunctionName="Turnover_SA_CVModel.Store.ST_CrearUsuario" />
+          <FunctionImportMapping FunctionImportName="ST_EliminarConcierto" FunctionName="Turnover_SA_CVModel.Store.ST_EliminarConcierto" />
+          <FunctionImportMapping FunctionImportName="ST_EliminarEntrada" FunctionName="Turnover_SA_CVModel.Store.ST_EliminarEntrada" />
+          <FunctionImportMapping FunctionImportName="ST_EliminarUsuario" FunctionName="Turnover_SA_CVModel.Store.ST_EliminarUsuario" />
+          <FunctionImportMapping FunctionImportName="ST_LeerConciertos" FunctionName="Turnover_SA_CVModel.Store.ST_LeerConciertos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Turnover_SA_CVModel.ST_LeerConciertos_Result">
+                <ScalarProperty Name="IDConcierto" ColumnName="IDConcierto" />
+                <ScalarProperty Name="Localizacion" ColumnName="Localizacion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Artista" ColumnName="Artista" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ST_LeerEntradas" FunctionName="Turnover_SA_CVModel.Store.ST_LeerEntradas">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Turnover_SA_CVModel.ST_LeerEntradas_Result">
+                <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
+                <ScalarProperty Name="IDConcierto" ColumnName="IDConcierto" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="CantidadDisponible" ColumnName="CantidadDisponible" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ST_LeerUsuarios" FunctionName="Turnover_SA_CVModel.Store.ST_LeerUsuarios">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Turnover_SA_CVModel.ST_LeerUsuarios_Result">
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
