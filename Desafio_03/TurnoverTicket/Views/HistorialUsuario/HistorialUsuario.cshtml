@@ -1,0 +1,307 @@
+﻿@{
+    ViewBag.Title = "Historial de Compras";
+}
+<link href="~/Content/css/Global.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/img/ticket.png" rel="shortcut icon" type="image/x-icon" />
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .all-content {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "menu main-content"
+            "menu footer";
+        min-height: 100vh;
+    }
+
+    .main-content {
+        grid-area: main-content;
+        padding: 40px;
+        overflow-y: auto;
+    }
+
+    .page-header {
+        margin: 0 0 30px 0;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 2.5em;
+        color: #1a1a1a;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .concerts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .purchase-card {
+        background: white;
+        border-radius: 16px;
+        padding: 25px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+        .purchase-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+    .purchase-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .purchase-title {
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0;
+    }
+
+    .purchase-status {
+        display: inline-flex;
+        align-items: center;
+        background-color: #ecfdf5;
+        color: #059669;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.875em;
+        font-weight: 500;
+        border: 1px solid #059669;
+    }
+
+    .purchase-date {
+        color: #6b7280;
+        margin: 15px 0;
+        font-size: 0.95em;
+        font-weight: 500;
+    }
+
+    .purchase-details {
+        margin: 25px 0;
+        background-color: #f8fafc;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .purchase-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 12px 0;
+        color: #4b5563;
+        font-size: 0.95em;
+    }
+
+        .purchase-item span:first-child {
+            font-weight: 500;
+        }
+
+    .purchase-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 2px solid #e5e7eb;
+        font-weight: 600;
+        color: #1a1a1a;
+        font-size: 1.1em;
+    }
+
+    .view-details {
+        display: inline-flex;
+        align-items: center;
+        color: #4f46e5;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.95em;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background-color: #eef2ff;
+        transition: all 0.2s ease;
+    }
+
+        .view-details:hover {
+            background-color: #e0e7ff;
+            color: #4338ca;
+            text-decoration: none;
+        }
+
+    .menu__logout {
+        width: 90%;
+        position: absolute;
+        bottom: 800px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .body-footer {
+        grid-area: footer;
+        background-color: #110452;
+    }
+
+        .body-footer p {
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            font-size: 0.9em;
+        }
+</style>
+
+<div class="menu">
+    <div class="menu__title">
+        <h1>TurnoverTickets</h1>
+        <img src="~/Content/img/ticket.png" alt="Logo de un ticket" />
+    </div>
+    <div class="menu__links">
+        <nav>
+            <ul>
+                <li>
+                    <img src="~/Content/img/layout-dashboard.png" alt="Icono" />
+                    @Html.ActionLink("Dashboard", "ComprarConcierto", "ComprarConcierto", null, new { @class = "links", @id = "EmpleadoLink" })
+                </li>
+                <li>
+                    <img src="~/Content/img/calendar-event.png" alt="Icono" />
+                    @Html.ActionLink("Historial de Compras", "HistorialUsuario", "HistorialUsuario", null, new { @class = "links", @id = "EmpleadoLink" })
+                </li>
+            </ul>
+            <div class="menu__logout">
+                <img src="~/Content/img/logout.png" alt="Icono" />
+                @Html.ActionLink("Cerrar sesión", "Login", "Login", null, new { @class = "links" })
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="page-header">
+        <h1 class="page-title">Historial de Compras</h1>
+    </div>
+    <div class="concerts-grid">
+        <div class="purchase-card">
+            <div class="purchase-header">
+                <span class="purchase-title">Rock en Concierto 2024</span>
+                <span class="purchase-status">Completado</span>
+            </div>
+            <div class="purchase-date">
+                Comprado el 1 de Octubre, 2024
+            </div>
+            <div class="purchase-details">
+                <div class="purchase-item">
+                    <span>2x Entrada VIP</span>
+                    <span>$200.00</span>
+                </div>
+                <div class="purchase-item">
+                  
+                </div>
+                <div class="purchase-total">
+                    <span>Total</span>
+                    <span>$200.00</span>
+                </div>
+            </div>
+            <a href="#" class="view-details">Ver Detalles</a>
+        </div>
+        <div class="purchase-card">
+            <div class="purchase-header">
+                <span class="purchase-title">Festival de Jazz 2024</span>
+                <span class="purchase-status">Completado</span>
+            </div>
+            <div class="purchase-date">
+                Comprado el 15 de Septiembre, 2024
+            </div>
+            <div class="purchase-details">
+                <div class="purchase-item">
+                    <span>3x Entrada General</span>
+                    <span>$90.00</span>
+                </div>
+                <div class="purchase-item">
+                   
+                </div>
+                <div class="purchase-total">
+                    <span>Total</span>
+                    <span>$90.00</span>
+                </div>
+            </div>
+            <a href="#" class="view-details">Ver Detalles</a>
+        </div>
+        <div class="purchase-card">
+            <div class="purchase-header">
+                <span class="purchase-title">Concierto Sinfónico</span>
+                <span class="purchase-status">Completado</span>
+            </div>
+            <div class="purchase-date">
+                Comprado el 5 de Agosto, 2024
+            </div>
+            <div class="purchase-details">
+                <div class="purchase-item">
+                    <span>2x Entrada Premium</span>
+                    <span>$160.00</span>
+                </div>
+                <div class="purchase-item">
+                    
+                </div>
+                <div class="purchase-total">
+                    <span>Total</span>
+                    <span>$160.00</span>
+                </div>
+            </div>
+            <a href="#" class="view-details">Ver Detalles</a>
+        </div>
+        <div class="purchase-card">
+            <div class="purchase-header">
+                <span class="purchase-title">Festival de Música Electrónica</span>
+                <span class="purchase-status">Completado</span>
+            </div>
+            <div class="purchase-date">
+                Comprado el 20 de Julio, 2024
+            </div>
+            <div class="purchase-details">
+                <div class="purchase-item">
+                    <span>4x Entrada VIP</span>
+                    <span>$280.00</span>
+                </div>
+                <div class="purchase-item">
+                    
+                </div>
+                <div class="purchase-total">
+                    <span>Total</span>
+                    <span>$280.00</span>
+                </div>
+            </div>
+            <a href="#" class="view-details">Ver Detalles</a>
+        </div>
+    </div>
+</div>
+
+<footer class="body-footer">
+    <p>&copy; @DateTime.Now.Year - TurnoverTickets | Universidad Don Bosco</p>
+</footer>

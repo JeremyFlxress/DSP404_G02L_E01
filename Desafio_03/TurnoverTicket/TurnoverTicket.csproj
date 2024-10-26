@@ -102,8 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ComprarConciertoController.cs" />
     <Compile Include="Controllers\CrearConciertoController.cs" />
     <Compile Include="Controllers\DashboardEmpleadoController.cs" />
+    <Compile Include="Controllers\HistorialUsuarioController.cs" />
     <Compile Include="Controllers\ListaConciertosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
@@ -120,6 +122,8 @@
     <Content Include="Views\DashboardEmpleado\DashboardEmpleado.cshtml" />
     <Content Include="Views\ListaConciertos\ListaConciertos.cshtml" />
     <Content Include="Views\CrearConcierto\CrearConcierto.cshtml" />
+    <Content Include="Views\ComprarConcierto\ComprarConcierto.cshtml" />
+    <Content Include="Views\HistorialUsuario\HistorialUsuario.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
