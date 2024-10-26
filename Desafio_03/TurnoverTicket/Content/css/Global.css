@@ -10,12 +10,13 @@
 */
 .all-content {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 240px 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas:
         "menu main-content"
         "menu footer";
     min-height: 100vh;
+    margin: 0;
 }
 
 .main-content {
@@ -23,9 +24,187 @@
     padding: 20px;
     overflow-y: auto;
 }
+.page-header {
+    margin: 0 0 30px 0;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.page-title {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.concerts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.purchase-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+    .purchase-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+.purchase-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.purchase-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.purchase-status {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ecfdf5;
+    color: #059669;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875em;
+    font-weight: 500;
+    border: 1px solid #059669;
+}
+
+.purchase-date {
+    color: #6b7280;
+    margin: 15px 0;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.purchase-details {
+    margin: 25px 0;
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.purchase-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    color: #4b5563;
+    font-size: 0.95em;
+}
+
+.purchase-item span:first-child {
+    font-weight: 500;
+}
+
+.purchase-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #e5e7eb;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 1.1em;
+}
+
+.view-details {
+    display: inline-flex;
+    align-items: center;
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95em;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #eef2ff;
+    transition: all 0.2s ease;
+}
+
+.view-details:hover {
+    background-color: #e0e7ff;
+    color: #4338ca;
+    text-decoration: none;
+}
+
+.concert-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+.concert-card:hover {
+    transform: translateY(-5px);
+}
+
+.concert-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(45deg, #6c5ce7, #a855f7);
+    object-fit: cover;
+}
+
+.concert-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.concert-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.concert-date {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.concert-price {
+    color: #6c5ce7;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+}
+
+.buy-button:hover {
+    background-color: #5b4bc4;
+}
+
+/**
+    Menu fijo
+*/
 .menu {
-    position: relative;
+    position: fixed;
     grid-area: menu;
     background-color: #190482;
     height: 100%; 
