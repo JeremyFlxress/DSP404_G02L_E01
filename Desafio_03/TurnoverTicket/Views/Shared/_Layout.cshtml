@@ -5,35 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - TurnoverTicket</title>
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/css/Global.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/img/ticket.png" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+    <div class="menu">
+        <div class="menu__title">
+            <h1>TurnoverTickets</h1>
+            <img src="~/Content/img/ticket.png" alt="Logo de un ticket" />
+        </div>
+        <div class="menu__links">
+            <nav>
+                <ul>
+                    <li>
+                        @Html.ActionLink("Dashboard", "DashboardEmpleado", "DashboardEmpleado", null, new { @class = "links", @id = "EmpleadoLink" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Crear un concierto", "CrearConcierto", "CrearConcierto", null, new { @class = "links", @id = "EmpleadoLink" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Lista de conciertos", "ListaConcierto", "ListaConcierto", null, new { @class = "links", @id = "EmpleadoLink" })
+                    </li>
                 </ul>
-            </div>
+                <div class="menu__logout">
+                    @Html.ActionLink("Cerrar sesión", "Login", "Login", null, new { @class = "links"})
+                </div>
+            </nav>
+           
+
         </div>
     </div>
 
-    <div class="container body-content">
+    <div>
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="body-footer">
+            <p>&copy; @DateTime.Now.Year - TurnoverTickets | El Salvador </p>
         </footer>
     </div>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Content/js/bootstrap.min.js"></script>
 </body>
 </html>
