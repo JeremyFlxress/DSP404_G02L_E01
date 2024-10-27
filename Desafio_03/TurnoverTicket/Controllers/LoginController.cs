@@ -14,10 +14,9 @@ namespace TurnoverTicket.Controllers
 		// Acción GET para mostrar el formulario de login del cliente.
 		public ActionResult Cliente()
 		{
-			return View();  // Renderiza la vista Cliente.cshtml
+			return View(); 
 		}
 
-		// Acción POST para procesar el login del cliente.
 		[HttpPost]
 		public ActionResult Cliente(string correo, string password)
 		{

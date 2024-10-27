@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "TurnoverTickets - Login";
 }
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
 
 <div style="display: flex; height: 100vh; width: 100%;">
 
@@ -11,13 +12,7 @@
             <h2 style="color: #0b0b73; margin-bottom: 15px;">Bienvenido a TurnoverTickets</h2>
             <p style="margin-bottom: 30px;">Ingresa a tu cuenta</p>
 
-            <!-- Mostrar mensaje de error -->
-            @if (!string.IsNullOrEmpty(ViewBag.Error))
-            {
-                <div style="color: red; margin-bottom: 20px;">
-                    @ViewBag.Error
-                </div>
-            }
+
 
             <!-- Formulario de Login -->
             <form action="@Url.Action("Cliente", "Login")" method="post">
@@ -37,6 +32,14 @@
                 </button>
             </form>
 
+            <!-- Mostrar mensaje de error -->
+            @if (!string.IsNullOrEmpty(ViewBag.Error))
+            {
+                <div class="alert alert-danger p-0 mt-3">
+                   <p class="text-dark mb-0 p-2">@ViewBag.Error</p>
+                </div>
+            }
+
             <p style="margin-top: 15px;">
                 ¿No tienes cuenta? <a href="@Url.Action("RegistroCliente", "Login")" style="color: #0b0b73; text-decoration: underline;">Regístrate</a>
             </p>
@@ -44,9 +47,9 @@
             <div style="margin-top: 30px;">
                 <p>Síguenos en nuestras redes sociales</p>
                 <div style="display: flex; justify-content: center; gap: 15px;">
-                    <a href="#"><img src="/Content/img/feis.png" width="32" alt="Facebook"></a>
-                    <a href="#"><img src="/Content/img/instagram.png" width="32" alt="Instagram"></a>
-                    <a href="#"><img src="/Content/img/x.png" width="32" alt="X"></a>
+                    <a href="https://www.facebook.com/"><img src="/Content/img/feis.png" width="32" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="/Content/img/instagram.png" width="32" alt="Instagram"></a>
+                    <a href="https://www.x.com/"><img src="/Content/img/x.png" width="32" alt="X"></a>
                 </div>
             </div>
         </div>

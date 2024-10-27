@@ -2,24 +2,22 @@
     ViewBag.Title = "Selecciona tu tipo de usuario";
 }
 
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f8f9fa;">
-    <div style="background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center;">
-        <h2 style="margin-bottom: 30px; color: #333;">Seleccione su tipo de usuario</h2>
+<div class="d-flex justify-content-center align-items-center bg-light" style="min-height: 80vh;">
+    <div class="bg-white p-4 rounded shadow text-center" style="width: 100%; max-width: 400px;">
+        <h2 class="mb-3 text-dark">Seleccione su tipo de usuario</h2>
 
         <div>
             <button onclick="location.href='@Url.Action("Cliente", "Login")'"
-                    style="padding: 15px 30px; margin: 10px; font-size: 18px;
-                           color: white; background-color: #007BFF; border: none;
-                           border-radius: 5px; cursor: pointer; transition: background-color 0.3s; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                    class="btn btn-primary mx-2 px-3 py-2 fs-6 shadow-sm">
                 Cliente
             </button>
             <button onclick="location.href='@Url.Action("Empleado", "Login")'"
-                    style="padding: 15px 30px; margin: 10px; font-size: 18px;
-                           color: white; background-color: #28A745; border: none;
-                           border-radius: 5px; cursor: pointer; transition: background-color 0.3s; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                    class="btn btn-success mx-2 px-3 py-2 fs-6 shadow-sm">
                 Empleado
             </button>
         </div>
     </div>
 </div>
+
