@@ -119,7 +119,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComprarConciertoController.cs" />
     <Compile Include="Controllers\CrearConciertoController.cs" />
-    <Compile Include="Controllers\DashboardEmpleadoController.cs" />
     <Compile Include="Controllers\HistorialUsuarioController.cs" />
     <Compile Include="Controllers\ListaConciertosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -190,11 +189,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
-    <Content Include="Views\DashboardEmpleado\DashboardEmpleado.cshtml" />
     <Content Include="Views\ListaConciertos\ListaConciertos.cshtml" />
     <Content Include="Views\CrearConcierto\CrearConcierto.cshtml" />
     <Content Include="Views\ComprarConcierto\ComprarConcierto.cshtml" />
     <Content Include="Views\HistorialUsuario\HistorialUsuario.cshtml" />
+    <Content Include="Views\ListaConciertos\Edit.cshtml" />
+    <Content Include="Views\ListaConciertos\Delete.cshtml" />
     <Content Include="Views\Login\SeleccionUsuario.cshtml" />
     <Content Include="Views\Login\Cliente.cshtml" />
     <Content Include="Views\Login\RegistroCliente.cshtml" />
