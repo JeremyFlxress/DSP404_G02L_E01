@@ -198,6 +198,7 @@
     <Content Include="Views\Login\SeleccionUsuario.cshtml" />
     <Content Include="Views\Login\Cliente.cshtml" />
     <Content Include="Views\Login\RegistroCliente.cshtml" />
+    <Content Include="Views\Login\Empleado.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

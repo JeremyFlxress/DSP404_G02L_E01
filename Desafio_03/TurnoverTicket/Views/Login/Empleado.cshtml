@@ -3,24 +3,16 @@
 }
 
 <div style="display: flex; height: 100vh; width: 100%;">
-
     <div style="flex: 1; background-image: url('/Content/img/imagen2.jpg'); background-size: cover; background-position: center;"></div>
 
+    <!-- Sección del formulario -->
     <div style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #fff;">
         <div style="width: 80%; max-width: 400px; text-align: center;">
             <h2 style="color: #0b0b73; margin-bottom: 15px;">Bienvenido a TurnoverTickets</h2>
             <p style="margin-bottom: 30px;">Ingresa a tu cuenta</p>
 
-            <!-- Mostrar mensaje de error -->
-            @if (!string.IsNullOrEmpty(ViewBag.Error))
-            {
-                <div style="color: red; margin-bottom: 20px;">
-                    @ViewBag.Error
-                </div>
-            }
-
-            <!-- Formulario de Login -->
-            <form action="@Url.Action("Cliente", "Login")" method="post">
+            <!-- Formulario de Login para empleados -->
+            <form action="@Url.Action("Empleado", "Login")" method="post">
                 <div style="margin-bottom: 20px;">
                     <input type="email" name="correo" placeholder="Correo electrónico"
                            style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;" required>
@@ -31,15 +23,20 @@
                            style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;" required>
                 </div>
 
-                <button type="submit" style="width: 100%; padding: 10px; font-size: 16px; background-color: #0b0b73;
-                                             color: white; border: none; border-radius: 5px; cursor: pointer;">
+                <button type="submit"
+                        style="width: 100%; padding: 10px; font-size: 16px; background-color: #0b0b73;
+                               color: white; border: none; border-radius: 5px; cursor: pointer;">
                     Ingresar
                 </button>
             </form>
 
-            <p style="margin-top: 15px;">
-                ¿No tienes cuenta? <a href="@Url.Action("RegistroCliente", "Login")" style="color: #0b0b73; text-decoration: underline;">Regístrate</a>
-            </p>
+            <!-- Mostrar mensaje de error -->
+            @if (!string.IsNullOrEmpty(ViewBag.Error))
+            {
+                <div style="color: red; margin-top: 10px;">
+                    @ViewBag.Error
+                </div>
+            }
 
             <div style="margin-top: 30px;">
                 <p>Síguenos en nuestras redes sociales</p>
@@ -52,5 +49,3 @@
         </div>
     </div>
 </div>
-
-
