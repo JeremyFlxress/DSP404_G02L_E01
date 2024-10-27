@@ -20,5 +20,6 @@ namespace TurnoverTicket.Models
     
         public virtual Entradas Entradas { get; set; }
         public virtual VentaEntradas VentaEntradas { get; set; }
+        public decimal PrecioUnitario { get; internal set; }
     }
 }

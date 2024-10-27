@@ -1,0 +1,104 @@
+﻿@model TurnoverTicket.Models.FacturaViewModel
+
+@{
+    ViewBag.Title = "Factura";
+}
+
+<style>
+    .invoice-details {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+        .invoice-details h2 {
+            color: #4a148c; /* Morado oscuro */
+            margin-bottom: 10px;
+        }
+
+        .invoice-details p {
+            color: #1565c0; /* Azul oscuro */
+            margin: 5px 0;
+        }
+
+        .invoice-details table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .invoice-details table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        .invoice-details th {
+            background-color: #4a148c; /* Morado oscuro */
+            color: white;
+            padding: 10px;
+        }
+
+        .invoice-details td {
+            padding: 10px;
+            text-align: center;
+        }
+
+    .invoice-button {
+        background-color: #4a148c; /* Morado oscuro */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .invoice-button:hover {
+            background-color: #6a1b9a; /* Morado un poco más claro */
+        }
+</style>
+
+<h2>Factura</h2>
+
+<div class="invoice-details">
+    <h3>@Model.Nombre</h3>
+    <p>@Model.Artista</p>
+    <p>@Model.Fecha.ToString("d 'de' MMMM, yyyy")</p>
+    <p>@Model.Localizacion</p>
+
+    <h4>Entradas Compradas</h4>
+    <table>
+        <tr>
+            <th>Localidad</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+        </tr>
+        @foreach (var entrada in Model.Entradas)
+        {
+            <tr>
+                <td>@entrada.Localidad</td>
+                <td>@entrada.Precio.ToString("C")</td>
+                <td>@entrada.CantidadComprar</td>
+                <td>@(entrada.Precio * entrada.CantidadComprar).ToString("C")</td>
+            </tr>
+        }
+    </table>
+    <p><strong>Total: @Model.Total.ToString("C")</strong></p>
+
+    @using (Html.BeginForm("ConfirmarCompraFinal", "ComprarConcierto", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.IDConcierto)
+        foreach (var entrada in Model.Entradas)
+        {
+            @Html.Hidden("CantidadComprar_" + entrada.IDEntrada, entrada.CantidadComprar)
+        }
+        <button type="submit" class="invoice-button">Confirmar Compra</button>
+    }
+</div>

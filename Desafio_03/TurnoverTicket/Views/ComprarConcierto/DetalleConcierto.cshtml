@@ -1,0 +1,107 @@
+﻿@model TurnoverTicket.Models.DetalleConciertoViewModel
+
+@{
+    ViewBag.Title = "Detalle del Concierto";
+}
+
+<style>
+    .concert-details {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+        .concert-details h2 {
+            color: #4a148c; /* Morado oscuro */
+            margin-bottom: 10px;
+        }
+
+        .concert-details p {
+            color: #1565c0; /* Azul oscuro */
+            margin: 5px 0;
+        }
+
+        .concert-details table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .concert-details table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        .concert-details th {
+            background-color: #4a148c; /* Morado oscuro */
+            color: white;
+            padding: 10px;
+        }
+
+        .concert-details td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .concert-details input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+    .buy-button {
+        background-color: #4a148c; /* Morado oscuro */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .buy-button:hover {
+            background-color: #6a1b9a; /* Morado un poco más claro */
+        }
+</style>
+
+<h2>Detalle del Concierto</h2>
+
+<div class="concert-details">
+    <h3>@Model.Nombre</h3>
+    <p>@Model.Artista</p>
+    <p>@Model.Fecha.ToString("d 'de' MMMM, yyyy")</p>
+    <p>@Model.Localizacion</p>
+
+    <h4>Entradas Disponibles</h4>
+    @using (Html.BeginForm("ConfirmarCompra", "ComprarConcierto", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.IDConcierto)
+        <table>
+            <tr>
+                <th>Localidad</th>
+                <th>Precio</th>
+                <th>Cantidad Disponible</th>
+                <th>Cantidad a Comprar</th>
+            </tr>
+            @foreach (var entrada in Model.Entradas)
+            {
+                <tr>
+                    <td>@entrada.Localidad</td>
+                    <td>@entrada.Precio.ToString("C")</td>
+                    <td>@entrada.CantidadDisponible</td>
+                    <td>
+                        <input type="number" name="CantidadComprar_@entrada.IDEntrada" min="1" max="@entrada.CantidadDisponible" />
+                    </td>
+                </tr>
+            }
+        </table>
+        <button type="submit" class="buy-button">Confirmar Compra</button>
+    }
+</div>

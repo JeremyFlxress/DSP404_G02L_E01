@@ -32,5 +32,6 @@ namespace TurnoverTicket.Models
         public virtual VentaEntradas VentaEntradas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HistorialCompra> HistorialCompra { get; set; }
+        public decimal Total { get; internal set; }
     }
 }

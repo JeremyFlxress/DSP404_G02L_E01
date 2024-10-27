@@ -135,6 +135,7 @@
       <DependentUpon>TurnoverTicket.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CrearConciertoViewModel.cs" />
+    <Compile Include="Models\DetalleCompra.cs" />
     <Compile Include="Models\DetallesEntradas.cs">
       <DependentUpon>TurnoverTicket.tt</DependentUpon>
     </Compile>
@@ -147,6 +148,7 @@
     <Compile Include="Models\Factura.cs">
       <DependentUpon>TurnoverTicket.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\FacturaCompra.cs" />
     <Compile Include="Models\HistorialCompra.cs">
       <DependentUpon>TurnoverTicket.tt</DependentUpon>
     </Compile>
@@ -201,6 +203,8 @@
     <Content Include="Views\HistorialUsuario\HistorialUsuario.cshtml" />
     <Content Include="Views\ListaConciertos\Edit.cshtml" />
     <Content Include="Views\ListaConciertos\Delete.cshtml" />
+    <Content Include="Views\ComprarConcierto\DetalleConcierto.cshtml" />
+    <Content Include="Views\ComprarConcierto\Factura.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
