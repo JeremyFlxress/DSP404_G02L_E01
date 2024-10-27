@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<TurnoverTicket.Models.ComprarConcierto>
+
+@{
     ViewBag.Title = "Conciertos Disponibles";
 }
 <link href="~/Content/css/Global.css" rel="stylesheet" type="text/css" />
@@ -35,42 +37,26 @@
             <h1 class="page-title">Próximos Conciertos</h1>
         </div>
         <div class="concerts-grid">
-            <div class="concert-card">
-                <div class="concert-image"></div>
-                <div class="concert-info">
-                    <h2 class="concert-title">Rock en Concierto 2024</h2>
-                    <p class="concert-date">15 de Noviembre, 2024 • 8:00 P.M</p>
-                    <p class="concert-price">Desde $25.00</p>
-                    <a href="#" class="buy-button">Comprar</a>
+            @foreach (var concierto in Model)
+            {
+                <div class="concert-card">
+                    <div class="concert-image"></div>
+                    <div class="concert-info">
+                        <h2 class="concert-title">@concierto.Nombre</h2>
+                        <p class="concert-artist">@concierto.Artista</p>
+                        <p class="concert-date">@concierto.Fecha.ToString("d 'de' MMMM, yyyy")</p>
+                        <p class="concert-location">@concierto.Localizacion</p>
+                        <p class="concert-price">Desde @concierto.PrecioDesde.ToString("C")</p>
+                        @Html.ActionLink("Comprar", "DetalleConcierto", new { id = concierto.IDConcierto }, new { @class = "buy-button" })
+                    </div>
                 </div>
-            </div>
-            <div class="concert-card">
-                <div class="concert-image"></div>
-                <div class="concert-info">
-                    <h2 class="concert-title">Festival de Jazz 2024</h2>
-                    <p class="concert-date">20 de Diciembre, 2024 • 7:00 P.M</p>
-                    <p class="concert-price">Desde $30.00</p>
-                    <a href="#" class="buy-button">Comprar</a>
+            }
+            @if (!Model.Any())
+            {
+                <div class="no-concerts">
+                    <p>No hay conciertos disponibles en este momento.</p>
                 </div>
-            </div>
-            <div class="concert-card">
-                <div class="concert-image"></div>
-                <div class="concert-info">
-                    <h2 class="concert-title">Concierto Sinfónico</h2>
-                    <p class="concert-date">5 de Enero, 2025 • 6:30 P.M</p>
-                    <p class="concert-price">Desde $40.00</p>
-                    <a href="#" class="buy-button">Comprar</a>
-                </div>
-            </div>
-            <div class="concert-card">
-                <div class="concert-image"></div>
-                <div class="concert-info">
-                    <h2 class="concert-title">Festival de Música Electrónica</h2>
-                    <p class="concert-date">10 de Febrero, 2025 • 9:00 P.M</p>
-                    <p class="concert-price">Desde $35.00</p>
-                    <a href="#" class="buy-button">Comprar</a>
-                </div>
-            </div>
+            }
         </div>
     </div>
 

@@ -29,5 +29,6 @@ namespace TurnoverTicket.Models
         public virtual ICollection<Factura> Factura { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DetallesEntradas> DetallesEntradas { get; set; }
+        public DateTime FechaVenta { get; internal set; }
     }
 }
