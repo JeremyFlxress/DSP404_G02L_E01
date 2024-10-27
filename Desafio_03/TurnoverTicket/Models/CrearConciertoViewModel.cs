@@ -5,6 +5,9 @@ namespace TurnoverTicket.Models
 {
     public class CrearConciertoViewModel
     {
+        // Propiedad ID del Concierto
+        public int IDConcierto { get; set; }
+
         // Propiedades del Concierto
         [Required(ErrorMessage = "El nombre del concierto es requerido")]
         [Display(Name = "Nombre del concierto")]

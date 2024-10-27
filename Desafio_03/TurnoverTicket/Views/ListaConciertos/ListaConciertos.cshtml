@@ -1,11 +1,11 @@
-﻿
+﻿@model IEnumerable<TurnoverTicket.Models.Conciertos>
 @{
     ViewBag.Title = "Lista de Conciertos disponibles";
 }
-
 <link href="~/Content/css/Global.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/img/ticket.png" rel="shortcut icon" type="image/x-icon" />
 <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
 <div class="all-content">
     <div class="menu">
         <div class="menu__title">
@@ -15,10 +15,6 @@
         <div class="menu__links">
             <nav>
                 <ul>
-                    <li>
-                        <img src="~/Content/img/layout-dashboard.png" alt="Icono" />
-                        @Html.ActionLink("Dashboard", "DashboardEmpleado", "DashboardEmpleado", null, new { @class = "links", @id = "EmpleadoLink" })
-                    </li>
                     <li>
                         <img src="~/Content/img/calendar-event.png" alt="Icono" />
                         @Html.ActionLink("Crear un concierto", "CrearConcierto", "CrearConcierto", null, new { @class = "links", @id = "EmpleadoLink" })
@@ -35,9 +31,86 @@
             </nav>
         </div>
     </div>
+    <div class="main-content p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Lista de conciertos</h1>
+            @Html.ActionLink("Crear Nuevo Concierto", "CrearConcierto", "CrearConcierto", null, new { @class = "btn btn-primary" })
+        </div>
 
-    <div class="main-content">
-        <h1>Lista de conciertos</h1>
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-info table-bordered">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Artista</th>
+                        <th>Fecha</th>
+                        <th>Localización</th>
+                        <th>Entradas VIP</th>
+                        <th>Entradas General</th>
+                        <th>Entradas Platea</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var concierto in Model)
+                    {
+                        var entradasVIP = concierto.Entradas.FirstOrDefault(e => e.Localidad == "VIP");
+                        var entradasGeneral = concierto.Entradas.FirstOrDefault(e => e.Localidad == "General");
+                        var entradasPlatea = concierto.Entradas.FirstOrDefault(e => e.Localidad == "Platea");
+
+                        <tr>
+                            <td>@concierto.Nombre</td>
+                            <td>@concierto.Artista</td>
+                            <td>@concierto.Fecha.ToShortDateString()</td>
+                            <td>@concierto.Localizacion</td>
+                            <td>
+                                @if (entradasVIP != null)
+                                {
+                                    <span>Disponibles: @entradasVIP.CantidadDisponible</span><br />
+                                    <span>Precio: $@entradasVIP.Precio</span>
+                                }
+                            </td>
+                            <td>
+                                @if (entradasGeneral != null)
+                                {
+                                    <span>Disponibles: @entradasGeneral.CantidadDisponible</span><br />
+                                    <span>Precio: $@entradasGeneral.Precio</span>
+                                }
+                            </td>
+                            <td>
+                                @if (entradasPlatea != null)
+                                {
+                                    <span>Disponibles: @entradasPlatea.CantidadDisponible</span><br />
+                                    <span>Precio: $@entradasPlatea.Precio</span>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    @Html.ActionLink("Editar", "Edit", new { id = concierto.IDConcierto }, new { @class = "btn btn-warning btn-sm" })
+                                    @Html.ActionLink("Eliminar", "Delete", new { id = concierto.IDConcierto }, new { @class = "btn btn-danger btn-sm", onclick = "return confirm('¿Está seguro que desea eliminar este concierto?');" })
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
     <footer class="body-footer">
         <p>&copy; @DateTime.Now.Year - TurnoverTickets | Universidad Don Bosco</p>

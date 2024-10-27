@@ -1,0 +1,174 @@
+﻿@model TurnoverTicket.Models.CrearConciertoViewModel
+@{
+    ViewBag.Title = "Editar Concierto";
+}
+
+<link href="~/Content/css/Global.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/img/ticket.png" rel="shortcut icon" type="image/x-icon" />
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="all-content">
+    <div class="menu">
+        <div class="menu__title">
+            <h1>TurnoverTickets</h1>
+            <img src="~/Content/img/ticket.png" alt="Logo de un ticket" />
+        </div>
+        <div class="menu__links">
+            <nav>
+                <ul>
+                    <li>
+                        <img src="~/Content/img/calendar-event.png" alt="Icono" />
+                        @Html.ActionLink("Crear un concierto", "CrearConcierto", "CrearConcierto", null, new { @class = "links", @id = "EmpleadoLink" })
+                    </li>
+                    <li>
+                        <img src="~/Content/img/list-check.png" alt="Icono" />
+                        @Html.ActionLink("Lista de conciertos", "ListaConciertos", "ListaConciertos", null, new { @class = "links", @id = "EmpleadoLink" })
+                    </li>
+                </ul>
+                <div class="menu__logout">
+                    <img src="~/Content/img/logout.png" alt="Icono" />
+                    @Html.ActionLink("Cerrar sesión", "Login", "Login", null, new { @class = "links" })
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main-content p-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h2 class="mb-0">Editar Concierto</h2>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("Edit", "ListaConciertos", FormMethod.Post, new { @class = "needs-validation" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(m => m.IDConcierto)
+
+                    if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            @Html.ValidationSummary(true)
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Nombre, new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", placeholder = "Ingrese el nombre del concierto" })
+                                @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Artista, new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.Artista, new { @class = "form-control", placeholder = "Ingrese el nombre del artista" })
+                                @Html.ValidationMessageFor(m => m.Artista, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Fecha, new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.Fecha, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                                @Html.ValidationMessageFor(m => m.Fecha, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Localizacion, new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.Localizacion, new { @class = "form-control", placeholder = "Ingrese la localización" })
+                                @Html.ValidationMessageFor(m => m.Localizacion, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">Entradas VIP</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CantidadVIP, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.CantidadVIP, new { @class = "form-control", type = "number", min = "0" })
+                                        @Html.ValidationMessageFor(m => m.CantidadVIP, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.PrecioVIP, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.PrecioVIP, new { @class = "form-control", type = "number", step = "0.01", min = "0" })
+                                        @Html.ValidationMessageFor(m => m.PrecioVIP, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">Entradas General</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CantidadGeneral, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.CantidadGeneral, new { @class = "form-control", type = "number", min = "0" })
+                                        @Html.ValidationMessageFor(m => m.CantidadGeneral, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.PrecioGeneral, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.PrecioGeneral, new { @class = "form-control", type = "number", step = "0.01", min = "0" })
+                                        @Html.ValidationMessageFor(m => m.PrecioGeneral, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning">
+                            <h5 class="mb-0">Entradas Platea</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CantidadPlatea, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.CantidadPlatea, new { @class = "form-control", type = "number", min = "0" })
+                                        @Html.ValidationMessageFor(m => m.CantidadPlatea, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.PrecioPlatea, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.PrecioPlatea, new { @class = "form-control", type = "number", step = "0.01", min = "0" })
+                                        @Html.ValidationMessageFor(m => m.PrecioPlatea, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Guardar Cambios
+                            </button>
+                            @Html.ActionLink("Cancelar", "ListaConciertos", null, new { @class = "btn btn-secondary ms-2" })
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <footer class="body-footer">
+        <p>&copy; @DateTime.Now.Year - TurnoverTickets | Universidad Don Bosco</p>
+    </footer>
+</div>
