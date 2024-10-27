@@ -54,17 +54,17 @@
         }
 
         <div class="table-responsive">
-            <table class="table table-striped table-hover">
-                <thead class="table-info table-bordered">
+            <table class="table table-hover table-bordered">
+                <thead class="table-primary">
                     <tr>
-                        <th>Nombre</th>
-                        <th>Artista</th>
-                        <th>Fecha</th>
-                        <th>Localización</th>
-                        <th>Entradas VIP</th>
-                        <th>Entradas General</th>
-                        <th>Entradas Platea</th>
-                        <th>Acciones</th>
+                        <th class="text-center">Nombre</th>
+                        <th class="text-center">Artista</th>
+                        <th class="text-center">Fecha</th>
+                        <th class="text-center">Localización</th>
+                        <th class="text-center">Entradas VIP</th>
+                        <th class="text-center">Entradas General</th>
+                        <th class="text-center">Entradas Platea</th>
+                        <th class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,7 +101,7 @@
                                 }
                             </td>
                             <td>
-                                <div class="btn-group">
+                                <div class="btn-group ">
                                     @Html.ActionLink("Editar", "Edit", new { id = concierto.IDConcierto }, new { @class = "btn btn-warning btn-sm" })
                                     @Html.ActionLink("Eliminar", "Delete", new { id = concierto.IDConcierto }, new { @class = "btn btn-danger btn-sm", onclick = "return confirm('¿Está seguro que desea eliminar este concierto?');" })
                                 </div>

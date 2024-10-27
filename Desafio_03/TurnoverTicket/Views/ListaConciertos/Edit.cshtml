@@ -45,8 +45,9 @@
 
                     if (!ViewData.ModelState.IsValid)
                     {
-                        <div class="alert alert-danger">
+                        <div class="alert alert-danger p-0">
                             @Html.ValidationSummary(true)
+                            <p class="text-center p-0">¡Complete la información correctamente!</p>
                         </div>
                     }
 
