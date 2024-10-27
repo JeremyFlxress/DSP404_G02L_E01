@@ -129,7 +129,7 @@
       <DependentUpon>TurnoverTicket.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CrearConciertoViewModel.cs" />
-    <Compile Include="Models\DetallesCompra.cs" />
+    <Compile Include="Models\DetalleCompra.cs" />
     <Compile Include="Models\DetallesEntradas.cs">
       <DependentUpon>TurnoverTicket.tt</DependentUpon>
     </Compile>
