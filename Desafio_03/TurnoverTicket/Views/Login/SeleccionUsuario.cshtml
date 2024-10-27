@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Selecciona tu tipo de usuario";
+}
+
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="d-flex justify-content-center align-items-center bg-light" style="min-height: 80vh;">
+    <div class="bg-white p-4 rounded shadow text-center" style="width: 100%; max-width: 400px;">
+        <h2 class="mb-3 text-dark">Seleccione su tipo de usuario</h2>
+
+        <div>
+            <button onclick="location.href='@Url.Action("Cliente", "Login")'"
+                    class="btn btn-primary mx-2 px-3 py-2 fs-6 shadow-sm">
+                Cliente
+            </button>
+            <button onclick="location.href='@Url.Action("Empleado", "Login")'"
+                    class="btn btn-success mx-2 px-3 py-2 fs-6 shadow-sm">
+                Empleado
+            </button>
+        </div>
+    </div>
+</div>
+
