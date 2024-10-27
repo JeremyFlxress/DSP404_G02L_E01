@@ -106,7 +106,11 @@
     <Content Include="Content\img\ticket.png" />
     <Content Include="Content\js\bootstrap.bundle.min.js" />
     <Content Include="Content\js\bootstrap.min.js" />
+<<<<<<< HEAD
     <Content Include="Content\js\jquery.validate.min.js" />
+=======
+    <Content Include="Content\js\jquery.validate.js" />
+>>>>>>> 2a04f7333ede7e4a663e85a7aa814392f9cddd4c
     <Content Include="Global.asax" />
     <Content Include="Models\TurnoverTicket.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
