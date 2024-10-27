@@ -206,7 +206,7 @@
 .menu {
     position: fixed;
     grid-area: menu;
-    width: 250px;
+    width: 260px;
     background-color: #190482;
     height: 100%; 
 }
