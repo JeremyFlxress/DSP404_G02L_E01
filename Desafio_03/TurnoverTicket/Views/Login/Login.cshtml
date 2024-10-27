@@ -1,21 +1,8 @@
-﻿@{
-    ViewBag.Title = "TurnoverTickets";
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
 }
 
-<div>
-    <h1 class="text-center p-2">TurnoverTickets - Portal</h1>
-    <div id="contenidoParcial">
-        @Html.Partial("SeleccionUsuario")
-    </div>
-</div>
+<h2>Página Login</h2>
 
-<script>function cargarVista(vista) {
-        fetch(`/${vista}`)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('contenidoParcial').innerHTML = html;
-            })
-            .catch(error => console.error('Error cargando vista:', error));
-    }</script>
-
-   
