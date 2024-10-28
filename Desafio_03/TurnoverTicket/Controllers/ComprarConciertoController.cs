@@ -1,21 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TurnoverTicket.Models;
+using System.Data.Entity;
 
 namespace TurnoverTicket.Controllers
 {
     public class ComprarConciertoController : Controller
     {
-        private Turnover_SA_CVEntities db = new Turnover_SA_CVEntities();
+        private Turnover_SA_CVEntities1 db = new Turnover_SA_CVEntities1();
+
+        private int ObtenerUsuarioActual()
+        {
+            if (Session["IDUsuario"] != null)
+            {
+                return Convert.ToInt32(Session["IDUsuario"]);
+            }
+            // Si no hay usuario en sesión, redirigir al login
+            throw new UnauthorizedAccessException("Usuario no autenticado");
+        }
 
         // GET: ComprarConcierto
-        public ActionResult ComprarConcierto()
+        public ActionResult ComprarConcierto(string searchString, DateTime? searchDate)
         {
-            var conciertos = db.Conciertos
+            var conciertos = db.Conciertos.AsQueryable();
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                conciertos = conciertos.Where(c => c.Nombre.Contains(searchString) || c.Artista.Contains(searchString));
+            }
+
+            if (searchDate.HasValue)
+            {
+                conciertos = conciertos.Where(c => DbFunctions.TruncateTime(c.Fecha) == DbFunctions.TruncateTime(searchDate.Value));
+            }
+
+            var conciertoList = conciertos
                 .Where(c => c.Fecha >= DateTime.Now)
                 .OrderBy(c => c.Fecha)
                 .Select(c => new
@@ -35,7 +57,7 @@ namespace TurnoverTicket.Controllers
                 })
                 .ToList();
 
-            return View(conciertos);
+            return View(conciertoList);
         }
 
         public ActionResult DetalleConcierto(int id)
@@ -69,7 +91,7 @@ namespace TurnoverTicket.Controllers
         [HttpPost]
         public ActionResult ConfirmarCompra(int IDConcierto, FormCollection form)
         {
-            return RedirectToAction("Factura", new { idConcierto = IDConcierto, form });
+            return RedirectToAction("Factura", new { idConcierto = IDConcierto });
         }
 
         public ActionResult Factura(int idConcierto, FormCollection form)
@@ -129,97 +151,63 @@ namespace TurnoverTicket.Controllers
         [HttpPost]
         public ActionResult ConfirmarCompraFinal(int IDConcierto, FormCollection form)
         {
-            using (var dbContext = new Turnover_SA_CVEntities())
+            using (var transaction = db.Database.BeginTransaction())
             {
-                DbContextTransaction transaction = null;
                 try
                 {
-                    // Aseguramos que la conexión está abierta
-                    if (dbContext.Database.Connection.State != System.Data.ConnectionState.Open)
+                    var nuevaVenta = new VentaEntrada
                     {
-                        dbContext.Database.Connection.Open();
-                    }
-
-                    // Iniciamos la transacción después de asegurar la conexión
-                    transaction = dbContext.Database.BeginTransaction();
-
-                    var nuevaVenta = new VentaEntradas
-                    {
-                        IDEmpleado = 1, // ID del empleado de prueba
-                        FechaVenta = DateTime.Now
+                        IDEmpleado = 1
                     };
-                    dbContext.VentaEntradas.Add(nuevaVenta);
-                    dbContext.SaveChanges(); // Guardamos para obtener el ID de la venta
+                    db.VentaEntradas.Add(nuevaVenta);
+                    db.SaveChanges();
 
                     decimal total = 0;
-
                     foreach (var key in form.AllKeys.Where(k => k.StartsWith("CantidadComprar_")))
                     {
                         int idEntrada = int.Parse(key.Split('_')[1]);
                         int cantidadComprar = int.Parse(form[key]);
 
-                        var entrada = dbContext.Entradas.Find(idEntrada);
+                        var entrada = db.Entradas.Find(idEntrada);
                         if (entrada != null && cantidadComprar <= entrada.CantidadDisponible)
                         {
                             entrada.CantidadDisponible -= cantidadComprar;
+                            db.SaveChanges();
+
                             total += cantidadComprar * entrada.Precio;
 
-                            var detalleEntrada = new DetallesEntradas
+                            var detalleEntrada = new DetallesEntrada
                             {
                                 IDVenta = nuevaVenta.IDVenta,
                                 IDEntrada = idEntrada,
                                 Cantidad = cantidadComprar
                             };
-                            dbContext.DetallesEntradas.Add(detalleEntrada);
-                        }
-                        else
-                        {
-                            if (transaction != null)
-                            {
-                                transaction.Rollback();
-                            }
-                            throw new InvalidOperationException("La cantidad solicitada es mayor a la disponible.");
+                            db.DetallesEntradas.Add(detalleEntrada);
+                            db.SaveChanges();
                         }
                     }
 
                     var nuevaFactura = new Factura
                     {
                         IDEmpleado = 1,
-                        IDUsuario = 1,
+                        IDUsuario = 2,
                         IDVenta = nuevaVenta.IDVenta,
                         FechaVenta = DateTime.Now,
                         Subtotal = total
                     };
-                    dbContext.Factura.Add(nuevaFactura);
+                    db.Facturas.Add(nuevaFactura);
+                    db.SaveChanges();
 
-                    dbContext.SaveChanges();
                     transaction.Commit();
 
+                  
                     return RedirectToAction("ComprarConcierto");
                 }
                 catch (Exception ex)
                 {
-                    if (transaction != null)
-                    {
-                        try
-                        {
-                            transaction.Rollback();
-                        }
-                        catch (InvalidOperationException)
-                        {
-                            // Log error de rollback si es necesario
-                        }
-                    }
-                    // Log del error original
-                    Console.WriteLine(ex.Message);
+                    transaction.Rollback();
+                    Console.WriteLine(ex.InnerException?.Message ?? ex.Message);
                     throw;
-                }
-                finally
-                {
-                    if (transaction != null)
-                    {
-                        transaction.Dispose();
-                    }
                 }
             }
         }

@@ -36,6 +36,24 @@
         <div class="page-header">
             <h1 class="page-title">Próximos Conciertos</h1>
         </div>
+
+     
+        <div class="search-form">
+            @using (Html.BeginForm("ComprarConcierto", "ComprarConcierto", FormMethod.Get))
+            {
+                <div class="form-group">
+                    @Html.Label("Buscar por nombre o artista")
+                    @Html.TextBox("searchString", null, new { @class = "form-control", placeholder = "Nombre o Artista" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Buscar por fecha")
+                    @Html.TextBox("searchDate", null, new { @class = "form-control", type = "date" })
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+                @Html.ActionLink("Mostrar todos los eventos", "ComprarConcierto", null, new { @class = "btn btn-secondary" })
+            }
+        </div>
+
         <div class="concerts-grid">
             @foreach (var concierto in Model)
             {
@@ -61,6 +79,6 @@
     </div>
 
     <footer class="body-footer">
-        <p>&copy; @DateTime.Now.Year - TurnoverTickets | Universidad Don Bosco</p>
+        <p>© @DateTime.Now.Year - TurnoverTickets | Universidad Don Bosco</p>
     </footer>
 </div>

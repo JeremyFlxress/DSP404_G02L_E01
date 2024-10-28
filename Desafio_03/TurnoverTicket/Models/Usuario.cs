@@ -12,23 +12,22 @@ namespace TurnoverTicket.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class VentaEntradas
+    public partial class Usuario
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public VentaEntradas()
+        public Usuario()
         {
-            this.Factura = new HashSet<Factura>();
-            this.DetallesEntradas = new HashSet<DetallesEntradas>();
+            this.Facturas = new HashSet<Factura>();
         }
     
-        public int IDVenta { get; set; }
-        public Nullable<int> IDEmpleado { get; set; }
+        public int IDUsuario { get; set; }
+        public string Nombres { get; set; }
+        public string Apellidos { get; set; }
+        public string Correo { get; set; }
+        public string Contraseña { get; set; }
+        public string Telefono { get; set; }
     
-        public virtual Empleado Empleado { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Factura> Factura { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetallesEntradas> DetallesEntradas { get; set; }
-        public DateTime FechaVenta { get; internal set; }
+        public virtual ICollection<Factura> Facturas { get; set; }
     }
 }

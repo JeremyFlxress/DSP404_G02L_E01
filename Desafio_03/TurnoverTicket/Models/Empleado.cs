@@ -17,8 +17,8 @@ namespace TurnoverTicket.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Empleado()
         {
-            this.Factura = new HashSet<Factura>();
-            this.VentaEntradas = new HashSet<VentaEntradas>();
+            this.Facturas = new HashSet<Factura>();
+            this.VentaEntradas = new HashSet<VentaEntrada>();
         }
     
         public int IDEmpleado { get; set; }
@@ -29,8 +29,8 @@ namespace TurnoverTicket.Models
         public string Contraseña { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Factura> Factura { get; set; }
+        public virtual ICollection<Factura> Facturas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VentaEntradas> VentaEntradas { get; set; }
+        public virtual ICollection<VentaEntrada> VentaEntradas { get; set; }
     }
 }

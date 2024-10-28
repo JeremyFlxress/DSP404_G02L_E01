@@ -9,7 +9,8 @@ namespace TurnoverTicket.Controllers
 {
 	public class LoginController : Controller
 	{
-		private Turnover_SA_CVEntities _db = new Turnover_SA_CVEntities();
+		private Turnover_SA_CVEntities1 _db = new Turnover_SA_CVEntities1();
+
 
 		// Acción GET para mostrar el formulario de login del cliente.
 		public ActionResult Cliente()
@@ -53,7 +54,7 @@ namespace TurnoverTicket.Controllers
 					return View();
 				}
 
-				var nuevoCliente = new Usuarios
+				var nuevoCliente = new Usuario
 				{
 					Nombres = nombre,
 					Apellidos = apellido,
@@ -84,14 +85,14 @@ namespace TurnoverTicket.Controllers
 		[HttpPost]
 		public ActionResult Empleado(string correo, string password)
 		{
-			var empleado = _db.Empleado.FirstOrDefault(e => e.Correo == correo && e.Contraseña == password);
+			var empleado = _db.Empleadoes.FirstOrDefault(e => e.Correo == correo && e.Contraseña == password);
 
 			if (empleado != null)
 			{
 				// Redirige a ComprarConcierto si el empleado es válido.
 				return RedirectToAction("ListaConciertos", "ListaConciertos");
 			}
-
+			
 			// Si el login falla, mostrar un mensaje de error.
 			ViewBag.Error = "Correo o contraseña incorrectos.";
 			return View();
@@ -100,6 +101,7 @@ namespace TurnoverTicket.Controllers
 		public ActionResult Login()
 		{
 			return View();
+
 		}
 	}
 }

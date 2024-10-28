@@ -15,10 +15,10 @@ namespace TurnoverTicket.Models
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class Turnover_SA_CVEntities : DbContext
+    public partial class Turnover_SA_CVEntities1 : DbContext
     {
-        public Turnover_SA_CVEntities()
-            : base("name=Turnover_SA_CVEntities")
+        public Turnover_SA_CVEntities1()
+            : base("name=Turnover_SA_CVEntities1")
         {
         }
     
@@ -27,15 +27,17 @@ namespace TurnoverTicket.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Conciertos> Conciertos { get; set; }
-        public virtual DbSet<Empleado> Empleado { get; set; }
-        public virtual DbSet<Entradas> Entradas { get; set; }
-        public virtual DbSet<Factura> Factura { get; set; }
-        public virtual DbSet<HistorialCompra> HistorialCompra { get; set; }
-        public virtual DbSet<Usuarios> Usuarios { get; set; }
-        public virtual DbSet<VentaEntradas> VentaEntradas { get; set; }
-        public virtual DbSet<DetallesEntradas> DetallesEntradas { get; set; }
-    
+        public virtual DbSet<Concierto> Conciertos { get; set; }
+        public virtual DbSet<DetallesEntrada> DetallesEntradas { get; set; }
+        public virtual DbSet<Empleado> Empleadoes { get; set; }
+        public virtual DbSet<Entrada> Entradas { get; set; }
+        public virtual DbSet<Factura> Facturas { get; set; }
+        public virtual DbSet<HistorialCompra> HistorialCompras { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<VentaEntrada> VentaEntradas { get; set; }
+        public object Factura { get; internal set; }
+        public object Empleado { get; internal set; }
+
         public virtual int ST_ActualizarConcierto(Nullable<int> iDConcierto, string localizacion, string nombre, Nullable<System.DateTime> fecha)
         {
             var iDConciertoParameter = iDConcierto.HasValue ?

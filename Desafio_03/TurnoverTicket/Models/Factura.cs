@@ -17,7 +17,7 @@ namespace TurnoverTicket.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Factura()
         {
-            this.HistorialCompra = new HashSet<HistorialCompra>();
+            this.HistorialCompras = new HashSet<HistorialCompra>();
         }
     
         public int IDFactura { get; set; }
@@ -28,10 +28,9 @@ namespace TurnoverTicket.Models
         public Nullable<decimal> Subtotal { get; set; }
     
         public virtual Empleado Empleado { get; set; }
-        public virtual Usuarios Usuarios { get; set; }
-        public virtual VentaEntradas VentaEntradas { get; set; }
+        public virtual Usuario Usuario { get; set; }
+        public virtual VentaEntrada VentaEntrada { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialCompra> HistorialCompra { get; set; }
-        public decimal Total { get; internal set; }
+        public virtual ICollection<HistorialCompra> HistorialCompras { get; set; }
     }
 }

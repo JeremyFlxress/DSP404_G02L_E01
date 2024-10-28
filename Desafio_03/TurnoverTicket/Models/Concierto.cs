@@ -12,12 +12,12 @@ namespace TurnoverTicket.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Conciertos
+    public partial class Concierto
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Conciertos()
+        public Concierto()
         {
-            this.Entradas = new HashSet<Entradas>();
+            this.Entradas = new HashSet<Entrada>();
         }
     
         public int IDConcierto { get; set; }
@@ -27,6 +27,6 @@ namespace TurnoverTicket.Models
         public System.DateTime Fecha { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Entradas> Entradas { get; set; }
+        public virtual ICollection<Entrada> Entradas { get; set; }
     }
 }

@@ -103,15 +103,15 @@
     <Content Include="Content\img\ticket.png" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="Models\TurnoverTicket.Context.tt">
+    <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TurnoverTicket.Context.cs</LastGenOutput>
-      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TurnoverTicket.tt">
+    <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
-      <LastGenOutput>TurnoverTicket.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -125,68 +125,69 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Conciertos.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    <Compile Include="Models\Concierto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CrearConciertoViewModel.cs" />
     <Compile Include="Models\DetalleCompra.cs" />
-    <Compile Include="Models\FacturaCompra.cs" />
-    <Compile Include="Models\ComprarConcierto.cs" />
-    <Compile Include="Models\DetallesEntradas.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    <Compile Include="Models\DetallesEntrada.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Empleado.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entradas.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    <Compile Include="Models\Entrada.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Factura.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\FacturaCompra.cs" />
+    <Compile Include="Models\ComprarConcierto.cs" />
     <Compile Include="Models\HistorialCompra.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HistorialCompraViewModel.cs" />
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\ST_LeerConciertos_Result.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ST_LeerEntradas_Result.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ST_LeerUsuarios_Result.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TurnoverTicket.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TurnoverTicket.Context.tt</DependentUpon>
+    <Compile Include="Models\Usuario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TurnoverTicket.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TurnoverTicket.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Usuarios.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\VentaEntradas.cs">
-      <DependentUpon>TurnoverTicket.tt</DependentUpon>
+    <Compile Include="Models\VentaEntrada.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\TurnoverTicket.edmx">
+    <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TurnoverTicket.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\TurnoverTicket.edmx.diagram">
-      <DependentUpon>TurnoverTicket.edmx</DependentUpon>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />

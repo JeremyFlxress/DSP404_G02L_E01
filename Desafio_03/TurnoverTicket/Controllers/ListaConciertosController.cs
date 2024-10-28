@@ -12,7 +12,7 @@ namespace TurnoverTicket.Controllers
     public class ListaConciertosController : Controller
     {
         // GET: ListaConciertos
-        private Turnover_SA_CVEntities db = new Turnover_SA_CVEntities();
+        private Turnover_SA_CVEntities1 db = new Turnover_SA_CVEntities1();
 
         // GET: ListaConciertos
         public ActionResult ListaConciertos()

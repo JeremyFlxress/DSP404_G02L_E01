@@ -12,14 +12,13 @@ namespace TurnoverTicket.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DetallesEntradas
+    public partial class DetallesEntrada
     {
-        public Nullable<int> IDVenta { get; set; }
-        public Nullable<int> IDEntrada { get; set; }
+        public int IDVenta { get; set; }
+        public int IDEntrada { get; set; }
         public int Cantidad { get; set; }
     
-        public virtual Entradas Entradas { get; set; }
-        public virtual VentaEntradas VentaEntradas { get; set; }
-        public decimal PrecioUnitario { get; internal set; }
+        public virtual Entrada Entrada { get; set; }
+        public virtual VentaEntrada VentaEntrada { get; set; }
     }
 }

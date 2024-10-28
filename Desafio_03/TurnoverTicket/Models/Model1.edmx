@@ -15,14 +15,13 @@
           <Property Name="Artista" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="Fecha" Type="date" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
         <EntityType Name="DetallesEntradas">
           <Key>
-            <PropertyRef Name="Cantidad" />
+            <PropertyRef Name="IDVenta" />
+            <PropertyRef Name="IDEntrada" />
           </Key>
-          <Property Name="IDVenta" Type="int" />
-          <Property Name="IDEntrada" Type="int" />
+          <Property Name="IDVenta" Type="int" Nullable="false" />
+          <Property Name="IDEntrada" Type="int" Nullable="false" />
           <Property Name="Cantidad" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Empleado">
@@ -84,34 +83,6 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="IDVenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IDEmpleado" Type="int" />
         </EntityType>
-        <Association Name="FK__DetallesE__IDEnt__46E78A0C">
-          <End Role="Entradas" Type="Self.Entradas" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Entradas">
-              <PropertyRef Name="IDEntrada" />
-            </Principal>
-            <Dependent Role="DetallesEntradas">
-              <PropertyRef Name="IDEntrada" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__DetallesE__IDVen__45F365D3">
-          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="VentaEntradas">
-              <PropertyRef Name="IDVenta" />
-            </Principal>
-            <Dependent Role="DetallesEntradas">
-              <PropertyRef Name="IDVenta" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__Entradas__IDConc__3F466844">
           <End Role="Conciertos" Type="Self.Conciertos" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -185,6 +156,34 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             </Principal>
             <Dependent Role="VentaEntradas">
               <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetallesEntradas_Entradas">
+          <End Role="Entradas" Type="Self.Entradas" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entradas">
+              <PropertyRef Name="IDEntrada" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDEntrada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetallesEntradas_VentaEntradas">
+          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VentaEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDVenta" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -235,27 +234,13 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
         <Function Name="ST_LeerUsuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="Turnover_SA_CVModelStoreContainer">
           <EntitySet Name="Conciertos" EntityType="Self.Conciertos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetallesEntradas" EntityType="Self.DetallesEntradas" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Entradas" EntityType="Self.Entradas" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HistorialCompra" EntityType="Self.HistorialCompra" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VentaEntradas" EntityType="Self.VentaEntradas" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="DetallesEntradas" EntityType="Self.DetallesEntradas" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [DetallesEntradas].[IDVenta] AS [IDVenta], 
-    [DetallesEntradas].[IDEntrada] AS [IDEntrada], 
-    [DetallesEntradas].[Cantidad] AS [Cantidad]
-    FROM [dbo].[DetallesEntradas] AS [DetallesEntradas]</DefiningQuery>
-          </EntitySet>
-          <AssociationSet Name="FK__DetallesE__IDEnt__46E78A0C" Association="Self.FK__DetallesE__IDEnt__46E78A0C">
-            <End Role="Entradas" EntitySet="Entradas" />
-            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
-          </AssociationSet>
-          <AssociationSet Name="FK__DetallesE__IDVen__45F365D3" Association="Self.FK__DetallesE__IDVen__45F365D3">
-            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
-            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
-          </AssociationSet>
           <AssociationSet Name="FK__Entradas__IDConc__3F466844" Association="Self.FK__Entradas__IDConc__3F466844">
             <End Role="Conciertos" EntitySet="Conciertos" />
             <End Role="Entradas" EntitySet="Entradas" />
@@ -280,13 +265,21 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             <End Role="Empleado" EntitySet="Empleado" />
             <End Role="VentaEntradas" EntitySet="VentaEntradas" />
           </AssociationSet>
+          <AssociationSet Name="FK_DetallesEntradas_Entradas" Association="Self.FK_DetallesEntradas_Entradas">
+            <End Role="Entradas" EntitySet="Entradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetallesEntradas_VentaEntradas" Association="Self.FK_DetallesEntradas_VentaEntradas">
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Turnover_SA_CVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Conciertos">
+        <EntityType Name="Concierto">
           <Key>
             <PropertyRef Name="IDConcierto" />
           </Key>
@@ -296,6 +289,17 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="Artista" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="Entradas" Relationship="Self.FK__Entradas__IDConc__3F466844" FromRole="Conciertos" ToRole="Entradas" />
+        </EntityType>
+        <EntityType Name="DetallesEntrada">
+          <Key>
+            <PropertyRef Name="IDVenta" />
+            <PropertyRef Name="IDEntrada" />
+          </Key>
+          <Property Name="IDVenta" Type="Int32" Nullable="false" />
+          <Property Name="IDEntrada" Type="Int32" Nullable="false" />
+          <Property Name="Cantidad" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Entrada" Relationship="Self.FK_DetallesEntradas_Entradas" FromRole="DetallesEntradas" ToRole="Entradas" />
+          <NavigationProperty Name="VentaEntrada" Relationship="Self.FK_DetallesEntradas_VentaEntradas" FromRole="DetallesEntradas" ToRole="VentaEntradas" />
         </EntityType>
         <EntityType Name="Empleado">
           <Key>
@@ -307,10 +311,10 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDEmple__4AB81AF0" FromRole="Empleado" ToRole="Factura" />
+          <NavigationProperty Name="Facturas" Relationship="Self.FK__Factura__IDEmple__4AB81AF0" FromRole="Empleado" ToRole="Factura" />
           <NavigationProperty Name="VentaEntradas" Relationship="Self.FK__VentaEntr__IDEmp__440B1D61" FromRole="Empleado" ToRole="VentaEntradas" />
         </EntityType>
-        <EntityType Name="Entradas">
+        <EntityType Name="Entrada">
           <Key>
             <PropertyRef Name="IDEntrada" />
           </Key>
@@ -319,8 +323,8 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="Localidad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="CantidadDisponible" Type="Int32" Nullable="false" />
           <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
-          <NavigationProperty Name="Conciertos" Relationship="Self.FK__Entradas__IDConc__3F466844" FromRole="Entradas" ToRole="Conciertos" />
-          <NavigationProperty Name="DetallesEntradas" Relationship="Self.FK__DetallesE__IDEnt__46E78A0C" FromRole="Entradas" ToRole="DetallesEntradas" />
+          <NavigationProperty Name="Concierto" Relationship="Self.FK__Entradas__IDConc__3F466844" FromRole="Entradas" ToRole="Conciertos" />
+          <NavigationProperty Name="DetallesEntradas" Relationship="Self.FK_DetallesEntradas_Entradas" FromRole="Entradas" ToRole="DetallesEntradas" />
         </EntityType>
         <EntityType Name="Factura">
           <Key>
@@ -333,9 +337,9 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="FechaVenta" Type="DateTime" Precision="0" />
           <Property Name="Subtotal" Type="Decimal" Precision="10" Scale="2" />
           <NavigationProperty Name="Empleado" Relationship="Self.FK__Factura__IDEmple__4AB81AF0" FromRole="Factura" ToRole="Empleado" />
-          <NavigationProperty Name="Usuarios" Relationship="Self.FK__Factura__IDUsuar__4BAC3F29" FromRole="Factura" ToRole="Usuarios" />
-          <NavigationProperty Name="VentaEntradas" Relationship="Self.FK__Factura__IDVenta__4CA06362" FromRole="Factura" ToRole="VentaEntradas" />
-          <NavigationProperty Name="HistorialCompra" Relationship="Self.FK__Historial__IDFac__5165187F" FromRole="Factura" ToRole="HistorialCompra" />
+          <NavigationProperty Name="Usuario" Relationship="Self.FK__Factura__IDUsuar__4BAC3F29" FromRole="Factura" ToRole="Usuarios" />
+          <NavigationProperty Name="VentaEntrada" Relationship="Self.FK__Factura__IDVenta__4CA06362" FromRole="Factura" ToRole="VentaEntradas" />
+          <NavigationProperty Name="HistorialCompras" Relationship="Self.FK__Historial__IDFac__5165187F" FromRole="Factura" ToRole="HistorialCompra" />
         </EntityType>
         <EntityType Name="HistorialCompra">
           <Key>
@@ -347,7 +351,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="CantidadEntradas" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Factura" Relationship="Self.FK__Historial__IDFac__5165187F" FromRole="HistorialCompra" ToRole="Factura" />
         </EntityType>
-        <EntityType Name="Usuarios">
+        <EntityType Name="Usuario">
           <Key>
             <PropertyRef Name="IDUsuario" />
           </Key>
@@ -357,39 +361,57 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDUsuar__4BAC3F29" FromRole="Usuarios" ToRole="Factura" />
+          <NavigationProperty Name="Facturas" Relationship="Self.FK__Factura__IDUsuar__4BAC3F29" FromRole="Usuarios" ToRole="Factura" />
         </EntityType>
-        <EntityType Name="VentaEntradas">
+        <EntityType Name="VentaEntrada">
           <Key>
             <PropertyRef Name="IDVenta" />
           </Key>
           <Property Name="IDVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IDEmpleado" Type="Int32" />
+          <NavigationProperty Name="DetallesEntradas" Relationship="Self.FK_DetallesEntradas_VentaEntradas" FromRole="VentaEntradas" ToRole="DetallesEntradas" />
           <NavigationProperty Name="Empleado" Relationship="Self.FK__VentaEntr__IDEmp__440B1D61" FromRole="VentaEntradas" ToRole="Empleado" />
-          <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDVenta__4CA06362" FromRole="VentaEntradas" ToRole="Factura" />
-          <NavigationProperty Name="DetallesEntradas" Relationship="Self.FK__DetallesE__IDVen__45F365D3" FromRole="VentaEntradas" ToRole="DetallesEntradas" />
-        </EntityType>
-        <EntityType Name="DetallesEntradas">
-          <Key>
-            <PropertyRef Name="Cantidad" />
-          </Key>
-          <Property Name="IDVenta" Type="Int32" />
-          <Property Name="IDEntrada" Type="Int32" />
-          <Property Name="Cantidad" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Entradas" Relationship="Self.FK__DetallesE__IDEnt__46E78A0C" FromRole="DetallesEntradas" ToRole="Entradas" />
-          <NavigationProperty Name="VentaEntradas" Relationship="Self.FK__DetallesE__IDVen__45F365D3" FromRole="DetallesEntradas" ToRole="VentaEntradas" />
+          <NavigationProperty Name="Facturas" Relationship="Self.FK__Factura__IDVenta__4CA06362" FromRole="VentaEntradas" ToRole="Factura" />
         </EntityType>
         <Association Name="FK__Entradas__IDConc__3F466844">
-          <End Role="Conciertos" Type="Self.Conciertos" Multiplicity="0..1">
+          <End Role="Conciertos" Type="Self.Concierto" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Entradas" Type="Self.Entradas" Multiplicity="*" />
+          <End Role="Entradas" Type="Self.Entrada" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Conciertos">
               <PropertyRef Name="IDConcierto" />
             </Principal>
             <Dependent Role="Entradas">
               <PropertyRef Name="IDConcierto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetallesEntradas_Entradas">
+          <End Role="Entradas" Type="Self.Entrada" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntrada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entradas">
+              <PropertyRef Name="IDEntrada" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDEntrada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetallesEntradas_VentaEntradas">
+          <End Role="VentaEntradas" Type="Self.VentaEntrada" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetallesEntradas" Type="Self.DetallesEntrada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VentaEntradas">
+              <PropertyRef Name="IDVenta" />
+            </Principal>
+            <Dependent Role="DetallesEntradas">
+              <PropertyRef Name="IDVenta" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -407,7 +429,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
         </Association>
         <Association Name="FK__VentaEntr__IDEmp__440B1D61">
           <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
-          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="*" />
+          <End Role="VentaEntradas" Type="Self.VentaEntrada" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Empleado">
               <PropertyRef Name="IDEmpleado" />
@@ -417,22 +439,8 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DetallesE__IDEnt__46E78A0C">
-          <End Role="Entradas" Type="Self.Entradas" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Entradas">
-              <PropertyRef Name="IDEntrada" />
-            </Principal>
-            <Dependent Role="DetallesEntradas">
-              <PropertyRef Name="IDEntrada" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__Factura__IDUsuar__4BAC3F29">
-          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuario" Multiplicity="0..1" />
           <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Usuarios">
@@ -444,7 +452,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Factura__IDVenta__4CA06362">
-          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1" />
+          <End Role="VentaEntradas" Type="Self.VentaEntrada" Multiplicity="0..1" />
           <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="VentaEntradas">
@@ -469,60 +477,46 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DetallesE__IDVen__45F365D3">
-          <End Role="VentaEntradas" Type="Self.VentaEntradas" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="DetallesEntradas" Type="Self.DetallesEntradas" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="VentaEntradas">
-              <PropertyRef Name="IDVenta" />
-            </Principal>
-            <Dependent Role="DetallesEntradas">
-              <PropertyRef Name="IDVenta" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityContainer Name="Turnover_SA_CVEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Conciertos" EntityType="Self.Conciertos" />
-          <EntitySet Name="Empleado" EntityType="Self.Empleado" />
-          <EntitySet Name="Entradas" EntityType="Self.Entradas" />
-          <EntitySet Name="Factura" EntityType="Self.Factura" />
-          <EntitySet Name="HistorialCompra" EntityType="Self.HistorialCompra" />
-          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
-          <EntitySet Name="VentaEntradas" EntityType="Self.VentaEntradas" />
-          <EntitySet Name="DetallesEntradas" EntityType="Self.DetallesEntradas" />
+        <EntityContainer Name="Turnover_SA_CVEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Conciertos" EntityType="Self.Concierto" />
+          <EntitySet Name="DetallesEntradas" EntityType="Self.DetallesEntrada" />
+          <EntitySet Name="Empleadoes" EntityType="Self.Empleado" />
+          <EntitySet Name="Entradas" EntityType="Self.Entrada" />
+          <EntitySet Name="Facturas" EntityType="Self.Factura" />
+          <EntitySet Name="HistorialCompras" EntityType="Self.HistorialCompra" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+          <EntitySet Name="VentaEntradas" EntityType="Self.VentaEntrada" />
           <AssociationSet Name="FK__Entradas__IDConc__3F466844" Association="Self.FK__Entradas__IDConc__3F466844">
             <End Role="Conciertos" EntitySet="Conciertos" />
             <End Role="Entradas" EntitySet="Entradas" />
           </AssociationSet>
-          <AssociationSet Name="FK__Factura__IDEmple__4AB81AF0" Association="Self.FK__Factura__IDEmple__4AB81AF0">
-            <End Role="Empleado" EntitySet="Empleado" />
-            <End Role="Factura" EntitySet="Factura" />
-          </AssociationSet>
-          <AssociationSet Name="FK__VentaEntr__IDEmp__440B1D61" Association="Self.FK__VentaEntr__IDEmp__440B1D61">
-            <End Role="Empleado" EntitySet="Empleado" />
-            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
-          </AssociationSet>
-          <AssociationSet Name="FK__DetallesE__IDEnt__46E78A0C" Association="Self.FK__DetallesE__IDEnt__46E78A0C">
+          <AssociationSet Name="FK_DetallesEntradas_Entradas" Association="Self.FK_DetallesEntradas_Entradas">
             <End Role="Entradas" EntitySet="Entradas" />
             <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
           </AssociationSet>
+          <AssociationSet Name="FK_DetallesEntradas_VentaEntradas" Association="Self.FK_DetallesEntradas_VentaEntradas">
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Factura__IDEmple__4AB81AF0" Association="Self.FK__Factura__IDEmple__4AB81AF0">
+            <End Role="Empleado" EntitySet="Empleadoes" />
+            <End Role="Factura" EntitySet="Facturas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VentaEntr__IDEmp__440B1D61" Association="Self.FK__VentaEntr__IDEmp__440B1D61">
+            <End Role="Empleado" EntitySet="Empleadoes" />
+            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
+          </AssociationSet>
           <AssociationSet Name="FK__Factura__IDUsuar__4BAC3F29" Association="Self.FK__Factura__IDUsuar__4BAC3F29">
             <End Role="Usuarios" EntitySet="Usuarios" />
-            <End Role="Factura" EntitySet="Factura" />
+            <End Role="Factura" EntitySet="Facturas" />
           </AssociationSet>
           <AssociationSet Name="FK__Factura__IDVenta__4CA06362" Association="Self.FK__Factura__IDVenta__4CA06362">
             <End Role="VentaEntradas" EntitySet="VentaEntradas" />
-            <End Role="Factura" EntitySet="Factura" />
+            <End Role="Factura" EntitySet="Facturas" />
           </AssociationSet>
           <AssociationSet Name="FK__Historial__IDFac__5165187F" Association="Self.FK__Historial__IDFac__5165187F">
-            <End Role="Factura" EntitySet="Factura" />
-            <End Role="HistorialCompra" EntitySet="HistorialCompra" />
-          </AssociationSet>
-          <AssociationSet Name="FK__DetallesE__IDVen__45F365D3" Association="Self.FK__DetallesE__IDVen__45F365D3">
-            <End Role="VentaEntradas" EntitySet="VentaEntradas" />
-            <End Role="DetallesEntradas" EntitySet="DetallesEntradas" />
+            <End Role="Factura" EntitySet="Facturas" />
+            <End Role="HistorialCompra" EntitySet="HistorialCompras" />
           </AssociationSet>
           <FunctionImport Name="ST_ActualizarConcierto">
             <Parameter Name="IDConcierto" Mode="In" Type="Int32" />
@@ -597,9 +591,9 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Turnover_SA_CVModelStoreContainer" CdmEntityContainer="Turnover_SA_CVEntities">
+        <EntityContainerMapping StorageEntityContainer="Turnover_SA_CVModelStoreContainer" CdmEntityContainer="Turnover_SA_CVEntities1">
           <EntitySetMapping Name="Conciertos">
-            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Conciertos">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Concierto">
               <MappingFragment StoreEntitySet="Conciertos">
                 <ScalarProperty Name="IDConcierto" ColumnName="IDConcierto" />
                 <ScalarProperty Name="Localizacion" ColumnName="Localizacion" />
@@ -609,7 +603,16 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Empleado">
+          <EntitySetMapping Name="DetallesEntradas">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.DetallesEntrada">
+              <MappingFragment StoreEntitySet="DetallesEntradas">
+                <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
+                <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empleadoes">
             <EntityTypeMapping TypeName="Turnover_SA_CVModel.Empleado">
               <MappingFragment StoreEntitySet="Empleado">
                 <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
@@ -622,7 +625,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Entradas">
-            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Entradas">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Entrada">
               <MappingFragment StoreEntitySet="Entradas">
                 <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
                 <ScalarProperty Name="IDConcierto" ColumnName="IDConcierto" />
@@ -632,7 +635,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Factura">
+          <EntitySetMapping Name="Facturas">
             <EntityTypeMapping TypeName="Turnover_SA_CVModel.Factura">
               <MappingFragment StoreEntitySet="Factura">
                 <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
@@ -644,7 +647,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="HistorialCompra">
+          <EntitySetMapping Name="HistorialCompras">
             <EntityTypeMapping TypeName="Turnover_SA_CVModel.HistorialCompra">
               <MappingFragment StoreEntitySet="HistorialCompra">
                 <ScalarProperty Name="IDHistorial" ColumnName="IDHistorial" />
@@ -655,7 +658,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Usuarios">
-            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Usuarios">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.Usuario">
               <MappingFragment StoreEntitySet="Usuarios">
                 <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
                 <ScalarProperty Name="Nombres" ColumnName="Nombres" />
@@ -667,19 +670,10 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="VentaEntradas">
-            <EntityTypeMapping TypeName="Turnover_SA_CVModel.VentaEntradas">
+            <EntityTypeMapping TypeName="Turnover_SA_CVModel.VentaEntrada">
               <MappingFragment StoreEntitySet="VentaEntradas">
                 <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
                 <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="DetallesEntradas">
-            <EntityTypeMapping TypeName="Turnover_SA_CVModel.DetallesEntradas">
-              <MappingFragment StoreEntitySet="DetallesEntradas">
-                <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
-                <ScalarProperty Name="IDEntrada" ColumnName="IDEntrada" />
-                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -740,7 +734,7 @@ advertencia 6002: La tabla o vista 'Turnover_SA_CV.dbo.DetallesEntradas' no tien
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />

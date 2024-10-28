@@ -6,7 +6,7 @@ namespace TurnoverTicket.Controllers
 {
     public class CrearConciertoController : Controller
     {
-        private Turnover_SA_CVEntities db = new Turnover_SA_CVEntities();
+        private Turnover_SA_CVEntities1 db = new Turnover_SA_CVEntities1();
 
         // GET: CrearConcierto
         public ActionResult CrearConcierto()
@@ -28,7 +28,7 @@ namespace TurnoverTicket.Controllers
                     try
                     {
                         // Crear el concierto usando el modelo generado por EF
-                        var concierto = new Conciertos
+                        var concierto = new Concierto
                         {
                             Nombre = model.Nombre,
                             Artista = model.Artista,
@@ -40,7 +40,7 @@ namespace TurnoverTicket.Controllers
                         db.SaveChanges();
 
                         // Crear las entradas VIP
-                        var entradasVIP = new Entradas
+                        var entradasVIP = new Entrada
                         {
                             IDConcierto = concierto.IDConcierto,
                             Localidad = "VIP",
@@ -50,7 +50,7 @@ namespace TurnoverTicket.Controllers
                         db.Entradas.Add(entradasVIP);
 
                         // Crear las entradas General
-                        var entradasGeneral = new Entradas
+                        var entradasGeneral = new Entrada
                         {
                             IDConcierto = concierto.IDConcierto,
                             Localidad = "General",
@@ -60,7 +60,7 @@ namespace TurnoverTicket.Controllers
                         db.Entradas.Add(entradasGeneral);
 
                         // Crear las entradas Platea
-                        var entradasPlatea = new Entradas
+                        var entradasPlatea = new Entrada
                         {
                             IDConcierto = concierto.IDConcierto,
                             Localidad = "Platea",
