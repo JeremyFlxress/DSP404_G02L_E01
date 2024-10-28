@@ -190,7 +190,7 @@ namespace TurnoverTicket.Controllers
                     var nuevaFactura = new Factura
                     {
                         IDEmpleado = 1,
-                        IDUsuario = 2,
+                        IDUsuario = 1,
                         IDVenta = nuevaVenta.IDVenta,
                         FechaVenta = DateTime.Now,
                         Subtotal = total

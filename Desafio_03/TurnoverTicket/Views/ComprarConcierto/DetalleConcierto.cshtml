@@ -96,10 +96,10 @@
             {
                 <tr>
                     <td>@entrada.Localidad</td>
-                    <td>@entrada.Precio.ToString("C")</td>
+                    <td>@entrada.Precio.ToString()</td>
                     <td>@entrada.CantidadDisponible</td>
                     <td>
-                        @Html.TextBox("CantidadComprar_" + entrada.IDEntrada, "", new { type = "number", min = "1", max = entrada.CantidadDisponible })
+                        @Html.TextBox("CantidadComprar_" + entrada.IDEntrada, "", new { type = "number", @value = "0", min = "0", max = entrada.CantidadDisponible })
                     </td>
                 </tr>
             }
