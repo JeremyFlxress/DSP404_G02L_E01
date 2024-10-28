@@ -13,7 +13,7 @@ namespace TurnoverTicket.Controllers
         {
             return View(new CrearConciertoViewModel
             {
-                Fecha = DateTime.Now.Date // Establecer la fecha actual por defecto
+                Fecha = DateTime.Now.Date 
             });
         }
 
@@ -27,7 +27,6 @@ namespace TurnoverTicket.Controllers
                 {
                     try
                     {
-                        // Crear el concierto usando el modelo generado por EF
                         var concierto = new Concierto
                         {
                             Nombre = model.Nombre,
@@ -39,7 +38,7 @@ namespace TurnoverTicket.Controllers
                         db.Conciertos.Add(concierto);
                         db.SaveChanges();
 
-                        // Crear las entradas VIP
+                        // aca es donde se crean todas las entradas
                         var entradasVIP = new Entrada
                         {
                             IDConcierto = concierto.IDConcierto,
@@ -49,7 +48,7 @@ namespace TurnoverTicket.Controllers
                         };
                         db.Entradas.Add(entradasVIP);
 
-                        // Crear las entradas General
+                      
                         var entradasGeneral = new Entrada
                         {
                             IDConcierto = concierto.IDConcierto,
@@ -59,7 +58,7 @@ namespace TurnoverTicket.Controllers
                         };
                         db.Entradas.Add(entradasGeneral);
 
-                        // Crear las entradas Platea
+                       
                         var entradasPlatea = new Entrada
                         {
                             IDConcierto = concierto.IDConcierto,
