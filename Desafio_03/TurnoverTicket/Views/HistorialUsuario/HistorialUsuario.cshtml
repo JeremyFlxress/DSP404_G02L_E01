@@ -1,20 +1,13 @@
 ﻿@model List<TurnoverTicket.Models.FacturaViewModel>
 
 <div class="container mt-4">
-    <h2>Facturas</h2>
+    <h2>Historial de Facturas</h2>
     @if (!string.IsNullOrEmpty(ViewBag.Error))
     {
         <div class="alert alert-danger">
             @ViewBag.Error
         </div>
     }
-    @if (!string.IsNullOrEmpty(ViewBag.Mensaje))
-    {
-        <div class="alert alert-info">
-            @ViewBag.Mensaje
-        </div>
-    }
-    @Html.Raw(Json.Encode(Model)) <!-- Esto mostrará los datos del modelo en formato JSON -->
     @if (Model != null && Model.Any())
     {
         foreach (var factura in Model)

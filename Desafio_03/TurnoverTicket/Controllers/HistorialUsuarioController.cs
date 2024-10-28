@@ -25,11 +25,6 @@ namespace TurnoverTicket.Controllers
         // GET: HistorialUsuario
         public ActionResult HistorialUsuario()
         {
-            return View();
-        }
-
-        public ActionResult FacturasUsuario()
-        {
             try
             {
                 int usuarioActual = ObtenerUsuarioActual();
@@ -67,6 +62,7 @@ namespace TurnoverTicket.Controllers
                     ViewBag.Error = "No se encontraron facturas para el usuario actual.";
                 }
 
+                // Enviar las facturas a la vista HistorialUsuario
                 return View(facturas);
             }
             catch (Exception ex)
@@ -75,7 +71,5 @@ namespace TurnoverTicket.Controllers
                 return View(new List<FacturaViewModel>());
             }
         }
-
-
     }
 }
