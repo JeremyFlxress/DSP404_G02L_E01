@@ -26,7 +26,7 @@ namespace TurnoverTicket.Models
         public string Localidad { get; set; }
         public decimal Precio { get; set; }
         public int CantidadDisponible { get; set; }
-        public int CantidadComprar { get; set; } 
+        public int CantidadComprar { get; set; } // Cambié a 'int' porque debería ser un número entero.
 
         public DateTime FechaConcierto { get; set; }
         public string Artista { get; set; }

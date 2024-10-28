@@ -18,6 +18,7 @@ namespace TurnoverTicket.Controllers
             {
                 return Convert.ToInt32(Session["IDUsuario"]);
             }
+            // Si no hay usuario en sesión, redirigir al login
             throw new UnauthorizedAccessException("Usuario no autenticado");
         }
 

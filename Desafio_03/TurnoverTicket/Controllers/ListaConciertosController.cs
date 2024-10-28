@@ -37,7 +37,7 @@ namespace TurnoverTicket.Controllers
                 return HttpNotFound();
             }
 
-            // esto es para obtener las entradas asociadas al concierto
+            // Obtener las entradas asociadas al concierto
             var entradasVIP = db.Entradas.FirstOrDefault(e => e.IDConcierto == id && e.Localidad == "VIP");
             var entradasGeneral = db.Entradas.FirstOrDefault(e => e.IDConcierto == id && e.Localidad == "General");
             var entradasPlatea = db.Entradas.FirstOrDefault(e => e.IDConcierto == id && e.Localidad == "Platea");
@@ -73,12 +73,13 @@ namespace TurnoverTicket.Controllers
                         var concierto = db.Conciertos.Find(model.IDConcierto);
                         if (concierto != null)
                         {
+                            // Actualizar datos del concierto
                             concierto.Nombre = model.Nombre;
                             concierto.Artista = model.Artista;
                             concierto.Fecha = model.Fecha;
                             concierto.Localizacion = model.Localizacion;
 
-                            
+                            // Actualizar entradas
                             UpdateEntradas(model.IDConcierto, "VIP", model.CantidadVIP, model.PrecioVIP);
                             UpdateEntradas(model.IDConcierto, "General", model.CantidadGeneral, model.PrecioGeneral);
                             UpdateEntradas(model.IDConcierto, "Platea", model.CantidadPlatea, model.PrecioPlatea);

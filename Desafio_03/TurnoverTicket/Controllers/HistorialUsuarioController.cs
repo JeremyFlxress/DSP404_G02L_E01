@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using TurnoverTicket.Models;
 using System.Data.Entity;
-using System.Collections.Generic;
 
 namespace TurnoverTicket.Controllers
 {
@@ -17,6 +18,7 @@ namespace TurnoverTicket.Controllers
             {
                 return Convert.ToInt32(Session["IDUsuario"]);
             }
+            // Si no hay usuario en sesión, redirigir al login
             throw new UnauthorizedAccessException("Usuario no autenticado");
         }
 
@@ -26,14 +28,14 @@ namespace TurnoverTicket.Controllers
             try
             {
                 int usuarioActual = ObtenerUsuarioActual();
-                Console.WriteLine("Usuario Actual: " + usuarioActual); // aca es donde se verifica el usuario actual usando la app
+                Console.WriteLine("Usuario Actual: " + usuarioActual); // Verificar el ID del usuario
 
                 var facturas = db.Facturas
                     .Include(f => f.VentaEntrada)
                     .Include(f => f.VentaEntrada.DetallesEntradas)
                     .Include(f => f.VentaEntrada.DetallesEntradas.Select(d => d.Entrada))
                     .Include(f => f.VentaEntrada.DetallesEntradas.Select(d => d.Entrada.Concierto))
-                    .Where(f => f.IDUsuario == usuarioActual) // filtra por usuario actual
+                    .Where(f => f.IDUsuario == usuarioActual) // Filtrar por usuario actual
                     .OrderByDescending(f => f.FechaVenta)
                     .Select(f => new FacturaViewModel
                     {
@@ -52,6 +54,7 @@ namespace TurnoverTicket.Controllers
                     })
                     .ToList();
 
+                // Verificar el contenido de facturas
                 Console.WriteLine("Facturas: " + facturas.Count); // Verificar la cantidad de facturas obtenidas
 
                 if (!facturas.Any())
@@ -65,7 +68,7 @@ namespace TurnoverTicket.Controllers
             catch (Exception ex)
             {
                 ViewBag.Error = "Error al cargar las facturas: " + ex.Message;
-                return View(new List<FacturaViewModel>()); // Devolver una lista vacía en caso de error
+                return View(new List<FacturaViewModel>());
             }
         }
     }
